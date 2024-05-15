@@ -27,15 +27,14 @@ jobs:
       - run: zip -r ./module.zip module.json index.js style.css lang/
 
       # Create a release for this specific version.
-      - name: Update Release with Files
-        id: create_version_release
+      - name: Create Latest Release
+        id: create_latest_release
         uses: ncipollo/release-action@v1
         with:
-          allowUpdates: true # Set this to false if you want to prevent updating existing releases.
-          name: ${{ github.event.release.name }}
+          allowUpdates: true
+          name: Latest
           draft: false
           prerelease: false
           token: ${{ secrets.GITHUB_TOKEN }}
-          artifacts: './module.json, ./module.zip'
-          tag: ${{ github.event.release.tag_name }}
-          body: ${{ github.event.release.body }}
+          artifacts: './module.json,./module.zip'
+          tag: latest
