@@ -15,8 +15,7 @@ Also, system sheets do not provide all the data necessary for in-person sessions
 And last but not least: Mobile-Companion is intended to work on smaller displays like smartphones!
 
 
-[example.mp4](assets%2Fexample.mp4)
-
+![example.gif](assets/example.gif)
 
 ## Setup
 1. Enable the module
@@ -25,3 +24,6 @@ And last but not least: Mobile-Companion is intended to work on smaller displays
 
 ## Supported Systems
 Currently, I am working on DND5e and A5e. When this is done I probably go to Pf2e. Additional systems will follow.
+
+## Future plans
+I will at least do the aforementioned systems as well as adding spells. If everything goes smoothly I'll also add additional information, useful to the players like feats, combat maneuvers etc. 
