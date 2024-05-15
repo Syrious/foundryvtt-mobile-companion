@@ -2,6 +2,8 @@
 
 [Join the Discord Community](https://discord.gg/VMqndcyUGS)
 
+Still in alpha!
+
 # Introduction
 Mobile-Companion is designed for in-person gaming sessions, catering to players who prefer not to micromanage their inventory. This module provides a streamlined, clean user interface that displays all relevant information for items, and will soon include spells and other features. With Mobile-Companion, players will never need to look up items in the rulebook again.
 
