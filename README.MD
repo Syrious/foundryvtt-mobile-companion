@@ -28,3 +28,4 @@ Currently, I am working on DND5e and A5e. When this is done I probably go to Pf2
 
 ## Future plans
 I will at least do the aforementioned systems as well as adding spells. If everything goes smoothly I'll also add additional information, useful to the players like feats, combat maneuvers etc. 
+Also, I want to add currency and encumbrance.
