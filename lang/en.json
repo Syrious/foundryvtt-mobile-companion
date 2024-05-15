@@ -1,0 +1,18 @@
+{
+  "A5E": {
+    "rollType" : {
+      "attack": "Attack"
+    },
+    "armor" : {
+      "maxDex" : "Maximum Dexterity",
+      "minStr" : "Minimum Strength"
+    },
+    "itemDescription": {
+      "cost": "Cost",
+      "weight" : "Weight"
+    }
+  },
+  "DND5E": {
+    "effect": "Effect"
+  }
+}

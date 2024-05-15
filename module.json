@@ -1,0 +1,48 @@
+{
+  "id": "mobile-companion",
+  "title": "Mobile Companion",
+  "description": "A companion module top be used on smartphones and tablets",
+  "version": "0.0.1",
+  "authors": [
+    {
+      "name": "Syrious",
+      "discord": "syrious_",
+      "flags": {
+        "patreon": "SyriousWorkshop",
+        "github": "Syrious",
+        "ko-fi": "syrious"
+      }
+    }
+  ],
+  "compatibility": {
+    "minimum": "11",
+    "verified": "11"
+  },
+  "esmodules": [
+    "index.js"
+  ],
+  "styles": [
+    "style.css"
+  ],
+  "flags": {
+    "hotReload": {
+      "extensions": [
+        "json"
+      ],
+      "paths": [
+        "lang"
+      ]
+    }
+  },
+  "languages": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "lang/en.json",
+      "flags": {}
+    }
+  ],
+  "url": "",
+  "manifest": "",
+  "download": ""
+}
