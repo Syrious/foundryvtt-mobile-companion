@@ -38,3 +38,4 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
           artifacts: './module.json,./module.zip'
           tag: latest
+          body: ${{ github.event.release.body }}
