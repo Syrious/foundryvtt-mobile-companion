@@ -14,7 +14,7 @@ Also, system sheets do not provide all the data necessary for in-person sessions
 
 And last but not least: Mobile-Companion is intended to work on smaller displays like smartphones!
 
-[![Watch the video](https://img.youtube.com/vi/3Cd2L8CkHkY/maxresdefault.jpg)](https://youtube.com/shorts/3Cd2L8CkHkY)
+[![Watch the video](https://img.youtube.com/vi/3Cd2L8CkHkY/hqdefault.jpg)](https://youtube.com/shorts/3Cd2L8CkHkY)
 
 
 
