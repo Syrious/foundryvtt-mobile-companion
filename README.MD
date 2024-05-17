@@ -16,8 +16,7 @@ Also, system sheets do not provide all the data necessary for in-person sessions
 
 And last but not least: Mobile-Companion is intended to work on smaller displays like smartphones!
 
-[example.mp4](assets/example.mp4.mov)
-[example.mp4.mov](assets%2Fexample.mp4.mov)
+![example.gif](assets/example.gif)
 
 ## Setup
 1. Enable the module
