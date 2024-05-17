@@ -1,18 +1,26 @@
 {
-  "A5E": {
-    "rollType" : {
-      "attack": "Attack"
+  "Mobile-Companion": {
+    "A5E": {
+      "rollType" : {
+        "attack": "Attack"
+      },
+      "armor" : {
+        "maxDex" : "Maximum Dexterity",
+        "minStr" : "Minimum Strength"
+      },
+      "itemDescription": {
+        "cost": "Cost",
+        "weight" : "Weight"
+      }
     },
-    "armor" : {
-      "maxDex" : "Maximum Dexterity",
-      "minStr" : "Minimum Strength"
+    "DND5E": {
+      "effect": "Effect"
     },
-    "itemDescription": {
-      "cost": "Cost",
-      "weight" : "Weight"
+    "Settings": {
+      "UseCurrency": {
+        "Name": "Use Currency",
+        "Hint" : "Whether or not to show your currency within the inventory"
+      }
     }
-  },
-  "DND5E": {
-    "effect": "Effect"
   }
 }

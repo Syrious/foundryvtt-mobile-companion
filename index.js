@@ -3,7 +3,10 @@ const moduleId = "mobile-companion";
 const settings = {
   users: "users",
   usersMenu: "usersMenu",
-  lastActorId: "lastActorId"
+  lastActorId: "lastActorId",
+  dnd5e: {
+    useCurrency: "useCurrency"
+  }
 };
 const system = {
   A5E: "a5e",
@@ -1081,7 +1084,7 @@ function make_dirty(component, i) {
   }
   component.$$.dirty[i / 31 | 0] |= 1 << i % 31;
 }
-function init(component, options, instance2, create_fragment2, not_equal, props, append_styles, dirty = [-1]) {
+function init$1(component, options, instance2, create_fragment2, not_equal, props, append_styles, dirty = [-1]) {
   const parent_component = current_component;
   set_current_component(component);
   const $$ = component.$$ = {
@@ -12761,7 +12764,7 @@ function create_else_block$2(ctx) {
     }
   };
 }
-function create_if_block$p(ctx) {
+function create_if_block$q(ctx) {
   let div0;
   let applyStyles_action;
   let div0_intro;
@@ -12910,14 +12913,14 @@ function create_if_block$p(ctx) {
     }
   };
 }
-function create_fragment$w(ctx) {
+function create_fragment$x(ctx) {
   let div;
   let current_block_type_index;
   let if_block;
   let current;
   let mounted;
   let dispose;
-  const if_block_creators = [create_if_block$p, create_else_block$2];
+  const if_block_creators = [create_if_block$q, create_else_block$2];
   const if_blocks = [];
   function select_block_type(ctx2, dirty) {
     if (
@@ -13117,7 +13120,7 @@ function create_fragment$w(ctx) {
     }
   };
 }
-function instance$w($$self, $$props, $$invalidate) {
+function instance$x($$self, $$props, $$invalidate) {
   let { $$slots: slots = {}, $$scope } = $$props;
   let { background = "#50505080" } = $$props;
   let { captureInput = true } = $$props;
@@ -13282,7 +13285,7 @@ function instance$w($$self, $$props, $$invalidate) {
 class TJSGlassPane extends SvelteComponent {
   constructor(options) {
     super();
-    init(this, options, instance$w, create_fragment$w, safe_not_equal, {
+    init$1(this, options, instance$x, create_fragment$x, safe_not_equal, {
       background: 5,
       captureInput: 13,
       closeOnInput: 14,
@@ -13323,7 +13326,7 @@ function localize(stringId, data) {
   return result !== void 0 ? result : "";
 }
 const TJSHeaderButton_svelte_svelte_type_style_lang = "";
-function create_if_block$o(ctx) {
+function create_if_block$p(ctx) {
   let span;
   let t;
   return {
@@ -13370,7 +13373,7 @@ function create_if_block$o(ctx) {
     }
   };
 }
-function create_fragment$v(ctx) {
+function create_fragment$w(ctx) {
   let a;
   let html_tag;
   let html_anchor;
@@ -13380,7 +13383,7 @@ function create_fragment$v(ctx) {
   let dispose;
   let if_block = (
     /*label*/
-    ctx[3] && create_if_block$o(ctx)
+    ctx[3] && create_if_block$p(ctx)
   );
   return {
     c() {
@@ -13463,7 +13466,7 @@ function create_fragment$v(ctx) {
         if (if_block) {
           if_block.p(ctx2, dirty);
         } else {
-          if_block = create_if_block$o(ctx2);
+          if_block = create_if_block$p(ctx2);
           if_block.c();
           if_block.m(a, null);
         }
@@ -13516,7 +13519,7 @@ function create_fragment$v(ctx) {
   };
 }
 const s_REGEX_HTML$1 = /^\s*<.*>$/;
-function instance$v($$self, $$props, $$invalidate) {
+function instance$w($$self, $$props, $$invalidate) {
   let title;
   let icon;
   let label;
@@ -13601,7 +13604,7 @@ function instance$v($$self, $$props, $$invalidate) {
 class TJSHeaderButton extends SvelteComponent {
   constructor(options) {
     super();
-    init(this, options, instance$v, create_fragment$v, safe_not_equal, { button: 0 });
+    init$1(this, options, instance$w, create_fragment$w, safe_not_equal, { button: 0 });
   }
   get button() {
     return this.$$.ctx[0];
@@ -13623,7 +13626,7 @@ function get_each_context_1$1(ctx, list, i) {
   child_ctx[31] = list[i];
   return child_ctx;
 }
-function create_if_block$n(ctx) {
+function create_if_block$o(ctx) {
   let img;
   let img_src_value;
   return {
@@ -13855,7 +13858,7 @@ function create_key_block(ctx) {
   let mounted;
   let dispose;
   let if_block = typeof /*$storeHeaderIcon*/
-  ctx[6] === "string" && create_if_block$n(ctx);
+  ctx[6] === "string" && create_if_block$o(ctx);
   let each_value_1 = ensure_array_like(
     /*buttonsLeft*/
     ctx[1]
@@ -13960,7 +13963,7 @@ function create_key_block(ctx) {
         if (if_block) {
           if_block.p(ctx2, dirty);
         } else {
-          if_block = create_if_block$n(ctx2);
+          if_block = create_if_block$o(ctx2);
           if_block.c();
           if_block.m(header, t0);
         }
@@ -14083,7 +14086,7 @@ function create_key_block(ctx) {
     }
   };
 }
-function create_fragment$u(ctx) {
+function create_fragment$v(ctx) {
   let previous_key = (
     /*draggable*/
     ctx[0]
@@ -14134,7 +14137,7 @@ function create_fragment$u(ctx) {
     }
   };
 }
-function instance$u($$self, $$props, $$invalidate) {
+function instance$v($$self, $$props, $$invalidate) {
   let $focusKeep;
   let $focusAuto;
   let $elementRoot;
@@ -14292,12 +14295,12 @@ function instance$u($$self, $$props, $$invalidate) {
 class TJSApplicationHeader extends SvelteComponent {
   constructor(options) {
     super();
-    init(this, options, instance$u, create_fragment$u, safe_not_equal, { draggable: 0, draggableOptions: 20 }, null, [-1, -1]);
+    init$1(this, options, instance$v, create_fragment$v, safe_not_equal, { draggable: 0, draggableOptions: 20 }, null, [-1, -1]);
   }
 }
 const TJSApplicationHeader$1 = TJSApplicationHeader;
 const TJSFocusWrap_svelte_svelte_type_style_lang = "";
-function create_fragment$t(ctx) {
+function create_fragment$u(ctx) {
   let div;
   let mounted;
   let dispose;
@@ -14333,7 +14336,7 @@ function create_fragment$t(ctx) {
     }
   };
 }
-function instance$t($$self, $$props, $$invalidate) {
+function instance$u($$self, $$props, $$invalidate) {
   let { elementRoot = void 0 } = $$props;
   let { enabled = true } = $$props;
   let ignoreElements, wrapEl;
@@ -14375,12 +14378,12 @@ function instance$t($$self, $$props, $$invalidate) {
 class TJSFocusWrap extends SvelteComponent {
   constructor(options) {
     super();
-    init(this, options, instance$t, create_fragment$t, safe_not_equal, { elementRoot: 2, enabled: 3 });
+    init$1(this, options, instance$u, create_fragment$u, safe_not_equal, { elementRoot: 2, enabled: 3 });
   }
 }
 const TJSFocusWrap$1 = TJSFocusWrap;
 const ResizableHandle_svelte_svelte_type_style_lang = "";
-function create_fragment$s(ctx) {
+function create_fragment$t(ctx) {
   let div;
   let resizable_action;
   let mounted;
@@ -14435,7 +14438,7 @@ function create_fragment$s(ctx) {
     }
   };
 }
-function instance$s($$self, $$props, $$invalidate) {
+function instance$t($$self, $$props, $$invalidate) {
   let $storeElementRoot;
   let $storeMinimized;
   let $storeResizable;
@@ -14564,7 +14567,7 @@ function instance$s($$self, $$props, $$invalidate) {
 class ResizableHandle extends SvelteComponent {
   constructor(options) {
     super();
-    init(this, options, instance$s, create_fragment$s, safe_not_equal, { isResizable: 7 });
+    init$1(this, options, instance$t, create_fragment$t, safe_not_equal, { isResizable: 7 });
   }
 }
 const ResizableHandle$1 = ResizableHandle;
@@ -14825,7 +14828,7 @@ function create_else_block$1(ctx) {
     }
   };
 }
-function create_if_block$m(ctx) {
+function create_if_block$n(ctx) {
   let div;
   let tjsapplicationheader;
   let t0;
@@ -15099,12 +15102,12 @@ function create_if_block$m(ctx) {
     }
   };
 }
-function create_fragment$r(ctx) {
+function create_fragment$s(ctx) {
   let current_block_type_index;
   let if_block;
   let if_block_anchor;
   let current;
-  const if_block_creators = [create_if_block$m, create_else_block$1];
+  const if_block_creators = [create_if_block$n, create_else_block$1];
   const if_blocks = [];
   function select_block_type(ctx2, dirty) {
     if (
@@ -15167,7 +15170,7 @@ function create_fragment$r(ctx) {
     }
   };
 }
-function instance$r($$self, $$props, $$invalidate) {
+function instance$s($$self, $$props, $$invalidate) {
   let $focusKeep;
   let $focusAuto;
   let $minimized;
@@ -15459,11 +15462,11 @@ function instance$r($$self, $$props, $$invalidate) {
 class ApplicationShell extends SvelteComponent {
   constructor(options) {
     super();
-    init(
+    init$1(
       this,
       options,
-      instance$r,
-      create_fragment$r,
+      instance$s,
+      create_fragment$s,
       safe_not_equal,
       {
         elementContent: 0,
@@ -15738,7 +15741,7 @@ function create_if_block_2$5(ctx) {
     }
   };
 }
-function create_if_block$l(ctx) {
+function create_if_block$m(ctx) {
   let div;
   let each_blocks = [];
   let each_1_lookup = /* @__PURE__ */ new Map();
@@ -15955,7 +15958,7 @@ function create_each_block$4(key_1, ctx) {
     }
   };
 }
-function create_fragment$q(ctx) {
+function create_fragment$r(ctx) {
   let main2;
   let div;
   let current_block_type_index;
@@ -15980,7 +15983,7 @@ function create_fragment$q(ctx) {
   }
   let if_block1 = (
     /*buttons*/
-    ctx[1].length && create_if_block$l(ctx)
+    ctx[1].length && create_if_block$m(ctx)
   );
   return {
     c() {
@@ -16041,7 +16044,7 @@ function create_fragment$q(ctx) {
         if (if_block1) {
           if_block1.p(ctx2, dirty);
         } else {
-          if_block1 = create_if_block$l(ctx2);
+          if_block1 = create_if_block$m(ctx2);
           if_block1.c();
           if_block1.m(main2, null);
         }
@@ -16074,7 +16077,7 @@ function create_fragment$q(ctx) {
   };
 }
 const s_REGEX_HTML = /^\s*<.*>$/;
-function instance$q($$self, $$props, $$invalidate) {
+function instance$r($$self, $$props, $$invalidate) {
   let autoClose;
   let focusFirst;
   let resolveId;
@@ -16392,7 +16395,7 @@ function instance$q($$self, $$props, $$invalidate) {
 class DialogContent extends SvelteComponent {
   constructor(options) {
     super();
-    init(this, options, instance$q, create_fragment$q, safe_not_equal, {
+    init$1(this, options, instance$r, create_fragment$r, safe_not_equal, {
       data: 10,
       preventDefault: 11,
       stopPropagation: 12,
@@ -16493,7 +16496,7 @@ function create_else_block(ctx) {
     }
   };
 }
-function create_if_block$k(ctx) {
+function create_if_block$l(ctx) {
   let tjsglasspane;
   let current;
   const tjsglasspane_spread_levels = [
@@ -16780,12 +16783,12 @@ function create_default_slot$3(ctx) {
     }
   };
 }
-function create_fragment$p(ctx) {
+function create_fragment$q(ctx) {
   let current_block_type_index;
   let if_block;
   let if_block_anchor;
   let current;
-  const if_block_creators = [create_if_block$k, create_else_block];
+  const if_block_creators = [create_if_block$l, create_else_block];
   const if_blocks = [];
   function select_block_type(ctx2, dirty) {
     if (
@@ -16848,7 +16851,7 @@ function create_fragment$p(ctx) {
   };
 }
 const s_MODAL_BACKGROUND = "#50505080";
-function instance$p($$self, $$props, $$invalidate) {
+function instance$q($$self, $$props, $$invalidate) {
   let { elementContent = void 0 } = $$props;
   let { elementRoot = void 0 } = $$props;
   let { data = {} } = $$props;
@@ -17128,7 +17131,7 @@ function instance$p($$self, $$props, $$invalidate) {
 class DialogShell extends SvelteComponent {
   constructor(options) {
     super();
-    init(this, options, instance$p, create_fragment$p, safe_not_equal, {
+    init$1(this, options, instance$q, create_fragment$q, safe_not_equal, {
       elementContent: 1,
       elementRoot: 0,
       data: 3,
@@ -18788,7 +18791,7 @@ function create_default_slot$2(ctx) {
     }
   };
 }
-function create_fragment$o(ctx) {
+function create_fragment$p(ctx) {
   let applicationshell;
   let updating_elementRoot;
   let current;
@@ -18846,7 +18849,7 @@ function create_fragment$o(ctx) {
     }
   };
 }
-function instance$o($$self, $$props, $$invalidate) {
+function instance$p($$self, $$props, $$invalidate) {
   let { elementRoot } = $$props;
   const { application } = getContext("#external");
   const playerData = game.settings.get(moduleId, settings.users);
@@ -18903,7 +18906,7 @@ function instance$o($$self, $$props, $$invalidate) {
 let UserSetupShell$1 = class UserSetupShell extends SvelteComponent {
   constructor(options) {
     super();
-    init(this, options, instance$o, create_fragment$o, safe_not_equal, { elementRoot: 0 });
+    init$1(this, options, instance$p, create_fragment$p, safe_not_equal, { elementRoot: 0 });
   }
   get elementRoot() {
     return this.$$.ctx[0];
@@ -18943,10 +18946,36 @@ class SettingsUser extends FormApplication {
     SettingsUser.showSettings();
   }
   async _updateObject(event, formData) {
+    await super._updateObject(event, formData);
   }
   render() {
     this.close();
   }
+}
+function i18n(key) {
+  return game.i18n.localize(key);
+}
+function myi18n(key) {
+  return i18n("Mobile-Companion.".concat(key));
+}
+function i18nFormat(key, data) {
+  return game.i18n.format(key, data);
+}
+function getDnd5eSettings() {
+  const setting = [];
+  setting.push({
+    namespace: moduleId,
+    key: settings.dnd5e.useCurrency,
+    options: {
+      name: i18n("Mobile-Companion.Settings.UseCurrency.Name"),
+      hint: i18n("Mobile-Companion.Settings.UseCurrency.Hint"),
+      scope: "client",
+      config: true,
+      type: Boolean,
+      default: true
+    }
+  });
+  return setting;
 }
 class MobileCompanionGameSettings extends TJSGameSettings {
   constructor() {
@@ -18978,6 +19007,9 @@ class MobileCompanionGameSettings extends TJSGameSettings {
       type: String,
       default: ""
     });
+    if (game.system.id === system.DND5E) {
+      this.registerAll(getDnd5eSettings(), true);
+    }
   }
 }
 const mobileCompanionGameSettings = new MobileCompanionGameSettings();
@@ -19013,7 +19045,7 @@ function activateSheet(factoryToUse) {
   popupSheet();
   addEventListener("resize", onResize);
 }
-function onResize(event) {
+function onResize() {
   currentSheet?.element.css({
     width: window.innerWidth,
     height: window.innerHeight
@@ -19197,7 +19229,7 @@ function create_each_block$2(key_1, ctx) {
     }
   };
 }
-function create_if_block$j(ctx) {
+function create_if_block$k(ctx) {
   let div3;
   let div0;
   let t1;
@@ -19283,7 +19315,7 @@ function create_if_block$j(ctx) {
     }
   };
 }
-function create_fragment$n(ctx) {
+function create_fragment$o(ctx) {
   let t0;
   let header;
   let div0;
@@ -19313,7 +19345,7 @@ function create_fragment$n(ctx) {
   }
   let if_block = (
     /*isContextOpen*/
-    ctx[2] && create_if_block$j(ctx)
+    ctx[2] && create_if_block$k(ctx)
   );
   return {
     c() {
@@ -19404,7 +19436,7 @@ function create_fragment$n(ctx) {
             transition_in(if_block, 1);
           }
         } else {
-          if_block = create_if_block$j(ctx2);
+          if_block = create_if_block$k(ctx2);
           if_block.c();
           transition_in(if_block, 1);
           if_block.m(header, null);
@@ -19438,9 +19470,9 @@ function create_fragment$n(ctx) {
     }
   };
 }
-function instance$n($$self, $$props, $$invalidate) {
+function instance$o($$self, $$props, $$invalidate) {
   let { customButtons = [] } = $$props;
-  let { menuButtons } = $$props;
+  let { menuButtons: menuButtons2 } = $$props;
   let isContextOpen = false;
   function handleBodyClick() {
     if (isContextOpen) {
@@ -19464,11 +19496,11 @@ function instance$n($$self, $$props, $$invalidate) {
     if ("customButtons" in $$props2)
       $$invalidate(0, customButtons = $$props2.customButtons);
     if ("menuButtons" in $$props2)
-      $$invalidate(1, menuButtons = $$props2.menuButtons);
+      $$invalidate(1, menuButtons2 = $$props2.menuButtons);
   };
   return [
     customButtons,
-    menuButtons,
+    menuButtons2,
     isContextOpen,
     handleBodyClick,
     toggleMenu,
@@ -19479,16 +19511,10 @@ function instance$n($$self, $$props, $$invalidate) {
 class Header extends SvelteComponent {
   constructor(options) {
     super();
-    init(this, options, instance$n, create_fragment$n, safe_not_equal, { customButtons: 0, menuButtons: 1 });
+    init$1(this, options, instance$o, create_fragment$o, safe_not_equal, { customButtons: 0, menuButtons: 1 });
   }
 }
-function i18n(key) {
-  return game.i18n.localize(key);
-}
-function i18nFormat(key, data) {
-  return game.i18n.format(key, data);
-}
-function create_if_block$i(ctx) {
+function create_if_block$j(ctx) {
   let p;
   return {
     c() {
@@ -19505,11 +19531,11 @@ function create_if_block$i(ctx) {
     }
   };
 }
-function create_fragment$m(ctx) {
+function create_fragment$n(ctx) {
   let if_block_anchor;
   let if_block = (
     /*itemData*/
-    ctx[0].capacity && create_if_block$i()
+    ctx[0].capacity && create_if_block$j()
   );
   return {
     c() {
@@ -19530,7 +19556,7 @@ function create_fragment$m(ctx) {
         if (if_block)
           ;
         else {
-          if_block = create_if_block$i();
+          if_block = create_if_block$j();
           if_block.c();
           if_block.m(if_block_anchor.parentNode, if_block_anchor);
         }
@@ -19550,7 +19576,7 @@ function create_fragment$m(ctx) {
     }
   };
 }
-function instance$m($$self, $$props, $$invalidate) {
+function instance$n($$self, $$props, $$invalidate) {
   let itemData;
   let { item } = $$props;
   $$self.$$set = ($$props2) => {
@@ -19568,10 +19594,10 @@ function instance$m($$self, $$props, $$invalidate) {
 class Dnd5eContainerObject extends SvelteComponent {
   constructor(options) {
     super();
-    init(this, options, instance$m, create_fragment$m, safe_not_equal, { item: 1 });
+    init$1(this, options, instance$n, create_fragment$n, safe_not_equal, { item: 1 });
   }
 }
-function create_if_block$h(ctx) {
+function create_if_block$i(ctx) {
   let p;
   let b;
   let t2;
@@ -19581,10 +19607,6 @@ function create_if_block$h(ctx) {
   );
   let t3;
   let t4;
-  let t5_value = CONFIG.DND5E.abilityActivationTypes[
-    /*activation*/
-    ctx[0].type
-  ] + "";
   let t5;
   let t6;
   let t7_value = (
@@ -19600,7 +19622,10 @@ function create_if_block$h(ctx) {
       t2 = space();
       t3 = text(t3_value);
       t4 = space();
-      t5 = text(t5_value);
+      t5 = text(
+        /*activationType*/
+        ctx[1]
+      );
       t6 = space();
       t7 = text(t7_value);
     },
@@ -19620,12 +19645,6 @@ function create_if_block$h(ctx) {
       ctx2[0].cost + ""))
         set_data(t3, t3_value);
       if (dirty & /*activation*/
-      1 && t5_value !== (t5_value = CONFIG.DND5E.abilityActivationTypes[
-        /*activation*/
-        ctx2[0].type
-      ] + ""))
-        set_data(t5, t5_value);
-      if (dirty & /*activation*/
       1 && t7_value !== (t7_value = /*activation*/
       ctx2[0].condition + ""))
         set_data(t7, t7_value);
@@ -19637,11 +19656,11 @@ function create_if_block$h(ctx) {
     }
   };
 }
-function create_fragment$l(ctx) {
+function create_fragment$m(ctx) {
   let if_block_anchor;
   let if_block = (
-    /*activation*/
-    ctx[0].type && create_if_block$h(ctx)
+    /*activationType*/
+    ctx[1] && create_if_block$i(ctx)
   );
   return {
     c() {
@@ -19656,20 +19675,10 @@ function create_fragment$l(ctx) {
     },
     p(ctx2, [dirty]) {
       if (
-        /*activation*/
-        ctx2[0].type
-      ) {
-        if (if_block) {
-          if_block.p(ctx2, dirty);
-        } else {
-          if_block = create_if_block$h(ctx2);
-          if_block.c();
-          if_block.m(if_block_anchor.parentNode, if_block_anchor);
-        }
-      } else if (if_block) {
-        if_block.d(1);
-        if_block = null;
-      }
+        /*activationType*/
+        ctx2[1]
+      )
+        if_block.p(ctx2, dirty);
     },
     i: noop,
     o: noop,
@@ -19682,21 +19691,22 @@ function create_fragment$l(ctx) {
     }
   };
 }
-function instance$l($$self, $$props, $$invalidate) {
+function instance$m($$self, $$props, $$invalidate) {
   let { activation } = $$props;
+  const activationType = CONFIG.DND5E.abilityActivationTypes[activation.type];
   $$self.$$set = ($$props2) => {
     if ("activation" in $$props2)
       $$invalidate(0, activation = $$props2.activation);
   };
-  return [activation];
+  return [activation, activationType];
 }
 class Dnd5EActivation extends SvelteComponent {
   constructor(options) {
     super();
-    init(this, options, instance$l, create_fragment$l, safe_not_equal, { activation: 0 });
+    init$1(this, options, instance$m, create_fragment$m, safe_not_equal, { activation: 0 });
   }
 }
-function create_if_block$g(ctx) {
+function create_if_block$h(ctx) {
   let p;
   let b;
   let t2;
@@ -19708,10 +19718,10 @@ function create_if_block$g(ctx) {
   let t4;
   let t5_value = (
     /*target*/
-    (ctx[0].type ? CONFIG.DND5E.individualTargetTypes[
-      /*target*/
-      ctx[0].type
-    ] : "") + ""
+    (ctx[0].type ? (
+      /*individualTargetType*/
+      ctx[1]
+    ) : "") + ""
   );
   let t5;
   let t6;
@@ -19749,10 +19759,10 @@ function create_if_block$g(ctx) {
         set_data(t3, t3_value);
       if (dirty & /*target*/
       1 && t5_value !== (t5_value = /*target*/
-      (ctx2[0].type ? CONFIG.DND5E.individualTargetTypes[
-        /*target*/
-        ctx2[0].type
-      ] : "") + ""))
+      (ctx2[0].type ? (
+        /*individualTargetType*/
+        ctx2[1]
+      ) : "") + ""))
         set_data(t5, t5_value);
       if (dirty & /*target*/
       1 && t7_value !== (t7_value = /*target*/
@@ -19766,11 +19776,11 @@ function create_if_block$g(ctx) {
     }
   };
 }
-function create_fragment$k(ctx) {
+function create_fragment$l(ctx) {
   let if_block_anchor;
   let if_block = (
     /*target*/
-    ctx[0].type && create_if_block$g(ctx)
+    ctx[0].type && create_if_block$h(ctx)
   );
   return {
     c() {
@@ -19791,7 +19801,7 @@ function create_fragment$k(ctx) {
         if (if_block) {
           if_block.p(ctx2, dirty);
         } else {
-          if_block = create_if_block$g(ctx2);
+          if_block = create_if_block$h(ctx2);
           if_block.c();
           if_block.m(if_block_anchor.parentNode, if_block_anchor);
         }
@@ -19811,18 +19821,19 @@ function create_fragment$k(ctx) {
     }
   };
 }
-function instance$k($$self, $$props, $$invalidate) {
+function instance$l($$self, $$props, $$invalidate) {
   let { target } = $$props;
+  const individualTargetType = CONFIG.DND5E.individualTargetTypes[target.type];
   $$self.$$set = ($$props2) => {
     if ("target" in $$props2)
       $$invalidate(0, target = $$props2.target);
   };
-  return [target];
+  return [target, individualTargetType];
 }
 class Dnd5ETarget extends SvelteComponent {
   constructor(options) {
     super();
-    init(this, options, instance$k, create_fragment$k, safe_not_equal, { target: 0 });
+    init$1(this, options, instance$l, create_fragment$l, safe_not_equal, { target: 0 });
   }
 }
 async function evaluateTotal(formula, rollData) {
@@ -19873,7 +19884,7 @@ function get_each_context$1(ctx, list, i) {
   child_ctx[3] = i;
   return child_ctx;
 }
-function create_if_block$f(ctx) {
+function create_if_block$g(ctx) {
   let each_blocks = [];
   let each_1_lookup = /* @__PURE__ */ new Map();
   let each_1_anchor;
@@ -19946,7 +19957,7 @@ function create_each_block$1(key_1, ctx) {
     c() {
       p = element("p");
       b = element("b");
-      b.textContent = `${i18n("DND5E.effect")}:`;
+      b.textContent = `${myi18n("DND5E.effect")}:`;
       t2 = space();
       t3 = text(t3_value);
       t4 = space();
@@ -19981,11 +19992,11 @@ function create_each_block$1(key_1, ctx) {
     }
   };
 }
-function create_fragment$j(ctx) {
+function create_fragment$k(ctx) {
   let if_block_anchor;
   let if_block = (
     /*effects*/
-    ctx[0].parts?.length > 0 && create_if_block$f(ctx)
+    ctx[0].parts?.length > 0 && create_if_block$g(ctx)
   );
   return {
     c() {
@@ -20006,7 +20017,7 @@ function create_fragment$j(ctx) {
         if (if_block) {
           if_block.p(ctx2, dirty);
         } else {
-          if_block = create_if_block$f(ctx2);
+          if_block = create_if_block$g(ctx2);
           if_block.c();
           if_block.m(if_block_anchor.parentNode, if_block_anchor);
         }
@@ -20026,7 +20037,7 @@ function create_fragment$j(ctx) {
     }
   };
 }
-function instance$j($$self, $$props, $$invalidate) {
+function instance$k($$self, $$props, $$invalidate) {
   let { effects } = $$props;
   $$self.$$set = ($$props2) => {
     if ("effects" in $$props2)
@@ -20037,26 +20048,15 @@ function instance$j($$self, $$props, $$invalidate) {
 class Dnd5eEffect extends SvelteComponent {
   constructor(options) {
     super();
-    init(this, options, instance$j, create_fragment$j, safe_not_equal, { effects: 0 });
+    init$1(this, options, instance$k, create_fragment$k, safe_not_equal, { effects: 0 });
   }
 }
 function create_if_block_3$3(ctx) {
   let p;
   let b;
   let t2;
-  let t3_value = CONFIG.DND5E.consumableTypes[
-    /*itemData*/
-    ctx[0].type.value
-  ]?.label + "";
   let t3;
   let t4;
-  let t5_value = (
-    /*itemData*/
-    ctx[0].type.subtype ? "(" + CONFIG.DND5E.consumableTypes.subtypes[
-      /*itemData*/
-      ctx[0].type.subtype
-    ] + ")" : ""
-  );
   let t5;
   return {
     c() {
@@ -20064,9 +20064,15 @@ function create_if_block_3$3(ctx) {
       b = element("b");
       b.textContent = `${i18n("DND5E.Type")}:`;
       t2 = space();
-      t3 = text(t3_value);
+      t3 = text(
+        /*consumableTypeLabel*/
+        ctx[1]
+      );
       t4 = space();
-      t5 = text(t5_value);
+      t5 = text(
+        /*subtype*/
+        ctx[2]
+      );
     },
     m(target, anchor) {
       insert(target, p, anchor);
@@ -20076,21 +20082,7 @@ function create_if_block_3$3(ctx) {
       append(p, t4);
       append(p, t5);
     },
-    p(ctx2, dirty) {
-      if (dirty & /*itemData*/
-      1 && t3_value !== (t3_value = CONFIG.DND5E.consumableTypes[
-        /*itemData*/
-        ctx2[0].type.value
-      ]?.label + ""))
-        set_data(t3, t3_value);
-      if (dirty & /*itemData*/
-      1 && t5_value !== (t5_value = /*itemData*/
-      ctx2[0].type.subtype ? "(" + CONFIG.DND5E.consumableTypes.subtypes[
-        /*itemData*/
-        ctx2[0].type.subtype
-      ] + ")" : ""))
-        set_data(t5, t5_value);
-    },
+    p: noop,
     d(detaching) {
       if (detaching) {
         detach(p);
@@ -20117,14 +20109,7 @@ function create_if_block_2$4(ctx) {
       mount_component(dnd5eactivation, target, anchor);
       current = true;
     },
-    p(ctx2, dirty) {
-      const dnd5eactivation_changes = {};
-      if (dirty & /*itemData*/
-      1)
-        dnd5eactivation_changes.activation = /*itemData*/
-        ctx2[0].activation;
-      dnd5eactivation.$set(dnd5eactivation_changes);
-    },
+    p: noop,
     i(local) {
       if (current)
         return;
@@ -20157,14 +20142,7 @@ function create_if_block_1$5(ctx) {
       mount_component(dnd5etarget, target, anchor);
       current = true;
     },
-    p(ctx2, dirty) {
-      const dnd5etarget_changes = {};
-      if (dirty & /*itemData*/
-      1)
-        dnd5etarget_changes.target = /*itemData*/
-        ctx2[0].target;
-      dnd5etarget.$set(dnd5etarget_changes);
-    },
+    p: noop,
     i(local) {
       if (current)
         return;
@@ -20180,7 +20158,7 @@ function create_if_block_1$5(ctx) {
     }
   };
 }
-function create_if_block$e(ctx) {
+function create_if_block$f(ctx) {
   let dnd5eeffect;
   let current;
   dnd5eeffect = new Dnd5eEffect({
@@ -20197,14 +20175,7 @@ function create_if_block$e(ctx) {
       mount_component(dnd5eeffect, target, anchor);
       current = true;
     },
-    p(ctx2, dirty) {
-      const dnd5eeffect_changes = {};
-      if (dirty & /*itemData*/
-      1)
-        dnd5eeffect_changes.effects = /*itemData*/
-        ctx2[0].damage;
-      dnd5eeffect.$set(dnd5eeffect_changes);
-    },
+    p: noop,
     i(local) {
       if (current)
         return;
@@ -20220,15 +20191,15 @@ function create_if_block$e(ctx) {
     }
   };
 }
-function create_fragment$i(ctx) {
+function create_fragment$j(ctx) {
   let t0;
   let t1;
   let t2;
   let if_block3_anchor;
   let current;
   let if_block0 = (
-    /*itemData*/
-    ctx[0].type?.value && create_if_block_3$3(ctx)
+    /*consumableTypeLabel*/
+    ctx[1] && create_if_block_3$3(ctx)
   );
   let if_block1 = (
     /*itemData*/
@@ -20240,7 +20211,7 @@ function create_fragment$i(ctx) {
   );
   let if_block3 = (
     /*itemData*/
-    ctx[0].damage && create_if_block$e(ctx)
+    ctx[0].damage && create_if_block$f(ctx)
   );
   return {
     c() {
@@ -20274,89 +20245,25 @@ function create_fragment$i(ctx) {
     },
     p(ctx2, [dirty]) {
       if (
-        /*itemData*/
-        ctx2[0].type?.value
-      ) {
-        if (if_block0) {
-          if_block0.p(ctx2, dirty);
-        } else {
-          if_block0 = create_if_block_3$3(ctx2);
-          if_block0.c();
-          if_block0.m(t0.parentNode, t0);
-        }
-      } else if (if_block0) {
-        if_block0.d(1);
-        if_block0 = null;
-      }
+        /*consumableTypeLabel*/
+        ctx2[1]
+      )
+        if_block0.p(ctx2, dirty);
       if (
         /*itemData*/
         ctx2[0].activation
-      ) {
-        if (if_block1) {
-          if_block1.p(ctx2, dirty);
-          if (dirty & /*itemData*/
-          1) {
-            transition_in(if_block1, 1);
-          }
-        } else {
-          if_block1 = create_if_block_2$4(ctx2);
-          if_block1.c();
-          transition_in(if_block1, 1);
-          if_block1.m(t1.parentNode, t1);
-        }
-      } else if (if_block1) {
-        group_outros();
-        transition_out(if_block1, 1, 1, () => {
-          if_block1 = null;
-        });
-        check_outros();
-      }
+      )
+        if_block1.p(ctx2, dirty);
       if (
         /*itemData*/
         ctx2[0].target
-      ) {
-        if (if_block2) {
-          if_block2.p(ctx2, dirty);
-          if (dirty & /*itemData*/
-          1) {
-            transition_in(if_block2, 1);
-          }
-        } else {
-          if_block2 = create_if_block_1$5(ctx2);
-          if_block2.c();
-          transition_in(if_block2, 1);
-          if_block2.m(t2.parentNode, t2);
-        }
-      } else if (if_block2) {
-        group_outros();
-        transition_out(if_block2, 1, 1, () => {
-          if_block2 = null;
-        });
-        check_outros();
-      }
+      )
+        if_block2.p(ctx2, dirty);
       if (
         /*itemData*/
         ctx2[0].damage
-      ) {
-        if (if_block3) {
-          if_block3.p(ctx2, dirty);
-          if (dirty & /*itemData*/
-          1) {
-            transition_in(if_block3, 1);
-          }
-        } else {
-          if_block3 = create_if_block$e(ctx2);
-          if_block3.c();
-          transition_in(if_block3, 1);
-          if_block3.m(if_block3_anchor.parentNode, if_block3_anchor);
-        }
-      } else if (if_block3) {
-        group_outros();
-        transition_out(if_block3, 1, 1, () => {
-          if_block3 = null;
-        });
-        check_outros();
-      }
+      )
+        if_block3.p(ctx2, dirty);
     },
     i(local) {
       if (current)
@@ -20390,29 +20297,26 @@ function create_fragment$i(ctx) {
     }
   };
 }
-function instance$i($$self, $$props, $$invalidate) {
+function instance$j($$self, $$props, $$invalidate) {
+  var _a;
   let { item } = $$props;
-  let itemData;
+  let itemData = item.system;
+  const consumableTypeLabel = (_a = CONFIG.DND5E.consumableTypes[itemData.type.value]) === null || _a === void 0 ? void 0 : _a.label;
+  const subtype = itemData.type.subtype ? "(" + CONFIG.DND5E.consumableTypes.subtypes[itemData.type.subtype] + ")" : "";
   $$self.$$set = ($$props2) => {
     if ("item" in $$props2)
-      $$invalidate(1, item = $$props2.item);
+      $$invalidate(3, item = $$props2.item);
   };
-  $$self.$$.update = () => {
-    if ($$self.$$.dirty & /*item*/
-    2) {
-      $$invalidate(0, itemData = item.system);
-    }
-  };
-  return [itemData, item];
+  return [itemData, consumableTypeLabel, subtype, item];
 }
 class Dnd5eConsumableObject extends SvelteComponent {
   constructor(options) {
     super();
-    init(this, options, instance$i, create_fragment$i, safe_not_equal, { item: 1 });
+    init$1(this, options, instance$j, create_fragment$j, safe_not_equal, { item: 3 });
   }
 }
 const Quantity_svelte_svelte_type_style_lang = "";
-function create_fragment$h(ctx) {
+function create_fragment$i(ctx) {
   let div;
   let a0;
   let t0;
@@ -20425,15 +20329,15 @@ function create_fragment$h(ctx) {
     c() {
       div = element("div");
       a0 = element("a");
-      a0.innerHTML = `<i class="fas fa-plus"></i>`;
+      a0.innerHTML = `<i class="fas fa-minus"></i>`;
       t0 = space();
       input = element("input");
       t1 = space();
       a1 = element("a");
-      a1.innerHTML = `<i class="fas fa-minus"></i>`;
+      a1.innerHTML = `<i class="fas fa-plus"></i>`;
       attr(a0, "class", "adjustment-button");
       attr(a0, "aria-hidden", "true");
-      attr(input, "class", "input svelte-mobile-companion81nkluj30u9vsd-7hls63");
+      attr(input, "class", "input svelte-mobile-companion81nkluj30u9vsd-1tta5ci");
       attr(input, "type", "text");
       input.value = /*quantity*/
       ctx[0];
@@ -20443,7 +20347,7 @@ function create_fragment$h(ctx) {
       attr(input, "min", "0");
       attr(a1, "class", "adjustment-button");
       attr(a1, "aria-hidden", "true");
-      attr(div, "class", "item-quantity svelte-mobile-companion81nkluj30u9vsd-7hls63");
+      attr(div, "class", "item-quantity svelte-mobile-companion81nkluj30u9vsd-1tta5ci");
     },
     m(target, anchor) {
       insert(target, div, anchor);
@@ -20457,14 +20361,14 @@ function create_fragment$h(ctx) {
           listen(
             a0,
             "click",
-            /*increase*/
-            ctx[1]
+            /*decrease*/
+            ctx[2]
           ),
           listen(
             a1,
             "click",
-            /*decrease*/
-            ctx[2]
+            /*increase*/
+            ctx[1]
           )
         ];
         mounted = true;
@@ -20489,7 +20393,7 @@ function create_fragment$h(ctx) {
     }
   };
 }
-function instance$h($$self, $$props, $$invalidate) {
+function instance$i($$self, $$props, $$invalidate) {
   let { quantity = 0 } = $$props;
   const dispatch2 = createEventDispatcher();
   function increase() {
@@ -20511,10 +20415,10 @@ function instance$h($$self, $$props, $$invalidate) {
 class Quantity extends SvelteComponent {
   constructor(options) {
     super();
-    init(this, options, instance$h, create_fragment$h, safe_not_equal, { quantity: 0 });
+    init$1(this, options, instance$i, create_fragment$i, safe_not_equal, { quantity: 0 });
   }
 }
-function create_if_block$d(ctx) {
+function create_if_block$e(ctx) {
   let p;
   let b;
   let t2;
@@ -20543,11 +20447,11 @@ function create_if_block$d(ctx) {
     }
   };
 }
-function create_fragment$g(ctx) {
+function create_fragment$h(ctx) {
   let if_block_anchor;
   let if_block = (
     /*labels*/
-    ctx[0] && create_if_block$d(ctx)
+    ctx[0] && create_if_block$e(ctx)
   );
   return {
     c() {
@@ -20578,7 +20482,7 @@ function create_fragment$g(ctx) {
     }
   };
 }
-function instance$g($$self, $$props, $$invalidate) {
+function instance$h($$self, $$props, $$invalidate) {
   let { properties } = $$props;
   const labels = Array.from(properties).map((it) => {
     var _a;
@@ -20595,10 +20499,10 @@ function instance$g($$self, $$props, $$invalidate) {
 class Dnd5EObjectProperties extends SvelteComponent {
   constructor(options) {
     super();
-    init(this, options, instance$g, create_fragment$g, safe_not_equal, { properties: 1 });
+    init$1(this, options, instance$h, create_fragment$h, safe_not_equal, { properties: 1 });
   }
 }
-function create_if_block$c(ctx) {
+function create_if_block$d(ctx) {
   let p;
   return {
     c() {
@@ -20622,11 +20526,11 @@ function create_if_block$c(ctx) {
     }
   };
 }
-function create_fragment$f(ctx) {
+function create_fragment$g(ctx) {
   let if_block_anchor;
   let if_block = (
     /*description*/
-    ctx[0] && create_if_block$c(ctx)
+    ctx[0] && create_if_block$d(ctx)
   );
   return {
     c() {
@@ -20647,7 +20551,7 @@ function create_fragment$f(ctx) {
         if (if_block) {
           if_block.p(ctx2, dirty);
         } else {
-          if_block = create_if_block$c(ctx2);
+          if_block = create_if_block$d(ctx2);
           if_block.c();
           if_block.m(if_block_anchor.parentNode, if_block_anchor);
         }
@@ -20667,7 +20571,7 @@ function create_fragment$f(ctx) {
     }
   };
 }
-function instance$f($$self, $$props, $$invalidate) {
+function instance$g($$self, $$props, $$invalidate) {
   let { itemData } = $$props;
   let identified, description;
   $$self.$$set = ($$props2) => {
@@ -20696,10 +20600,10 @@ function instance$f($$self, $$props, $$invalidate) {
 class Dnd5eDescription extends SvelteComponent {
   constructor(options) {
     super();
-    init(this, options, instance$f, create_fragment$f, safe_not_equal, { itemData: 1 });
+    init$1(this, options, instance$g, create_fragment$g, safe_not_equal, { itemData: 1 });
   }
 }
-function create_if_block$b(ctx) {
+function create_if_block$c(ctx) {
   let p;
   let b;
   let t1;
@@ -20749,11 +20653,11 @@ function create_if_block$b(ctx) {
     }
   };
 }
-function create_fragment$e(ctx) {
+function create_fragment$f(ctx) {
   let if_block_anchor;
   let if_block = (
     /*price*/
-    ctx[0].value && create_if_block$b(ctx)
+    ctx[0].value && create_if_block$c(ctx)
   );
   return {
     c() {
@@ -20774,7 +20678,7 @@ function create_fragment$e(ctx) {
         if (if_block) {
           if_block.p(ctx2, dirty);
         } else {
-          if_block = create_if_block$b(ctx2);
+          if_block = create_if_block$c(ctx2);
           if_block.c();
           if_block.m(if_block_anchor.parentNode, if_block_anchor);
         }
@@ -20794,7 +20698,7 @@ function create_fragment$e(ctx) {
     }
   };
 }
-function instance$e($$self, $$props, $$invalidate) {
+function instance$f($$self, $$props, $$invalidate) {
   let { price } = $$props;
   $$self.$$set = ($$props2) => {
     if ("price" in $$props2)
@@ -20805,10 +20709,10 @@ function instance$e($$self, $$props, $$invalidate) {
 class Dnd5ePrice extends SvelteComponent {
   constructor(options) {
     super();
-    init(this, options, instance$e, create_fragment$e, safe_not_equal, { price: 0 });
+    init$1(this, options, instance$f, create_fragment$f, safe_not_equal, { price: 0 });
   }
 }
-function create_if_block$a(ctx) {
+function create_if_block$b(ctx) {
   let p;
   let b;
   let t1;
@@ -20853,11 +20757,11 @@ function create_if_block$a(ctx) {
     }
   };
 }
-function create_fragment$d(ctx) {
+function create_fragment$e(ctx) {
   let if_block_anchor;
   let if_block = (
     /*weight*/
-    ctx[0] && create_if_block$a(ctx)
+    ctx[0] && create_if_block$b(ctx)
   );
   return {
     c() {
@@ -20878,7 +20782,7 @@ function create_fragment$d(ctx) {
         if (if_block) {
           if_block.p(ctx2, dirty);
         } else {
-          if_block = create_if_block$a(ctx2);
+          if_block = create_if_block$b(ctx2);
           if_block.c();
           if_block.m(if_block_anchor.parentNode, if_block_anchor);
         }
@@ -20898,7 +20802,7 @@ function create_fragment$d(ctx) {
     }
   };
 }
-function instance$d($$self, $$props, $$invalidate) {
+function instance$e($$self, $$props, $$invalidate) {
   let { weight } = $$props;
   $$self.$$set = ($$props2) => {
     if ("weight" in $$props2)
@@ -20909,7 +20813,7 @@ function instance$d($$self, $$props, $$invalidate) {
 class Dnd5eWeight extends SvelteComponent {
   constructor(options) {
     super();
-    init(this, options, instance$d, create_fragment$d, safe_not_equal, { weight: 0 });
+    init$1(this, options, instance$e, create_fragment$e, safe_not_equal, { weight: 0 });
   }
 }
 function create_catch_block$2(ctx) {
@@ -20939,7 +20843,7 @@ function create_then_block$2(ctx) {
 function create_pending_block$2(ctx) {
   return { c: noop, m: noop, p: noop, d: noop };
 }
-function create_fragment$c(ctx) {
+function create_fragment$d(ctx) {
   let p;
   let b;
   let t2;
@@ -20990,7 +20894,7 @@ function create_fragment$c(ctx) {
     }
   };
 }
-function instance$c($$self, $$props, $$invalidate) {
+function instance$d($$self, $$props, $$invalidate) {
   let { item } = $$props;
   let result = item.rollAttack({ fastForward: true, chatMessage: false });
   $$self.$$set = ($$props2) => {
@@ -21002,7 +20906,7 @@ function instance$c($$self, $$props, $$invalidate) {
 class Dnd5eAttack extends SvelteComponent {
   constructor(options) {
     super();
-    init(this, options, instance$c, create_fragment$c, safe_not_equal, { item: 1 });
+    init$1(this, options, instance$d, create_fragment$d, safe_not_equal, { item: 1 });
   }
 }
 function create_catch_block$1(ctx) {
@@ -21032,7 +20936,7 @@ function create_then_block$1(ctx) {
 function create_pending_block$1(ctx) {
   return { c: noop, m: noop, p: noop, d: noop };
 }
-function create_fragment$b(ctx) {
+function create_fragment$c(ctx) {
   let p;
   let b;
   let t2;
@@ -21083,7 +20987,7 @@ function create_fragment$b(ctx) {
     }
   };
 }
-function instance$b($$self, $$props, $$invalidate) {
+function instance$c($$self, $$props, $$invalidate) {
   let { item } = $$props;
   let result = item.rollDamage({
     critical: false,
@@ -21098,10 +21002,10 @@ function instance$b($$self, $$props, $$invalidate) {
 class Dnd5eDamage extends SvelteComponent {
   constructor(options) {
     super();
-    init(this, options, instance$b, create_fragment$b, safe_not_equal, { item: 1 });
+    init$1(this, options, instance$c, create_fragment$c, safe_not_equal, { item: 1 });
   }
 }
-function create_if_block$9(ctx) {
+function create_if_block$a(ctx) {
   let p;
   let b;
   let t2;
@@ -21131,11 +21035,11 @@ function create_if_block$9(ctx) {
     }
   };
 }
-function create_fragment$a(ctx) {
+function create_fragment$b(ctx) {
   let if_block_anchor;
   let if_block = (
     /*save*/
-    ctx[0].ability && create_if_block$9(ctx)
+    ctx[0].ability && create_if_block$a(ctx)
   );
   return {
     c() {
@@ -21156,7 +21060,7 @@ function create_fragment$a(ctx) {
         if (if_block) {
           if_block.p(ctx2, dirty);
         } else {
-          if_block = create_if_block$9(ctx2);
+          if_block = create_if_block$a(ctx2);
           if_block.c();
           if_block.m(if_block_anchor.parentNode, if_block_anchor);
         }
@@ -21176,7 +21080,7 @@ function create_fragment$a(ctx) {
     }
   };
 }
-function instance$a($$self, $$props, $$invalidate) {
+function instance$b($$self, $$props, $$invalidate) {
   var _a, _b;
   let { item } = $$props;
   let itemData = item.system;
@@ -21197,10 +21101,10 @@ function instance$a($$self, $$props, $$invalidate) {
 class Dnd5eSave extends SvelteComponent {
   constructor(options) {
     super();
-    init(this, options, instance$a, create_fragment$a, safe_not_equal, { item: 2 });
+    init$1(this, options, instance$b, create_fragment$b, safe_not_equal, { item: 2 });
   }
 }
-function create_if_block$8(ctx) {
+function create_if_block$9(ctx) {
   let div;
   let t0;
   let t1;
@@ -21834,7 +21738,7 @@ function create_if_block_1$4(ctx) {
     }
   };
 }
-function create_fragment$9(ctx) {
+function create_fragment$a(ctx) {
   let section;
   let div2;
   let div1;
@@ -21860,12 +21764,12 @@ function create_fragment$9(ctx) {
   });
   quantity.$on(
     "onQtyChange",
-    /*onQtyChange_handler*/
-    ctx[8]
+    /*handleQtyChange*/
+    ctx[4]
   );
   let if_block = (
     /*showItemData*/
-    ctx[1] && create_if_block$8(ctx)
+    ctx[1] && create_if_block$9(ctx)
   );
   return {
     c() {
@@ -21963,7 +21867,7 @@ function create_fragment$9(ctx) {
             transition_in(if_block, 1);
           }
         } else {
-          if_block = create_if_block$8(ctx2);
+          if_block = create_if_block$9(ctx2);
           if_block.c();
           transition_in(if_block, 1);
           if_block.m(section, null);
@@ -22000,7 +21904,7 @@ function create_fragment$9(ctx) {
     }
   };
 }
-function instance$9($$self, $$props, $$invalidate) {
+function instance$a($$self, $$props, $$invalidate) {
   let { $$slots: slots = {}, $$scope } = $$props;
   let { item } = $$props;
   let showItemData = false;
@@ -22008,11 +21912,10 @@ function instance$9($$self, $$props, $$invalidate) {
   function toggleDescription() {
     $$invalidate(1, showItemData = !showItemData);
   }
-  function handleQtyChange(qty) {
-    const update2 = { system: { quantity: qty } };
+  function handleQtyChange(event) {
+    const update2 = { system: { quantity: event.detail } };
     item.update(update2);
   }
-  const onQtyChange_handler = (e) => handleQtyChange(e.detail);
   $$self.$$set = ($$props2) => {
     if ("item" in $$props2)
       $$invalidate(0, item = $$props2.item);
@@ -22040,14 +21943,13 @@ function instance$9($$self, $$props, $$invalidate) {
     handleQtyChange,
     identified,
     $$scope,
-    slots,
-    onQtyChange_handler
+    slots
   ];
 }
 class Dnd5eObject extends SvelteComponent {
   constructor(options) {
     super();
-    init(this, options, instance$9, create_fragment$9, safe_not_equal, { item: 0 });
+    init$1(this, options, instance$a, create_fragment$a, safe_not_equal, { item: 0 });
   }
 }
 function create_catch_block(ctx) {
@@ -22077,7 +21979,7 @@ function create_then_block(ctx) {
 function create_pending_block(ctx) {
   return { c: noop, m: noop, p: noop, d: noop };
 }
-function create_if_block$7(ctx) {
+function create_if_block$8(ctx) {
   let p;
   let b;
   let t2;
@@ -22113,7 +22015,7 @@ function create_if_block$7(ctx) {
     }
   };
 }
-function create_fragment$8(ctx) {
+function create_fragment$9(ctx) {
   let p;
   let b;
   let t2;
@@ -22154,7 +22056,7 @@ function create_fragment$8(ctx) {
   );
   let if_block = (
     /*item*/
-    ctx[0].strength && create_if_block$7(ctx)
+    ctx[0].strength && create_if_block$8(ctx)
   );
   return {
     c() {
@@ -22216,7 +22118,7 @@ function create_fragment$8(ctx) {
         if (if_block) {
           if_block.p(ctx, dirty);
         } else {
-          if_block = create_if_block$7(ctx);
+          if_block = create_if_block$8(ctx);
           if_block.c();
           if_block.m(if_block_anchor.parentNode, if_block_anchor);
         }
@@ -22241,7 +22143,7 @@ function create_fragment$8(ctx) {
     }
   };
 }
-function instance$8($$self, $$props, $$invalidate) {
+function instance$9($$self, $$props, $$invalidate) {
   let { item } = $$props;
   let { rollData } = $$props;
   const formula = item.armor.value + ` + min(${item.armor.dex},@abilities.dex.mod)`;
@@ -22257,17 +22159,13 @@ function instance$8($$self, $$props, $$invalidate) {
 class Dnd5eArmorClass extends SvelteComponent {
   constructor(options) {
     super();
-    init(this, options, instance$8, create_fragment$8, safe_not_equal, { item: 0, rollData: 1 });
+    init$1(this, options, instance$9, create_fragment$9, safe_not_equal, { item: 0, rollData: 1 });
   }
 }
 function create_if_block_2$2(ctx) {
   let p;
   let b;
   let t2;
-  let t3_value = CONFIG.DND5E.equipmentTypes[
-    /*itemData*/
-    ctx[1].type.value
-  ] + "";
   let t3;
   return {
     c() {
@@ -22275,7 +22173,10 @@ function create_if_block_2$2(ctx) {
       b = element("b");
       b.textContent = `${i18n("DND5E.Type")}:`;
       t2 = space();
-      t3 = text(t3_value);
+      t3 = text(
+        /*equipmentType*/
+        ctx[2]
+      );
     },
     m(target, anchor) {
       insert(target, p, anchor);
@@ -22283,14 +22184,7 @@ function create_if_block_2$2(ctx) {
       append(p, t2);
       append(p, t3);
     },
-    p(ctx2, dirty) {
-      if (dirty & /*itemData*/
-      2 && t3_value !== (t3_value = CONFIG.DND5E.equipmentTypes[
-        /*itemData*/
-        ctx2[1].type.value
-      ] + ""))
-        set_data(t3, t3_value);
-    },
+    p: noop,
     d(detaching) {
       if (detaching) {
         detach(p);
@@ -22317,14 +22211,7 @@ function create_if_block_1$3(ctx) {
       mount_component(dnd5eactivation, target, anchor);
       current = true;
     },
-    p(ctx2, dirty) {
-      const dnd5eactivation_changes = {};
-      if (dirty & /*itemData*/
-      2)
-        dnd5eactivation_changes.activation = /*itemData*/
-        ctx2[1].activation;
-      dnd5eactivation.$set(dnd5eactivation_changes);
-    },
+    p: noop,
     i(local) {
       if (current)
         return;
@@ -22340,7 +22227,7 @@ function create_if_block_1$3(ctx) {
     }
   };
 }
-function create_if_block$6(ctx) {
+function create_if_block$7(ctx) {
   let dnd5earmorclass;
   let current;
   dnd5earmorclass = new Dnd5eArmorClass({
@@ -22365,10 +22252,6 @@ function create_if_block$6(ctx) {
     },
     p(ctx2, dirty) {
       const dnd5earmorclass_changes = {};
-      if (dirty & /*itemData*/
-      2)
-        dnd5earmorclass_changes.item = /*itemData*/
-        ctx2[1];
       if (dirty & /*rollData*/
       1)
         dnd5earmorclass_changes.rollData = /*rollData*/
@@ -22390,14 +22273,14 @@ function create_if_block$6(ctx) {
     }
   };
 }
-function create_fragment$7(ctx) {
+function create_fragment$8(ctx) {
   let t0;
   let t1;
   let if_block2_anchor;
   let current;
   let if_block0 = (
-    /*itemData*/
-    ctx[1].type?.value && create_if_block_2$2(ctx)
+    /*equipmentType*/
+    ctx[2] && create_if_block_2$2(ctx)
   );
   let if_block1 = (
     /*itemData*/
@@ -22405,7 +22288,7 @@ function create_fragment$7(ctx) {
   );
   let if_block2 = (
     /*itemData*/
-    ctx[1].armor?.value && create_if_block$6(ctx)
+    ctx[1].armor?.value && create_if_block$7(ctx)
   );
   return {
     c() {
@@ -22433,66 +22316,20 @@ function create_fragment$7(ctx) {
     },
     p(ctx2, [dirty]) {
       if (
-        /*itemData*/
-        ctx2[1].type?.value
-      ) {
-        if (if_block0) {
-          if_block0.p(ctx2, dirty);
-        } else {
-          if_block0 = create_if_block_2$2(ctx2);
-          if_block0.c();
-          if_block0.m(t0.parentNode, t0);
-        }
-      } else if (if_block0) {
-        if_block0.d(1);
-        if_block0 = null;
-      }
+        /*equipmentType*/
+        ctx2[2]
+      )
+        if_block0.p(ctx2, dirty);
       if (
         /*itemData*/
         ctx2[1].activation
-      ) {
-        if (if_block1) {
-          if_block1.p(ctx2, dirty);
-          if (dirty & /*itemData*/
-          2) {
-            transition_in(if_block1, 1);
-          }
-        } else {
-          if_block1 = create_if_block_1$3(ctx2);
-          if_block1.c();
-          transition_in(if_block1, 1);
-          if_block1.m(t1.parentNode, t1);
-        }
-      } else if (if_block1) {
-        group_outros();
-        transition_out(if_block1, 1, 1, () => {
-          if_block1 = null;
-        });
-        check_outros();
-      }
+      )
+        if_block1.p(ctx2, dirty);
       if (
         /*itemData*/
         ctx2[1].armor?.value
-      ) {
-        if (if_block2) {
-          if_block2.p(ctx2, dirty);
-          if (dirty & /*itemData*/
-          2) {
-            transition_in(if_block2, 1);
-          }
-        } else {
-          if_block2 = create_if_block$6(ctx2);
-          if_block2.c();
-          transition_in(if_block2, 1);
-          if_block2.m(if_block2_anchor.parentNode, if_block2_anchor);
-        }
-      } else if (if_block2) {
-        group_outros();
-        transition_out(if_block2, 1, 1, () => {
-          if_block2 = null;
-        });
-        check_outros();
-      }
+      )
+        if_block2.p(ctx2, dirty);
     },
     i(local) {
       if (current)
@@ -22521,38 +22358,29 @@ function create_fragment$7(ctx) {
     }
   };
 }
-function instance$7($$self, $$props, $$invalidate) {
+function instance$8($$self, $$props, $$invalidate) {
   let { item } = $$props;
   let { rollData } = $$props;
-  let itemData;
+  let itemData = item.system;
+  const equipmentType = CONFIG.DND5E.equipmentTypes[itemData.type.value];
   $$self.$$set = ($$props2) => {
     if ("item" in $$props2)
-      $$invalidate(2, item = $$props2.item);
+      $$invalidate(3, item = $$props2.item);
     if ("rollData" in $$props2)
       $$invalidate(0, rollData = $$props2.rollData);
   };
-  $$self.$$.update = () => {
-    if ($$self.$$.dirty & /*item*/
-    4) {
-      $$invalidate(1, itemData = item.system);
-    }
-  };
-  return [rollData, itemData, item];
+  return [rollData, itemData, equipmentType, item];
 }
 class Dnd5eEquipmentObject extends SvelteComponent {
   constructor(options) {
     super();
-    init(this, options, instance$7, create_fragment$7, safe_not_equal, { item: 2, rollData: 0 });
+    init$1(this, options, instance$8, create_fragment$8, safe_not_equal, { item: 3, rollData: 0 });
   }
 }
-function create_if_block$5(ctx) {
+function create_if_block$6(ctx) {
   let p;
   let b;
   let t2;
-  let t3_value = CONFIG.DND5E.lootTypes[
-    /*itemData*/
-    ctx[0].type.value
-  ].label + "";
   let t3;
   return {
     c() {
@@ -22560,7 +22388,10 @@ function create_if_block$5(ctx) {
       b = element("b");
       b.textContent = `${i18n("DND5E.Type")}:`;
       t2 = space();
-      t3 = text(t3_value);
+      t3 = text(
+        /*lootType*/
+        ctx[0]
+      );
     },
     m(target, anchor) {
       insert(target, p, anchor);
@@ -22568,14 +22399,7 @@ function create_if_block$5(ctx) {
       append(p, t2);
       append(p, t3);
     },
-    p(ctx2, dirty) {
-      if (dirty & /*itemData*/
-      1 && t3_value !== (t3_value = CONFIG.DND5E.lootTypes[
-        /*itemData*/
-        ctx2[0].type.value
-      ].label + ""))
-        set_data(t3, t3_value);
-    },
+    p: noop,
     d(detaching) {
       if (detaching) {
         detach(p);
@@ -22583,11 +22407,11 @@ function create_if_block$5(ctx) {
     }
   };
 }
-function create_fragment$6(ctx) {
+function create_fragment$7(ctx) {
   let if_block_anchor;
   let if_block = (
-    /*itemData*/
-    ctx[0].type?.value && create_if_block$5(ctx)
+    /*lootType*/
+    ctx[0] && create_if_block$6(ctx)
   );
   return {
     c() {
@@ -22602,20 +22426,92 @@ function create_fragment$6(ctx) {
     },
     p(ctx2, [dirty]) {
       if (
-        /*itemData*/
-        ctx2[0].type?.value
-      ) {
-        if (if_block) {
-          if_block.p(ctx2, dirty);
-        } else {
-          if_block = create_if_block$5(ctx2);
-          if_block.c();
-          if_block.m(if_block_anchor.parentNode, if_block_anchor);
-        }
-      } else if (if_block) {
-        if_block.d(1);
-        if_block = null;
+        /*lootType*/
+        ctx2[0]
+      )
+        if_block.p(ctx2, dirty);
+    },
+    i: noop,
+    o: noop,
+    d(detaching) {
+      if (detaching) {
+        detach(if_block_anchor);
       }
+      if (if_block)
+        if_block.d(detaching);
+    }
+  };
+}
+function instance$7($$self, $$props, $$invalidate) {
+  var _a;
+  let { item } = $$props;
+  const itemData = item.system;
+  const lootType = (_a = CONFIG.DND5E.lootTypes[itemData.type.value]) === null || _a === void 0 ? void 0 : _a.label;
+  $$self.$$set = ($$props2) => {
+    if ("item" in $$props2)
+      $$invalidate(1, item = $$props2.item);
+  };
+  return [lootType, item];
+}
+class Dnd5eLootObject extends SvelteComponent {
+  constructor(options) {
+    super();
+    init$1(this, options, instance$7, create_fragment$7, safe_not_equal, { item: 1 });
+  }
+}
+function create_if_block$5(ctx) {
+  let p;
+  let b;
+  let t2;
+  let t3;
+  return {
+    c() {
+      p = element("p");
+      b = element("b");
+      b.textContent = `${i18n("DND5E.Ability")}:`;
+      t2 = space();
+      t3 = text(
+        /*ability*/
+        ctx[0]
+      );
+    },
+    m(target, anchor) {
+      insert(target, p, anchor);
+      append(p, b);
+      append(p, t2);
+      append(p, t3);
+    },
+    p: noop,
+    d(detaching) {
+      if (detaching) {
+        detach(p);
+      }
+    }
+  };
+}
+function create_fragment$6(ctx) {
+  let if_block_anchor;
+  let if_block = (
+    /*ability*/
+    ctx[0] && create_if_block$5(ctx)
+  );
+  return {
+    c() {
+      if (if_block)
+        if_block.c();
+      if_block_anchor = empty();
+    },
+    m(target, anchor) {
+      if (if_block)
+        if_block.m(target, anchor);
+      insert(target, if_block_anchor, anchor);
+    },
+    p(ctx2, [dirty]) {
+      if (
+        /*ability*/
+        ctx2[0]
+      )
+        if_block.p(ctx2, dirty);
     },
     i: noop,
     o: noop,
@@ -22629,131 +22525,23 @@ function create_fragment$6(ctx) {
   };
 }
 function instance$6($$self, $$props, $$invalidate) {
-  let itemData;
+  var _a;
   let { item } = $$props;
+  let itemData = item.system;
+  let ability = (_a = CONFIG.DND5E.abilities[itemData.ability]) === null || _a === void 0 ? void 0 : _a.label;
   $$self.$$set = ($$props2) => {
     if ("item" in $$props2)
       $$invalidate(1, item = $$props2.item);
   };
-  $$self.$$.update = () => {
-    if ($$self.$$.dirty & /*item*/
-    2) {
-      $$invalidate(0, itemData = item.system);
-    }
-  };
-  return [itemData, item];
-}
-class Dnd5eLootObject extends SvelteComponent {
-  constructor(options) {
-    super();
-    init(this, options, instance$6, create_fragment$6, safe_not_equal, { item: 1 });
-  }
-}
-function create_if_block$4(ctx) {
-  let p;
-  let b;
-  let t2;
-  let t3_value = CONFIG.DND5E.abilities[
-    /*itemData*/
-    ctx[0].ability
-  ]?.label + "";
-  let t3;
-  return {
-    c() {
-      p = element("p");
-      b = element("b");
-      b.textContent = `${i18n("DND5E.Ability")}:`;
-      t2 = space();
-      t3 = text(t3_value);
-    },
-    m(target, anchor) {
-      insert(target, p, anchor);
-      append(p, b);
-      append(p, t2);
-      append(p, t3);
-    },
-    p(ctx2, dirty) {
-      if (dirty & /*itemData*/
-      1 && t3_value !== (t3_value = CONFIG.DND5E.abilities[
-        /*itemData*/
-        ctx2[0].ability
-      ]?.label + ""))
-        set_data(t3, t3_value);
-    },
-    d(detaching) {
-      if (detaching) {
-        detach(p);
-      }
-    }
-  };
-}
-function create_fragment$5(ctx) {
-  let if_block_anchor;
-  let if_block = (
-    /*itemData*/
-    ctx[0].ability && create_if_block$4(ctx)
-  );
-  return {
-    c() {
-      if (if_block)
-        if_block.c();
-      if_block_anchor = empty();
-    },
-    m(target, anchor) {
-      if (if_block)
-        if_block.m(target, anchor);
-      insert(target, if_block_anchor, anchor);
-    },
-    p(ctx2, [dirty]) {
-      if (
-        /*itemData*/
-        ctx2[0].ability
-      ) {
-        if (if_block) {
-          if_block.p(ctx2, dirty);
-        } else {
-          if_block = create_if_block$4(ctx2);
-          if_block.c();
-          if_block.m(if_block_anchor.parentNode, if_block_anchor);
-        }
-      } else if (if_block) {
-        if_block.d(1);
-        if_block = null;
-      }
-    },
-    i: noop,
-    o: noop,
-    d(detaching) {
-      if (detaching) {
-        detach(if_block_anchor);
-      }
-      if (if_block)
-        if_block.d(detaching);
-    }
-  };
-}
-function instance$5($$self, $$props, $$invalidate) {
-  let { item } = $$props;
-  let itemData;
-  $$self.$$set = ($$props2) => {
-    if ("item" in $$props2)
-      $$invalidate(1, item = $$props2.item);
-  };
-  $$self.$$.update = () => {
-    if ($$self.$$.dirty & /*item*/
-    2) {
-      $$invalidate(0, itemData = item.system);
-    }
-  };
-  return [itemData, item];
+  return [ability, item];
 }
 class Dnd5eToolObject extends SvelteComponent {
   constructor(options) {
     super();
-    init(this, options, instance$5, create_fragment$5, safe_not_equal, { item: 1 });
+    init$1(this, options, instance$6, create_fragment$6, safe_not_equal, { item: 1 });
   }
 }
-function create_if_block$3(ctx) {
+function create_if_block$4(ctx) {
   let p;
   let b;
   let t2;
@@ -22809,11 +22597,11 @@ function create_if_block$3(ctx) {
     }
   };
 }
-function create_fragment$4(ctx) {
+function create_fragment$5(ctx) {
   let if_block_anchor;
   let if_block = (
     /*range*/
-    ctx[0].value && create_if_block$3(ctx)
+    ctx[0].value && create_if_block$4(ctx)
   );
   return {
     c() {
@@ -22834,7 +22622,7 @@ function create_fragment$4(ctx) {
         if (if_block) {
           if_block.p(ctx2, dirty);
         } else {
-          if_block = create_if_block$3(ctx2);
+          if_block = create_if_block$4(ctx2);
           if_block.c();
           if_block.m(if_block_anchor.parentNode, if_block_anchor);
         }
@@ -22854,7 +22642,7 @@ function create_fragment$4(ctx) {
     }
   };
 }
-function instance$4($$self, $$props, $$invalidate) {
+function instance$5($$self, $$props, $$invalidate) {
   let { range } = $$props;
   $$self.$$set = ($$props2) => {
     if ("range" in $$props2)
@@ -22865,17 +22653,13 @@ function instance$4($$self, $$props, $$invalidate) {
 class Dnd5ERange extends SvelteComponent {
   constructor(options) {
     super();
-    init(this, options, instance$4, create_fragment$4, safe_not_equal, { range: 0 });
+    init$1(this, options, instance$5, create_fragment$5, safe_not_equal, { range: 0 });
   }
 }
-function create_fragment$3(ctx) {
+function create_fragment$4(ctx) {
   let p;
   let b;
   let t2;
-  let t3_value = CONFIG.DND5E.itemActionTypes[
-    /*actionType*/
-    ctx[0]
-  ] + "";
   let t3;
   return {
     c() {
@@ -22883,7 +22667,10 @@ function create_fragment$3(ctx) {
       b = element("b");
       b.textContent = `${i18n("DND5E.ItemActionType")}:`;
       t2 = space();
-      t3 = text(t3_value);
+      t3 = text(
+        /*itemActionType*/
+        ctx[0]
+      );
     },
     m(target, anchor) {
       insert(target, p, anchor);
@@ -22891,14 +22678,7 @@ function create_fragment$3(ctx) {
       append(p, t2);
       append(p, t3);
     },
-    p(ctx2, [dirty]) {
-      if (dirty & /*actionType*/
-      1 && t3_value !== (t3_value = CONFIG.DND5E.itemActionTypes[
-        /*actionType*/
-        ctx2[0]
-      ] + ""))
-        set_data(t3, t3_value);
-    },
+    p: noop,
     i: noop,
     o: noop,
     d(detaching) {
@@ -22908,28 +22688,25 @@ function create_fragment$3(ctx) {
     }
   };
 }
-function instance$3($$self, $$props, $$invalidate) {
+function instance$4($$self, $$props, $$invalidate) {
   let { actionType } = $$props;
+  const itemActionType = CONFIG.DND5E.itemActionTypes[actionType];
   $$self.$$set = ($$props2) => {
     if ("actionType" in $$props2)
-      $$invalidate(0, actionType = $$props2.actionType);
+      $$invalidate(1, actionType = $$props2.actionType);
   };
-  return [actionType];
+  return [itemActionType, actionType];
 }
 class Dnd5EActivationType extends SvelteComponent {
   constructor(options) {
     super();
-    init(this, options, instance$3, create_fragment$3, safe_not_equal, { actionType: 0 });
+    init$1(this, options, instance$4, create_fragment$4, safe_not_equal, { actionType: 1 });
   }
 }
 function create_if_block_4$1(ctx) {
   let p;
   let b;
   let t2;
-  let t3_value = CONFIG.DND5E.weaponTypes[
-    /*itemData*/
-    ctx[0].type.value
-  ] + "";
   let t3;
   return {
     c() {
@@ -22937,7 +22714,10 @@ function create_if_block_4$1(ctx) {
       b = element("b");
       b.textContent = `${i18n("DND5E.ItemWeaponType")}:`;
       t2 = space();
-      t3 = text(t3_value);
+      t3 = text(
+        /*weaponType*/
+        ctx[1]
+      );
     },
     m(target, anchor) {
       insert(target, p, anchor);
@@ -22945,14 +22725,7 @@ function create_if_block_4$1(ctx) {
       append(p, t2);
       append(p, t3);
     },
-    p(ctx2, dirty) {
-      if (dirty & /*itemData*/
-      1 && t3_value !== (t3_value = CONFIG.DND5E.weaponTypes[
-        /*itemData*/
-        ctx2[0].type.value
-      ] + ""))
-        set_data(t3, t3_value);
-    },
+    p: noop,
     d(detaching) {
       if (detaching) {
         detach(p);
@@ -22979,14 +22752,7 @@ function create_if_block_3$1(ctx) {
       mount_component(dnd5eactivation, target, anchor);
       current = true;
     },
-    p(ctx2, dirty) {
-      const dnd5eactivation_changes = {};
-      if (dirty & /*itemData*/
-      1)
-        dnd5eactivation_changes.activation = /*itemData*/
-        ctx2[0].activation;
-      dnd5eactivation.$set(dnd5eactivation_changes);
-    },
+    p: noop,
     i(local) {
       if (current)
         return;
@@ -23021,14 +22787,7 @@ function create_if_block_2$1(ctx) {
       mount_component(dnd5eactivationtype, target, anchor);
       current = true;
     },
-    p(ctx2, dirty) {
-      const dnd5eactivationtype_changes = {};
-      if (dirty & /*itemData*/
-      1)
-        dnd5eactivationtype_changes.actionType = /*itemData*/
-        ctx2[0].actionType;
-      dnd5eactivationtype.$set(dnd5eactivationtype_changes);
-    },
+    p: noop,
     i(local) {
       if (current)
         return;
@@ -23061,14 +22820,7 @@ function create_if_block_1$2(ctx) {
       mount_component(dnd5etarget, target, anchor);
       current = true;
     },
-    p(ctx2, dirty) {
-      const dnd5etarget_changes = {};
-      if (dirty & /*itemData*/
-      1)
-        dnd5etarget_changes.target = /*itemData*/
-        ctx2[0].target;
-      dnd5etarget.$set(dnd5etarget_changes);
-    },
+    p: noop,
     i(local) {
       if (current)
         return;
@@ -23084,7 +22836,7 @@ function create_if_block_1$2(ctx) {
     }
   };
 }
-function create_if_block$2(ctx) {
+function create_if_block$3(ctx) {
   let dnd5erange;
   let current;
   dnd5erange = new Dnd5ERange({
@@ -23101,14 +22853,7 @@ function create_if_block$2(ctx) {
       mount_component(dnd5erange, target, anchor);
       current = true;
     },
-    p(ctx2, dirty) {
-      const dnd5erange_changes = {};
-      if (dirty & /*itemData*/
-      1)
-        dnd5erange_changes.range = /*itemData*/
-        ctx2[0].range;
-      dnd5erange.$set(dnd5erange_changes);
-    },
+    p: noop,
     i(local) {
       if (current)
         return;
@@ -23124,7 +22869,7 @@ function create_if_block$2(ctx) {
     }
   };
 }
-function create_fragment$2(ctx) {
+function create_fragment$3(ctx) {
   let t0;
   let t1;
   let t2;
@@ -23132,8 +22877,8 @@ function create_fragment$2(ctx) {
   let if_block4_anchor;
   let current;
   let if_block0 = (
-    /*itemData*/
-    ctx[0].type && create_if_block_4$1(ctx)
+    /*weaponType*/
+    ctx[1] && create_if_block_4$1(ctx)
   );
   let if_block1 = (
     /*itemData*/
@@ -23149,7 +22894,7 @@ function create_fragment$2(ctx) {
   );
   let if_block4 = (
     /*itemData*/
-    ctx[0].range && create_if_block$2(ctx)
+    ctx[0].range && create_if_block$3(ctx)
   );
   return {
     c() {
@@ -23189,112 +22934,30 @@ function create_fragment$2(ctx) {
     },
     p(ctx2, [dirty]) {
       if (
-        /*itemData*/
-        ctx2[0].type
-      ) {
-        if (if_block0) {
-          if_block0.p(ctx2, dirty);
-        } else {
-          if_block0 = create_if_block_4$1(ctx2);
-          if_block0.c();
-          if_block0.m(t0.parentNode, t0);
-        }
-      } else if (if_block0) {
-        if_block0.d(1);
-        if_block0 = null;
-      }
+        /*weaponType*/
+        ctx2[1]
+      )
+        if_block0.p(ctx2, dirty);
       if (
         /*itemData*/
         ctx2[0].activation
-      ) {
-        if (if_block1) {
-          if_block1.p(ctx2, dirty);
-          if (dirty & /*itemData*/
-          1) {
-            transition_in(if_block1, 1);
-          }
-        } else {
-          if_block1 = create_if_block_3$1(ctx2);
-          if_block1.c();
-          transition_in(if_block1, 1);
-          if_block1.m(t1.parentNode, t1);
-        }
-      } else if (if_block1) {
-        group_outros();
-        transition_out(if_block1, 1, 1, () => {
-          if_block1 = null;
-        });
-        check_outros();
-      }
+      )
+        if_block1.p(ctx2, dirty);
       if (
         /*itemData*/
         ctx2[0].actionType
-      ) {
-        if (if_block2) {
-          if_block2.p(ctx2, dirty);
-          if (dirty & /*itemData*/
-          1) {
-            transition_in(if_block2, 1);
-          }
-        } else {
-          if_block2 = create_if_block_2$1(ctx2);
-          if_block2.c();
-          transition_in(if_block2, 1);
-          if_block2.m(t2.parentNode, t2);
-        }
-      } else if (if_block2) {
-        group_outros();
-        transition_out(if_block2, 1, 1, () => {
-          if_block2 = null;
-        });
-        check_outros();
-      }
+      )
+        if_block2.p(ctx2, dirty);
       if (
         /*itemData*/
         ctx2[0].target
-      ) {
-        if (if_block3) {
-          if_block3.p(ctx2, dirty);
-          if (dirty & /*itemData*/
-          1) {
-            transition_in(if_block3, 1);
-          }
-        } else {
-          if_block3 = create_if_block_1$2(ctx2);
-          if_block3.c();
-          transition_in(if_block3, 1);
-          if_block3.m(t3.parentNode, t3);
-        }
-      } else if (if_block3) {
-        group_outros();
-        transition_out(if_block3, 1, 1, () => {
-          if_block3 = null;
-        });
-        check_outros();
-      }
+      )
+        if_block3.p(ctx2, dirty);
       if (
         /*itemData*/
         ctx2[0].range
-      ) {
-        if (if_block4) {
-          if_block4.p(ctx2, dirty);
-          if (dirty & /*itemData*/
-          1) {
-            transition_in(if_block4, 1);
-          }
-        } else {
-          if_block4 = create_if_block$2(ctx2);
-          if_block4.c();
-          transition_in(if_block4, 1);
-          if_block4.m(if_block4_anchor.parentNode, if_block4_anchor);
-        }
-      } else if (if_block4) {
-        group_outros();
-        transition_out(if_block4, 1, 1, () => {
-          if_block4 = null;
-        });
-        check_outros();
-      }
+      )
+        if_block4.p(ctx2, dirty);
     },
     i(local) {
       if (current)
@@ -23333,30 +22996,20 @@ function create_fragment$2(ctx) {
     }
   };
 }
-function instance$2($$self, $$props, $$invalidate) {
+function instance$3($$self, $$props, $$invalidate) {
   let { item } = $$props;
-  let { rollData } = $$props;
-  let itemData;
-  console.log(item.system);
-  console.log();
+  let itemData = item.system;
+  const weaponType = CONFIG.DND5E.weaponTypes[itemData.type.value];
   $$self.$$set = ($$props2) => {
     if ("item" in $$props2)
-      $$invalidate(1, item = $$props2.item);
-    if ("rollData" in $$props2)
-      $$invalidate(2, rollData = $$props2.rollData);
+      $$invalidate(2, item = $$props2.item);
   };
-  $$self.$$.update = () => {
-    if ($$self.$$.dirty & /*item*/
-    2) {
-      $$invalidate(0, itemData = item.system);
-    }
-  };
-  return [itemData, item, rollData];
+  return [itemData, weaponType, item];
 }
 class Dnd5eWeaponObject extends SvelteComponent {
   constructor(options) {
     super();
-    init(this, options, instance$2, create_fragment$2, safe_not_equal, { item: 1, rollData: 2 });
+    init$1(this, options, instance$3, create_fragment$3, safe_not_equal, { item: 2 });
   }
 }
 const Dnd5eObjects_svelte_svelte_type_style_lang = "";
@@ -23433,8 +23086,8 @@ function create_if_block_5(ctx) {
       current = true;
     },
     p(ctx2, dirty) {
-      if (dirty & /*weapons, actor*/
-      65) {
+      if (dirty & /*weapons*/
+      64) {
         each_value_5 = ensure_array_like(
           /*weapons*/
           ctx2[6]
@@ -23472,21 +23125,10 @@ function create_default_slot_5(ctx) {
   let dnd5eweaponobject;
   let t;
   let current;
-  dnd5eweaponobject = new Dnd5eWeaponObject({
-    props: {
-      item: (
-        /*weapon*/
-        ctx[22]
-      ),
-      rollData: (
-        /*actor*/
-        ctx[0].getRollData(
-          /*weapon*/
-          ctx[22]
-        )
-      )
-    }
-  });
+  dnd5eweaponobject = new Dnd5eWeaponObject({ props: { item: (
+    /*weapon*/
+    ctx[22]
+  ) } });
   return {
     c() {
       create_component(dnd5eweaponobject.$$.fragment);
@@ -23503,13 +23145,6 @@ function create_default_slot_5(ctx) {
       64)
         dnd5eweaponobject_changes.item = /*weapon*/
         ctx2[22];
-      if (dirty & /*actor, weapons*/
-      65)
-        dnd5eweaponobject_changes.rollData = /*actor*/
-        ctx2[0].getRollData(
-          /*weapon*/
-          ctx2[22]
-        );
       dnd5eweaponobject.$set(dnd5eweaponobject_changes);
     },
     i(local) {
@@ -23564,8 +23199,8 @@ function create_each_block_5(key_1, ctx) {
       64)
         dnd5eobject_changes.item = /*weapon*/
         ctx[22];
-      if (dirty & /*$$scope, weapons, actor*/
-      33554497) {
+      if (dirty & /*$$scope, weapons*/
+      33554496) {
         dnd5eobject_changes.$$scope = { dirty, ctx };
       }
       dnd5eobject.$set(dnd5eobject_changes);
@@ -24326,7 +23961,7 @@ function create_each_block_1(key_1, ctx) {
     }
   };
 }
-function create_if_block$1(ctx) {
+function create_if_block$2(ctx) {
   let section;
   let div;
   let t1;
@@ -24506,7 +24141,7 @@ function create_each_block(key_1, ctx) {
     }
   };
 }
-function create_fragment$1(ctx) {
+function create_fragment$2(ctx) {
   let section;
   let t0;
   let t1;
@@ -24536,7 +24171,7 @@ function create_fragment$1(ctx) {
   );
   let if_block5 = (
     /*containers*/
-    ctx[1].length > 0 && showContainers && create_if_block$1(ctx)
+    ctx[1].length > 0 && showContainers && create_if_block$2(ctx)
   );
   return {
     c() {
@@ -24708,7 +24343,7 @@ function create_fragment$1(ctx) {
             transition_in(if_block5, 1);
           }
         } else {
-          if_block5 = create_if_block$1(ctx2);
+          if_block5 = create_if_block$2(ctx2);
           if_block5.c();
           transition_in(if_block5, 1);
           if_block5.m(section, null);
@@ -24761,7 +24396,7 @@ function create_fragment$1(ctx) {
   };
 }
 const showContainers = false;
-function instance$1($$self, $$props, $$invalidate) {
+function instance$2($$self, $$props, $$invalidate) {
   let { actor } = $$props;
   let containers, consumables, equipments, loots, tools, weapons;
   $$self.$$set = ($$props2) => {
@@ -24786,25 +24421,448 @@ function instance$1($$self, $$props, $$invalidate) {
 class Dnd5eObjects extends SvelteComponent {
   constructor(options) {
     super();
-    init(this, options, instance$1, create_fragment$1, safe_not_equal, { actor: 0 });
+    init$1(this, options, instance$2, create_fragment$2, safe_not_equal, { actor: 0 });
   }
 }
+const Dnd5eCurrency_svelte_svelte_type_style_lang = "";
+function create_if_block$1(ctx) {
+  let section;
+  let label0;
+  let i0;
+  let t0;
+  let input0;
+  let t1;
+  let label1;
+  let i1;
+  let t2;
+  let input1;
+  let t3;
+  let label2;
+  let i2;
+  let t4;
+  let input2;
+  let t5;
+  let label3;
+  let i3;
+  let t6;
+  let input3;
+  let t7;
+  let label4;
+  let i4;
+  let t8;
+  let input4;
+  let mounted;
+  let dispose;
+  return {
+    c() {
+      section = element("section");
+      label0 = element("label");
+      i0 = element("i");
+      t0 = space();
+      input0 = element("input");
+      t1 = space();
+      label1 = element("label");
+      i1 = element("i");
+      t2 = space();
+      input1 = element("input");
+      t3 = space();
+      label2 = element("label");
+      i2 = element("i");
+      t4 = space();
+      input2 = element("input");
+      t5 = space();
+      label3 = element("label");
+      i3 = element("i");
+      t6 = space();
+      input3 = element("input");
+      t7 = space();
+      label4 = element("label");
+      i4 = element("i");
+      t8 = space();
+      input4 = element("input");
+      attr(i0, "class", "currency pp svelte-mobile-companion81nkluj30u9vsd-6y2tlo");
+      attr(input0, "type", "text");
+      attr(input0, "name", "system.currency.pp");
+      attr(input0, "inputmode", "numeric");
+      attr(input0, "pattern", "[0-9+=\\-]*");
+      attr(input0, "class", "svelte-mobile-companion81nkluj30u9vsd-6y2tlo");
+      attr(label0, "aria-label", "Platinum");
+      attr(label0, "class", "svelte-mobile-companion81nkluj30u9vsd-6y2tlo");
+      attr(i1, "class", "currency gp svelte-mobile-companion81nkluj30u9vsd-6y2tlo");
+      attr(input1, "type", "text");
+      attr(input1, "name", "system.currency.gp");
+      attr(input1, "inputmode", "numeric");
+      attr(input1, "pattern", "[0-9+=\\-]*");
+      attr(input1, "class", "svelte-mobile-companion81nkluj30u9vsd-6y2tlo");
+      attr(label1, "aria-label", "Gold");
+      attr(label1, "class", "svelte-mobile-companion81nkluj30u9vsd-6y2tlo");
+      attr(i2, "class", "currency ep svelte-mobile-companion81nkluj30u9vsd-6y2tlo");
+      attr(input2, "type", "text");
+      attr(input2, "name", "system.currency.ep");
+      attr(input2, "inputmode", "numeric");
+      attr(input2, "pattern", "[0-9+=\\-]*");
+      attr(input2, "class", "svelte-mobile-companion81nkluj30u9vsd-6y2tlo");
+      attr(label2, "aria-label", "Electrum");
+      attr(label2, "class", "svelte-mobile-companion81nkluj30u9vsd-6y2tlo");
+      attr(i3, "class", "currency sp svelte-mobile-companion81nkluj30u9vsd-6y2tlo");
+      attr(input3, "type", "text");
+      attr(input3, "name", "system.currency.sp");
+      attr(input3, "inputmode", "numeric");
+      attr(input3, "pattern", "[0-9+=\\-]*");
+      attr(input3, "class", "svelte-mobile-companion81nkluj30u9vsd-6y2tlo");
+      attr(label3, "aria-label", "Silver");
+      attr(label3, "class", "svelte-mobile-companion81nkluj30u9vsd-6y2tlo");
+      attr(i4, "class", "currency cp svelte-mobile-companion81nkluj30u9vsd-6y2tlo");
+      attr(input4, "type", "text");
+      attr(input4, "name", "system.currency.cp");
+      attr(input4, "inputmode", "numeric");
+      attr(input4, "pattern", "[0-9+=\\-]*");
+      attr(input4, "class", "svelte-mobile-companion81nkluj30u9vsd-6y2tlo");
+      attr(label4, "aria-label", "Copper");
+      attr(label4, "class", "svelte-mobile-companion81nkluj30u9vsd-6y2tlo");
+      attr(section, "class", "currency svelte-mobile-companion81nkluj30u9vsd-6y2tlo");
+    },
+    m(target, anchor) {
+      insert(target, section, anchor);
+      append(section, label0);
+      append(label0, i0);
+      append(label0, t0);
+      append(label0, input0);
+      set_input_value(
+        input0,
+        /*currency*/
+        ctx[0].pp
+      );
+      append(section, t1);
+      append(section, label1);
+      append(label1, i1);
+      append(label1, t2);
+      append(label1, input1);
+      set_input_value(
+        input1,
+        /*currency*/
+        ctx[0].gp
+      );
+      append(section, t3);
+      append(section, label2);
+      append(label2, i2);
+      append(label2, t4);
+      append(label2, input2);
+      set_input_value(
+        input2,
+        /*currency*/
+        ctx[0].ep
+      );
+      append(section, t5);
+      append(section, label3);
+      append(label3, i3);
+      append(label3, t6);
+      append(label3, input3);
+      set_input_value(
+        input3,
+        /*currency*/
+        ctx[0].sp
+      );
+      append(section, t7);
+      append(section, label4);
+      append(label4, i4);
+      append(label4, t8);
+      append(label4, input4);
+      set_input_value(
+        input4,
+        /*currency*/
+        ctx[0].cp
+      );
+      if (!mounted) {
+        dispose = [
+          listen(
+            input0,
+            "input",
+            /*input0_input_handler*/
+            ctx[3]
+          ),
+          listen(
+            input1,
+            "input",
+            /*input1_input_handler*/
+            ctx[4]
+          ),
+          listen(
+            input2,
+            "input",
+            /*input2_input_handler*/
+            ctx[5]
+          ),
+          listen(
+            input3,
+            "input",
+            /*input3_input_handler*/
+            ctx[6]
+          ),
+          listen(
+            input4,
+            "input",
+            /*input4_input_handler*/
+            ctx[7]
+          )
+        ];
+        mounted = true;
+      }
+    },
+    p(ctx2, dirty) {
+      if (dirty & /*currency*/
+      1 && input0.value !== /*currency*/
+      ctx2[0].pp) {
+        set_input_value(
+          input0,
+          /*currency*/
+          ctx2[0].pp
+        );
+      }
+      if (dirty & /*currency*/
+      1 && input1.value !== /*currency*/
+      ctx2[0].gp) {
+        set_input_value(
+          input1,
+          /*currency*/
+          ctx2[0].gp
+        );
+      }
+      if (dirty & /*currency*/
+      1 && input2.value !== /*currency*/
+      ctx2[0].ep) {
+        set_input_value(
+          input2,
+          /*currency*/
+          ctx2[0].ep
+        );
+      }
+      if (dirty & /*currency*/
+      1 && input3.value !== /*currency*/
+      ctx2[0].sp) {
+        set_input_value(
+          input3,
+          /*currency*/
+          ctx2[0].sp
+        );
+      }
+      if (dirty & /*currency*/
+      1 && input4.value !== /*currency*/
+      ctx2[0].cp) {
+        set_input_value(
+          input4,
+          /*currency*/
+          ctx2[0].cp
+        );
+      }
+    },
+    d(detaching) {
+      if (detaching) {
+        detach(section);
+      }
+      mounted = false;
+      run_all(dispose);
+    }
+  };
+}
+function create_fragment$1(ctx) {
+  let if_block_anchor;
+  let if_block = (
+    /*isUsingCurrency*/
+    ctx[1] && create_if_block$1(ctx)
+  );
+  return {
+    c() {
+      if (if_block)
+        if_block.c();
+      if_block_anchor = empty();
+    },
+    m(target, anchor) {
+      if (if_block)
+        if_block.m(target, anchor);
+      insert(target, if_block_anchor, anchor);
+    },
+    p(ctx2, [dirty]) {
+      if (
+        /*isUsingCurrency*/
+        ctx2[1]
+      ) {
+        if (if_block) {
+          if_block.p(ctx2, dirty);
+        } else {
+          if_block = create_if_block$1(ctx2);
+          if_block.c();
+          if_block.m(if_block_anchor.parentNode, if_block_anchor);
+        }
+      } else if (if_block) {
+        if_block.d(1);
+        if_block = null;
+      }
+    },
+    i: noop,
+    o: noop,
+    d(detaching) {
+      if (detaching) {
+        detach(if_block_anchor);
+      }
+      if (if_block)
+        if_block.d(detaching);
+    }
+  };
+}
+function instance$1($$self, $$props, $$invalidate) {
+  let { actor } = $$props;
+  let currency = actor.system.currency;
+  let isUsingCurrency = true;
+  const unsubscribe = mobileCompanionGameSettings.getWritableStore(settings.dnd5e.useCurrency).subscribe((value) => {
+    $$invalidate(1, isUsingCurrency = value);
+  });
+  onDestroy(() => {
+    unsubscribe();
+  });
+  function input0_input_handler() {
+    currency.pp = this.value;
+    $$invalidate(0, currency), $$invalidate(2, actor);
+  }
+  function input1_input_handler() {
+    currency.gp = this.value;
+    $$invalidate(0, currency), $$invalidate(2, actor);
+  }
+  function input2_input_handler() {
+    currency.ep = this.value;
+    $$invalidate(0, currency), $$invalidate(2, actor);
+  }
+  function input3_input_handler() {
+    currency.sp = this.value;
+    $$invalidate(0, currency), $$invalidate(2, actor);
+  }
+  function input4_input_handler() {
+    currency.cp = this.value;
+    $$invalidate(0, currency), $$invalidate(2, actor);
+  }
+  $$self.$$set = ($$props2) => {
+    if ("actor" in $$props2)
+      $$invalidate(2, actor = $$props2.actor);
+  };
+  $$self.$$.update = () => {
+    if ($$self.$$.dirty & /*actor, currency*/
+    5) {
+      {
+        $$invalidate(0, currency = actor.system.currency);
+        actor.update({ system: { currency } });
+      }
+    }
+  };
+  return [
+    currency,
+    isUsingCurrency,
+    actor,
+    input0_input_handler,
+    input1_input_handler,
+    input2_input_handler,
+    input3_input_handler,
+    input4_input_handler
+  ];
+}
+class Dnd5eCurrency extends SvelteComponent {
+  constructor(options) {
+    super();
+    init$1(this, options, instance$1, create_fragment$1, safe_not_equal, { actor: 2 });
+  }
+}
+const filters = {
+  object: "object",
+  spell: "spell"
+};
+const actorStore = writable(null);
+const activeFilterStore = writable(filters.object);
+function init(props) {
+  actorStore.set(props);
+}
+const handleUpdate = async (item) => {
+  let actor = get_store_value(actorStore);
+  if (item.parent?.id === actor.id) {
+    actor = game.actors.find((a) => a.id === actor.id);
+    actorStore.set(actor);
+    switchFilter(get_store_value(activeFilterStore));
+  }
+};
+const handleActorUpdate = async (changedActor) => {
+  let actor = get_store_value(actorStore);
+  if (actor.id === changedActor.id) {
+    actor = changedActor;
+    actorStore.set(actor);
+    switchFilter(get_store_value(activeFilterStore));
+  }
+};
+function handleOnMount() {
+  Hooks.on("createItem", handleUpdate);
+  Hooks.on("deleteItem", handleUpdate);
+  Hooks.on("updateItem", handleUpdate);
+  Hooks.on("updateActor", handleActorUpdate);
+  switchFilter(get_store_value(activeFilterStore));
+}
+function handleOffMount() {
+  Hooks.off("createItem", handleUpdate);
+  Hooks.off("deleteItem", handleUpdate);
+  Hooks.off("updateItem", handleUpdate);
+  Hooks.off("updateActor", handleActorUpdate);
+}
+const headerButtons = [
+  {
+    id: 0,
+    iconClass: "fas fa-box-open",
+    buttonClass: "dnd-button",
+    label: "Inventory",
+    onClick: () => switchFilter(filters.object)
+  },
+  {
+    id: 1,
+    iconClass: "fas fa-wand-sparkles",
+    buttonClass: "dnd-button",
+    label: "Spells",
+    onClick: () => switchFilter(filters.spell)
+  }
+];
+const menuButtons = {
+  buttonClass: "dnd-button",
+  iconClass: ""
+};
+function switchFilter(newFilter) {
+  activeFilterStore.set(newFilter);
+}
 function create_if_block_1(ctx) {
+  let dnd5ecurrency;
+  let t;
   let dnd5eobjects;
   let current;
+  dnd5ecurrency = new Dnd5eCurrency({ props: { actor: (
+    /*actor*/
+    ctx[1]
+  ) } });
   dnd5eobjects = new Dnd5eObjects({ props: { actor: (
     /*actor*/
     ctx[1]
   ) } });
   return {
     c() {
+      create_component(dnd5ecurrency.$$.fragment);
+      t = space();
       create_component(dnd5eobjects.$$.fragment);
     },
     m(target, anchor) {
+      mount_component(dnd5ecurrency, target, anchor);
+      insert(target, t, anchor);
       mount_component(dnd5eobjects, target, anchor);
       current = true;
     },
     p(ctx2, dirty) {
+      const dnd5ecurrency_changes = {};
+      if (dirty & /*actor*/
+      2)
+        dnd5ecurrency_changes.actor = /*actor*/
+        ctx2[1];
+      dnd5ecurrency.$set(dnd5ecurrency_changes);
       const dnd5eobjects_changes = {};
       if (dirty & /*actor*/
       2)
@@ -24815,14 +24873,20 @@ function create_if_block_1(ctx) {
     i(local) {
       if (current)
         return;
+      transition_in(dnd5ecurrency.$$.fragment, local);
       transition_in(dnd5eobjects.$$.fragment, local);
       current = true;
     },
     o(local) {
+      transition_out(dnd5ecurrency.$$.fragment, local);
       transition_out(dnd5eobjects.$$.fragment, local);
       current = false;
     },
     d(detaching) {
+      if (detaching) {
+        detach(t);
+      }
+      destroy_component(dnd5ecurrency, detaching);
       destroy_component(dnd5eobjects, detaching);
     }
   };
@@ -24856,14 +24920,8 @@ function create_default_slot(ctx) {
   let current;
   header = new Header({
     props: {
-      customButtons: (
-        /*headerButtons*/
-        ctx[4]
-      ),
-      menuButtons: (
-        /*menuButtons*/
-        ctx[5]
-      )
+      customButtons: headerButtons,
+      menuButtons
     }
   });
   const if_block_creators = [create_if_block, create_if_block_1];
@@ -24871,14 +24929,12 @@ function create_default_slot(ctx) {
   function select_block_type(ctx2, dirty) {
     if (
       /*activeFilter*/
-      ctx2[2] === /*filters*/
-      ctx2[3].spell
+      ctx2[2] === filters.spell
     )
       return 0;
     if (
       /*activeFilter*/
-      ctx2[2] === /*filters*/
-      ctx2[3].object
+      ctx2[2] === filters.object
     )
       return 1;
     return -1;
@@ -24962,7 +25018,7 @@ function create_fragment(ctx) {
   let updating_elementRoot;
   let current;
   function applicationshell_elementRoot_binding(value) {
-    ctx[7](value);
+    ctx[4](value);
   }
   let applicationshell_props = {
     $$slots: { default: [create_default_slot] },
@@ -24988,7 +25044,7 @@ function create_fragment(ctx) {
     p(ctx2, [dirty]) {
       const applicationshell_changes = {};
       if (dirty & /*$$scope, activeFilter, actor*/
-      8198) {
+      134) {
         applicationshell_changes.$$scope = { dirty, ctx: ctx2 };
       }
       if (!updating_elementRoot && dirty & /*elementRoot*/
@@ -25018,46 +25074,23 @@ function create_fragment(ctx) {
 function instance($$self, $$props, $$invalidate) {
   let { elementRoot } = $$props;
   let { props = void 0 } = $$props;
+  init(props);
   let actor = props;
-  const handleUpdate = async (item, _, triggeringUserId) => {
-    if (item.parent?.id === actor.id) {
-      $$invalidate(1, actor = game.actors.find((a) => a.id === actor.id));
-      switchFilter(activeFilter);
-    }
-  };
+  let activeFilter;
+  const unsubscribeActor = actorStore.subscribe((value) => {
+    $$invalidate(1, actor = value);
+  });
+  const unsubscribeFilter = activeFilterStore.subscribe((value) => {
+    $$invalidate(2, activeFilter = value);
+  });
   onMount(() => {
-    Hooks.on("createItem", handleUpdate);
-    Hooks.on("deleteItem", handleUpdate);
-    Hooks.on("updateItem", handleUpdate);
-    switchFilter(activeFilter);
+    handleOnMount();
   });
   onDestroy(() => {
-    Hooks.off("createItem", handleUpdate);
-    Hooks.off("deleteItem", handleUpdate);
-    Hooks.off("updateItem", handleUpdate);
+    handleOffMount();
+    unsubscribeActor();
+    unsubscribeFilter();
   });
-  const filters = { object: "object", spell: "spell" };
-  let activeFilter = filters.object;
-  function switchFilter(newFilter) {
-    $$invalidate(2, activeFilter = newFilter);
-  }
-  let headerButtons = [
-    {
-      id: 0,
-      iconClass: "fas fa-box-open",
-      buttonClass: "dnd-button",
-      label: "Inventory",
-      onClick: () => switchFilter(filters.object)
-    },
-    {
-      id: 1,
-      iconClass: "fas fa-wand-sparkles",
-      buttonClass: "dnd-button",
-      label: "Spells",
-      onClick: () => switchFilter(filters.spell)
-    }
-  ];
-  const menuButtons = { buttonClass: "dnd-button", iconClass: "" };
   function applicationshell_elementRoot_binding(value) {
     elementRoot = value;
     $$invalidate(0, elementRoot);
@@ -25066,23 +25099,14 @@ function instance($$self, $$props, $$invalidate) {
     if ("elementRoot" in $$props2)
       $$invalidate(0, elementRoot = $$props2.elementRoot);
     if ("props" in $$props2)
-      $$invalidate(6, props = $$props2.props);
+      $$invalidate(3, props = $$props2.props);
   };
-  return [
-    elementRoot,
-    actor,
-    activeFilter,
-    filters,
-    headerButtons,
-    menuButtons,
-    props,
-    applicationshell_elementRoot_binding
-  ];
+  return [elementRoot, actor, activeFilter, props, applicationshell_elementRoot_binding];
 }
-let Dnd5eAppShell$1 = class Dnd5eAppShell extends SvelteComponent {
+class Dnd5eFreeAppShell extends SvelteComponent {
   constructor(options) {
     super();
-    init(this, options, instance, create_fragment, safe_not_equal, { elementRoot: 0, props: 6 });
+    init$1(this, options, instance, create_fragment, safe_not_equal, { elementRoot: 0, props: 3 });
   }
   get elementRoot() {
     return this.$$.ctx[0];
@@ -25092,21 +25116,21 @@ let Dnd5eAppShell$1 = class Dnd5eAppShell extends SvelteComponent {
     flush();
   }
   get props() {
-    return this.$$.ctx[6];
+    return this.$$.ctx[3];
   }
   set props(props) {
     this.$$set({ props });
     flush();
   }
-};
-class Dnd5eAppShell2 extends SvelteApplication {
+}
+class Dnd5eAppShell extends SvelteApplication {
   constructor(actor) {
     super();
     this.options.svelte.props = actor;
   }
   static get defaultOptions() {
     return foundry.utils.mergeObject(super.defaultOptions, {
-      title: "Mobile Companion Dnd5e",
+      title: "Mobile Companion Dnd5e Free",
       id: moduleId,
       // classes: [],
       width: window.innerWidth,
@@ -25115,7 +25139,7 @@ class Dnd5eAppShell2 extends SvelteApplication {
       resizable: false,
       // The other options...
       svelte: {
-        class: Dnd5eAppShell$1,
+        class: Dnd5eFreeAppShell,
         target: document.body,
         props: {}
       }
@@ -25124,7 +25148,7 @@ class Dnd5eAppShell2 extends SvelteApplication {
 }
 function getCompanionComponent(actor) {
   if (game.system.id === system.DND5E) {
-    return new Dnd5eAppShell2({ props: actor });
+    return new Dnd5eAppShell({ props: actor });
   }
 }
 Hooks.once("ready", () => {
