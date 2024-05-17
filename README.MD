@@ -16,7 +16,7 @@ Also, system sheets do not provide all the data necessary for in-person sessions
 
 And last but not least: Mobile-Companion is intended to work on smaller displays like smartphones!
 
-<iframe width="560" height="315" src="https://github.com/Syrious/foundryvtt-mobile-companion/blob/main/assets/example.mp4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+[example.mp4](assets/example.mp4)
 
 ## Setup
 1. Enable the module
@@ -27,5 +27,4 @@ And last but not least: Mobile-Companion is intended to work on smaller displays
 Currently, I am working on DND5e and A5e. When this is done I probably go to Pf2e. Additional systems will follow.
 
 ## Future plans
-I will at least do the aforementioned systems as well as adding spells. If everything goes smoothly I'll also add additional information, useful to the players like feats, combat maneuvers etc. 
-Also, I want to add currency and encumbrance.
+I will at least do the aforementioned systems as well as adding spells. If everything goes smoothly I'll also add additional information, useful to the players like feats, combat maneuvers etc.
