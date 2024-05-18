@@ -17,6 +17,7 @@ Also, system sheets do not provide all the data necessary for in-person sessions
 And last but not least: Mobile-Companion is intended to work on smaller displays like smartphones!
 
 ![example.gif](assets/example.gif)
+https://github.com/Syrious/foundryvtt-mobile-companion/assets/8050391/3bd6b84d-7bb0-4061-9708-afa190fd8f21
 
 ## Setup
 1. Enable the module
