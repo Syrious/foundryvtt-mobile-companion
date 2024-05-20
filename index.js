@@ -5,7 +5,8 @@ const settings = {
   usersMenu: "usersMenu",
   lastActorId: "lastActorId",
   dnd5e: {
-    useCurrency: "useCurrency"
+    useCurrency: "useCurrency",
+    useEncumbrance: "useEncumbrance"
   }
 };
 const system = {
@@ -12626,7 +12627,7 @@ class TJSDefaultTransition {
   }
 }
 const TJSGlassPane_svelte_svelte_type_style_lang = "";
-function create_else_block$2(ctx) {
+function create_else_block$3(ctx) {
   let div;
   let applyStyles_action;
   let div_intro;
@@ -12764,7 +12765,7 @@ function create_else_block$2(ctx) {
     }
   };
 }
-function create_if_block$q(ctx) {
+function create_if_block$r(ctx) {
   let div0;
   let applyStyles_action;
   let div0_intro;
@@ -12920,7 +12921,7 @@ function create_fragment$x(ctx) {
   let current;
   let mounted;
   let dispose;
-  const if_block_creators = [create_if_block$q, create_else_block$2];
+  const if_block_creators = [create_if_block$r, create_else_block$3];
   const if_blocks = [];
   function select_block_type(ctx2, dirty) {
     if (
@@ -13326,7 +13327,7 @@ function localize(stringId, data) {
   return result !== void 0 ? result : "";
 }
 const TJSHeaderButton_svelte_svelte_type_style_lang = "";
-function create_if_block$p(ctx) {
+function create_if_block$q(ctx) {
   let span;
   let t;
   return {
@@ -13383,7 +13384,7 @@ function create_fragment$w(ctx) {
   let dispose;
   let if_block = (
     /*label*/
-    ctx[3] && create_if_block$p(ctx)
+    ctx[3] && create_if_block$q(ctx)
   );
   return {
     c() {
@@ -13466,7 +13467,7 @@ function create_fragment$w(ctx) {
         if (if_block) {
           if_block.p(ctx2, dirty);
         } else {
-          if_block = create_if_block$p(ctx2);
+          if_block = create_if_block$q(ctx2);
           if_block.c();
           if_block.m(a, null);
         }
@@ -13626,7 +13627,7 @@ function get_each_context_1$1(ctx, list, i) {
   child_ctx[31] = list[i];
   return child_ctx;
 }
-function create_if_block$o(ctx) {
+function create_if_block$p(ctx) {
   let img;
   let img_src_value;
   return {
@@ -13858,7 +13859,7 @@ function create_key_block(ctx) {
   let mounted;
   let dispose;
   let if_block = typeof /*$storeHeaderIcon*/
-  ctx[6] === "string" && create_if_block$o(ctx);
+  ctx[6] === "string" && create_if_block$p(ctx);
   let each_value_1 = ensure_array_like(
     /*buttonsLeft*/
     ctx[1]
@@ -13963,7 +13964,7 @@ function create_key_block(ctx) {
         if (if_block) {
           if_block.p(ctx2, dirty);
         } else {
-          if_block = create_if_block$o(ctx2);
+          if_block = create_if_block$p(ctx2);
           if_block.c();
           if_block.m(header, t0);
         }
@@ -14572,7 +14573,7 @@ class ResizableHandle extends SvelteComponent {
 }
 const ResizableHandle$1 = ResizableHandle;
 const ApplicationShell_svelte_svelte_type_style_lang = "";
-function create_else_block$1(ctx) {
+function create_else_block$2(ctx) {
   let div;
   let tjsapplicationheader;
   let t0;
@@ -14828,7 +14829,7 @@ function create_else_block$1(ctx) {
     }
   };
 }
-function create_if_block$n(ctx) {
+function create_if_block$o(ctx) {
   let div;
   let tjsapplicationheader;
   let t0;
@@ -15107,7 +15108,7 @@ function create_fragment$s(ctx) {
   let if_block;
   let if_block_anchor;
   let current;
-  const if_block_creators = [create_if_block$n, create_else_block$1];
+  const if_block_creators = [create_if_block$o, create_else_block$2];
   const if_blocks = [];
   function select_block_type(ctx2, dirty) {
     if (
@@ -15610,7 +15611,7 @@ function get_each_context$4(ctx, list, i) {
   child_ctx[26] = list[i];
   return child_ctx;
 }
-function create_if_block_3$4(ctx) {
+function create_if_block_3$2(ctx) {
   let switch_instance;
   let switch_instance_anchor;
   let current;
@@ -15705,7 +15706,7 @@ function create_if_block_3$4(ctx) {
     }
   };
 }
-function create_if_block_2$5(ctx) {
+function create_if_block_2$2(ctx) {
   let html_tag;
   let html_anchor;
   return {
@@ -15741,7 +15742,7 @@ function create_if_block_2$5(ctx) {
     }
   };
 }
-function create_if_block$m(ctx) {
+function create_if_block$n(ctx) {
   let div;
   let each_blocks = [];
   let each_1_lookup = /* @__PURE__ */ new Map();
@@ -15796,7 +15797,7 @@ function create_if_block$m(ctx) {
     }
   };
 }
-function create_if_block_1$6(ctx) {
+function create_if_block_1$5(ctx) {
   let html_tag;
   let raw_value = (
     /*button*/
@@ -15844,7 +15845,7 @@ function create_each_block$4(key_1, ctx) {
   let dispose;
   let if_block = (
     /*button*/
-    ctx[26].icon && create_if_block_1$6(ctx)
+    ctx[26].icon && create_if_block_1$5(ctx)
   );
   function click_handler() {
     return (
@@ -15912,7 +15913,7 @@ function create_each_block$4(key_1, ctx) {
         if (if_block) {
           if_block.p(ctx, dirty);
         } else {
-          if_block = create_if_block_1$6(ctx);
+          if_block = create_if_block_1$5(ctx);
           if_block.c();
           if_block.m(span, t0);
         }
@@ -15965,7 +15966,7 @@ function create_fragment$r(ctx) {
   let if_block0;
   let t;
   let current;
-  const if_block_creators = [create_if_block_2$5, create_if_block_3$4];
+  const if_block_creators = [create_if_block_2$2, create_if_block_3$2];
   const if_blocks = [];
   function select_block_type(ctx2, dirty) {
     if (typeof /*content*/
@@ -15983,7 +15984,7 @@ function create_fragment$r(ctx) {
   }
   let if_block1 = (
     /*buttons*/
-    ctx[1].length && create_if_block$m(ctx)
+    ctx[1].length && create_if_block$n(ctx)
   );
   return {
     c() {
@@ -16044,7 +16045,7 @@ function create_fragment$r(ctx) {
         if (if_block1) {
           if_block1.p(ctx2, dirty);
         } else {
-          if_block1 = create_if_block$m(ctx2);
+          if_block1 = create_if_block$n(ctx2);
           if_block1.c();
           if_block1.m(main2, null);
         }
@@ -16404,7 +16405,7 @@ class DialogContent extends SvelteComponent {
   }
 }
 const DialogContent$1 = DialogContent;
-function create_else_block(ctx) {
+function create_else_block$1(ctx) {
   let applicationshell;
   let updating_elementRoot;
   let updating_elementContent;
@@ -16496,7 +16497,7 @@ function create_else_block(ctx) {
     }
   };
 }
-function create_if_block$l(ctx) {
+function create_if_block$m(ctx) {
   let tjsglasspane;
   let current;
   const tjsglasspane_spread_levels = [
@@ -16788,7 +16789,7 @@ function create_fragment$q(ctx) {
   let if_block;
   let if_block_anchor;
   let current;
-  const if_block_creators = [create_if_block$l, create_else_block];
+  const if_block_creators = [create_if_block$m, create_else_block$1];
   const if_blocks = [];
   function select_block_type(ctx2, dirty) {
     if (
@@ -18952,11 +18953,8 @@ class SettingsUser extends FormApplication {
     this.close();
   }
 }
-function i18n(key) {
+function i18n$1(key) {
   return game.i18n.localize(key);
-}
-function myi18n(key) {
-  return i18n("Mobile-Companion.".concat(key));
 }
 function i18nFormat(key, data) {
   return game.i18n.format(key, data);
@@ -18967,8 +18965,20 @@ function getDnd5eSettings() {
     namespace: moduleId,
     key: settings.dnd5e.useCurrency,
     options: {
-      name: i18n("Mobile-Companion.Settings.UseCurrency.Name"),
-      hint: i18n("Mobile-Companion.Settings.UseCurrency.Hint"),
+      name: i18n$1("Mobile-Companion.Settings.UseCurrency.Name"),
+      hint: i18n$1("Mobile-Companion.Settings.UseCurrency.Hint"),
+      scope: "client",
+      config: true,
+      type: Boolean,
+      default: true
+    }
+  });
+  setting.push({
+    namespace: moduleId,
+    key: settings.dnd5e.useEncumbrance,
+    options: {
+      name: i18n$1("Mobile-Companion.Settings.UseEncumbrance.Name"),
+      hint: i18n$1("Mobile-Companion.Settings.UseEncumbrance.Hint"),
       scope: "client",
       config: true,
       type: Boolean,
@@ -19020,9 +19030,9 @@ function getLastActorId() {
   return game.settings.get(moduleId, settings.lastActorId);
 }
 function isSheetOnly() {
-  let playerData = game.settings.get(moduleId, settings.users);
-  let user = game.user;
-  let userData = playerData[user.id];
+  const playerData = game.settings.get(moduleId, settings.users);
+  const user = game.user;
+  const userData = playerData[user.id];
   if (userData) {
     const useSheetOnly = userData.enabled;
     if (useSheetOnly) {
@@ -19113,7 +19123,7 @@ function hideOtherElements() {
 }
 function enable() {
   const element2 = document.body;
-  const requestMethod = element2.requestFullScreen || element2.webkitRequestFullScreen || element2.mozRequestFullScreen || element2.msRequestFullScreen;
+  const requestMethod = element2.requestFullscreen || element2.webkitRequestFullscreen || element2.mozRequestFullScreen || element2.msRequestFullscreen;
   if (requestMethod) {
     requestMethod.call(element2);
   } else if (typeof window.ActiveXObject !== "undefined") {
@@ -19136,7 +19146,8 @@ function disable() {
   }
 }
 function toggleFullscreen() {
-  const isInFullScreen = document.fullscreenElement || document.webkitFullscreenElement || document.mozFullScreenElement || document.msFullscreenElement;
+  const dmc = document;
+  const isInFullScreen = dmc.fullscreenElement || dmc.webkitFullscreenElement || dmc.mozFullScreenElement || dmc.msFullscreenElement;
   if (isInFullScreen) {
     disable();
   } else {
@@ -19177,10 +19188,10 @@ function create_each_block$2(key_1, ctx) {
       attr(i, "class", i_class_value = null_to_empty(
         /*button*/
         ctx[7].iconClass
-      ) + " svelte-mobile-companion81nkluj30u9vsd-6uv7uh");
+      ) + " svelte-mobile-companion81nkluj30u9vsd-1ol6608");
       attr(i, "aria-hidden", "true");
       attr(button_1, "class", button_1_class_value = "icon-button " + /*button*/
-      ctx[7].buttonClass + " svelte-mobile-companion81nkluj30u9vsd-6uv7uh");
+      ctx[7].buttonClass + " svelte-mobile-companion81nkluj30u9vsd-1ol6608");
       attr(button_1, "aria-label", button_1_aria_label_value = /*button*/
       ctx[7].label ? (
         /*button*/
@@ -19203,12 +19214,12 @@ function create_each_block$2(key_1, ctx) {
       1 && i_class_value !== (i_class_value = null_to_empty(
         /*button*/
         ctx[7].iconClass
-      ) + " svelte-mobile-companion81nkluj30u9vsd-6uv7uh")) {
+      ) + " svelte-mobile-companion81nkluj30u9vsd-1ol6608")) {
         attr(i, "class", i_class_value);
       }
       if (dirty & /*customButtons*/
       1 && button_1_class_value !== (button_1_class_value = "icon-button " + /*button*/
-      ctx[7].buttonClass + " svelte-mobile-companion81nkluj30u9vsd-6uv7uh")) {
+      ctx[7].buttonClass + " svelte-mobile-companion81nkluj30u9vsd-1ol6608")) {
         attr(button_1, "class", button_1_class_value);
       }
       if (dirty & /*customButtons*/
@@ -19229,7 +19240,7 @@ function create_each_block$2(key_1, ctx) {
     }
   };
 }
-function create_if_block$k(ctx) {
+function create_if_block$l(ctx) {
   let div3;
   let div0;
   let t1;
@@ -19251,13 +19262,13 @@ function create_if_block$k(ctx) {
       t3 = space();
       div2 = element("div");
       div2.innerHTML = `<i class="fas fa-sign-out-alt"></i>Logout`;
-      attr(div0, "class", "menu-button svelte-mobile-companion81nkluj30u9vsd-6uv7uh");
+      attr(div0, "class", "menu-button svelte-mobile-companion81nkluj30u9vsd-1ol6608");
       attr(div0, "aria-hidden", "true");
-      attr(div1, "class", "menu-button svelte-mobile-companion81nkluj30u9vsd-6uv7uh");
+      attr(div1, "class", "menu-button svelte-mobile-companion81nkluj30u9vsd-1ol6608");
       attr(div1, "aria-hidden", "true");
-      attr(div2, "class", "menu-button svelte-mobile-companion81nkluj30u9vsd-6uv7uh");
+      attr(div2, "class", "menu-button svelte-mobile-companion81nkluj30u9vsd-1ol6608");
       attr(div2, "aria-hidden", "true");
-      attr(div3, "class", "context-menu svelte-mobile-companion81nkluj30u9vsd-6uv7uh");
+      attr(div3, "class", "context-menu svelte-mobile-companion81nkluj30u9vsd-1ol6608");
     },
     m(target, anchor) {
       insert(target, div3, anchor);
@@ -19345,7 +19356,7 @@ function create_fragment$o(ctx) {
   }
   let if_block = (
     /*isContextOpen*/
-    ctx[2] && create_if_block$k(ctx)
+    ctx[2] && create_if_block$l(ctx)
   );
   return {
     c() {
@@ -19362,15 +19373,15 @@ function create_fragment$o(ctx) {
       t2 = space();
       if (if_block)
         if_block.c();
-      attr(div0, "class", "custom-buttons svelte-mobile-companion81nkluj30u9vsd-6uv7uh");
+      attr(div0, "class", "custom-buttons svelte-mobile-companion81nkluj30u9vsd-1ol6608");
       attr(i, "class", i_class_value = "fa-solid fa-bars " + /*menuButtons*/
-      ctx[1]?.iconClass + " svelte-mobile-companion81nkluj30u9vsd-6uv7uh");
+      ctx[1]?.iconClass + " svelte-mobile-companion81nkluj30u9vsd-1ol6608");
       attr(i, "aria-hidden", "true");
       attr(button_1, "class", button_1_class_value = "icon-button " + /*menuButtons*/
-      ctx[1]?.buttonClass + " svelte-mobile-companion81nkluj30u9vsd-6uv7uh");
+      ctx[1]?.buttonClass + " svelte-mobile-companion81nkluj30u9vsd-1ol6608");
       attr(button_1, "aria-label", "Menu");
-      attr(div1, "class", "main-buttons svelte-mobile-companion81nkluj30u9vsd-6uv7uh");
-      attr(header, "class", "header svelte-mobile-companion81nkluj30u9vsd-6uv7uh");
+      attr(div1, "class", "main-buttons svelte-mobile-companion81nkluj30u9vsd-1ol6608");
+      attr(header, "class", "header svelte-mobile-companion81nkluj30u9vsd-1ol6608");
     },
     m(target, anchor) {
       insert(target, t0, anchor);
@@ -19417,12 +19428,12 @@ function create_fragment$o(ctx) {
       }
       if (dirty & /*menuButtons*/
       2 && i_class_value !== (i_class_value = "fa-solid fa-bars " + /*menuButtons*/
-      ctx2[1]?.iconClass + " svelte-mobile-companion81nkluj30u9vsd-6uv7uh")) {
+      ctx2[1]?.iconClass + " svelte-mobile-companion81nkluj30u9vsd-1ol6608")) {
         attr(i, "class", i_class_value);
       }
       if (dirty & /*menuButtons*/
       2 && button_1_class_value !== (button_1_class_value = "icon-button " + /*menuButtons*/
-      ctx2[1]?.buttonClass + " svelte-mobile-companion81nkluj30u9vsd-6uv7uh")) {
+      ctx2[1]?.buttonClass + " svelte-mobile-companion81nkluj30u9vsd-1ol6608")) {
         attr(button_1, "class", button_1_class_value);
       }
       if (
@@ -19436,7 +19447,7 @@ function create_fragment$o(ctx) {
             transition_in(if_block, 1);
           }
         } else {
-          if_block = create_if_block$k(ctx2);
+          if_block = create_if_block$l(ctx2);
           if_block.c();
           transition_in(if_block, 1);
           if_block.m(header, null);
@@ -19514,7 +19525,10 @@ class Header extends SvelteComponent {
     init$1(this, options, instance$o, create_fragment$o, safe_not_equal, { customButtons: 0, menuButtons: 1 });
   }
 }
-function create_if_block$j(ctx) {
+function i18n(key) {
+  return i18n$1(key);
+}
+function create_if_block$k(ctx) {
   let p;
   return {
     c() {
@@ -19535,7 +19549,7 @@ function create_fragment$n(ctx) {
   let if_block_anchor;
   let if_block = (
     /*itemData*/
-    ctx[0].capacity && create_if_block$j()
+    ctx[0].capacity && create_if_block$k()
   );
   return {
     c() {
@@ -19556,7 +19570,7 @@ function create_fragment$n(ctx) {
         if (if_block)
           ;
         else {
-          if_block = create_if_block$j();
+          if_block = create_if_block$k();
           if_block.c();
           if_block.m(if_block_anchor.parentNode, if_block_anchor);
         }
@@ -19597,37 +19611,28 @@ class Dnd5eContainerObject extends SvelteComponent {
     init$1(this, options, instance$n, create_fragment$n, safe_not_equal, { item: 1 });
   }
 }
-function create_if_block$i(ctx) {
+function create_if_block$j(ctx) {
   let p;
   let b;
   let t2;
-  let t3_value = (
-    /*activation*/
-    ctx[0].cost + ""
-  );
   let t3;
   let t4;
   let t5;
-  let t6;
-  let t7_value = (
-    /*activation*/
-    ctx[0].condition + ""
-  );
-  let t7;
   return {
     c() {
       p = element("p");
       b = element("b");
-      b.textContent = `${i18n("DND5E.ItemActivation")}:`;
+      b.textContent = `${i18n("DND5E.Type")}:`;
       t2 = space();
-      t3 = text(t3_value);
+      t3 = text(
+        /*consumableTypeLabel*/
+        ctx[0]
+      );
       t4 = space();
       t5 = text(
-        /*activationType*/
+        /*subtype*/
         ctx[1]
       );
-      t6 = space();
-      t7 = text(t7_value);
     },
     m(target, anchor) {
       insert(target, p, anchor);
@@ -19636,19 +19641,8 @@ function create_if_block$i(ctx) {
       append(p, t3);
       append(p, t4);
       append(p, t5);
-      append(p, t6);
-      append(p, t7);
     },
-    p(ctx2, dirty) {
-      if (dirty & /*activation*/
-      1 && t3_value !== (t3_value = /*activation*/
-      ctx2[0].cost + ""))
-        set_data(t3, t3_value);
-      if (dirty & /*activation*/
-      1 && t7_value !== (t7_value = /*activation*/
-      ctx2[0].condition + ""))
-        set_data(t7, t7_value);
-    },
+    p: noop,
     d(detaching) {
       if (detaching) {
         detach(p);
@@ -19659,8 +19653,8 @@ function create_if_block$i(ctx) {
 function create_fragment$m(ctx) {
   let if_block_anchor;
   let if_block = (
-    /*activationType*/
-    ctx[1] && create_if_block$i(ctx)
+    /*consumableTypeLabel*/
+    ctx[0] && create_if_block$j(ctx)
   );
   return {
     c() {
@@ -19675,8 +19669,8 @@ function create_fragment$m(ctx) {
     },
     p(ctx2, [dirty]) {
       if (
-        /*activationType*/
-        ctx2[1]
+        /*consumableTypeLabel*/
+        ctx2[0]
       )
         if_block.p(ctx2, dirty);
     },
@@ -19692,612 +19686,6 @@ function create_fragment$m(ctx) {
   };
 }
 function instance$m($$self, $$props, $$invalidate) {
-  let { activation } = $$props;
-  const activationType = CONFIG.DND5E.abilityActivationTypes[activation.type];
-  $$self.$$set = ($$props2) => {
-    if ("activation" in $$props2)
-      $$invalidate(0, activation = $$props2.activation);
-  };
-  return [activation, activationType];
-}
-class Dnd5EActivation extends SvelteComponent {
-  constructor(options) {
-    super();
-    init$1(this, options, instance$m, create_fragment$m, safe_not_equal, { activation: 0 });
-  }
-}
-function create_if_block$h(ctx) {
-  let p;
-  let b;
-  let t2;
-  let t3_value = (
-    /*target*/
-    (ctx[0].value ?? "") + ""
-  );
-  let t3;
-  let t4;
-  let t5_value = (
-    /*target*/
-    (ctx[0].type ? (
-      /*individualTargetType*/
-      ctx[1]
-    ) : "") + ""
-  );
-  let t5;
-  let t6;
-  let t7_value = (
-    /*target*/
-    (ctx[0].units ?? "") + ""
-  );
-  let t7;
-  return {
-    c() {
-      p = element("p");
-      b = element("b");
-      b.textContent = `${i18n("DND5E.Target")}:`;
-      t2 = space();
-      t3 = text(t3_value);
-      t4 = space();
-      t5 = text(t5_value);
-      t6 = space();
-      t7 = text(t7_value);
-    },
-    m(target, anchor) {
-      insert(target, p, anchor);
-      append(p, b);
-      append(p, t2);
-      append(p, t3);
-      append(p, t4);
-      append(p, t5);
-      append(p, t6);
-      append(p, t7);
-    },
-    p(ctx2, dirty) {
-      if (dirty & /*target*/
-      1 && t3_value !== (t3_value = /*target*/
-      (ctx2[0].value ?? "") + ""))
-        set_data(t3, t3_value);
-      if (dirty & /*target*/
-      1 && t5_value !== (t5_value = /*target*/
-      (ctx2[0].type ? (
-        /*individualTargetType*/
-        ctx2[1]
-      ) : "") + ""))
-        set_data(t5, t5_value);
-      if (dirty & /*target*/
-      1 && t7_value !== (t7_value = /*target*/
-      (ctx2[0].units ?? "") + ""))
-        set_data(t7, t7_value);
-    },
-    d(detaching) {
-      if (detaching) {
-        detach(p);
-      }
-    }
-  };
-}
-function create_fragment$l(ctx) {
-  let if_block_anchor;
-  let if_block = (
-    /*target*/
-    ctx[0].type && create_if_block$h(ctx)
-  );
-  return {
-    c() {
-      if (if_block)
-        if_block.c();
-      if_block_anchor = empty();
-    },
-    m(target, anchor) {
-      if (if_block)
-        if_block.m(target, anchor);
-      insert(target, if_block_anchor, anchor);
-    },
-    p(ctx2, [dirty]) {
-      if (
-        /*target*/
-        ctx2[0].type
-      ) {
-        if (if_block) {
-          if_block.p(ctx2, dirty);
-        } else {
-          if_block = create_if_block$h(ctx2);
-          if_block.c();
-          if_block.m(if_block_anchor.parentNode, if_block_anchor);
-        }
-      } else if (if_block) {
-        if_block.d(1);
-        if_block = null;
-      }
-    },
-    i: noop,
-    o: noop,
-    d(detaching) {
-      if (detaching) {
-        detach(if_block_anchor);
-      }
-      if (if_block)
-        if_block.d(detaching);
-    }
-  };
-}
-function instance$l($$self, $$props, $$invalidate) {
-  let { target } = $$props;
-  const individualTargetType = CONFIG.DND5E.individualTargetTypes[target.type];
-  $$self.$$set = ($$props2) => {
-    if ("target" in $$props2)
-      $$invalidate(0, target = $$props2.target);
-  };
-  return [target, individualTargetType];
-}
-class Dnd5ETarget extends SvelteComponent {
-  constructor(options) {
-    super();
-    init$1(this, options, instance$l, create_fragment$l, safe_not_equal, { target: 0 });
-  }
-}
-async function evaluateTotal(formula, rollData) {
-  let roll;
-  if (rollData) {
-    roll = new Roll(formula, rollData);
-  } else {
-    roll = new Roll(formula);
-  }
-  await roll.evaluate();
-  return roll.total;
-}
-function evaluateAsFormula(formula, rollData) {
-  let roll;
-  if (rollData) {
-    roll = new Roll(formula, rollData);
-  } else {
-    roll = new Roll(formula);
-  }
-  let output = roll.formula;
-  output = matchMin(output);
-  output = matchMax(output);
-  output = removeZeroes(output);
-  output = removePlusMinus(output);
-  return output;
-}
-function matchMin(output) {
-  return output.replace(/min\(([^)]+)\)/g, function(match, p1) {
-    const parameters = p1.split(",").map(Number);
-    return Math.min(...parameters);
-  });
-}
-function matchMax(output) {
-  return output.replace(/max\(([^)]+)\)/g, function(match, p1) {
-    const parameters = p1.split(",").map(Number);
-    return Math.max(...parameters);
-  });
-}
-function removeZeroes(output) {
-  return output.replace(/\s[-+]\s0/g, "");
-}
-function removePlusMinus(output) {
-  return output.replace(/\+\s*-\s*/g, "- ");
-}
-function get_each_context$1(ctx, list, i) {
-  const child_ctx = ctx.slice();
-  child_ctx[1] = list[i];
-  child_ctx[3] = i;
-  return child_ctx;
-}
-function create_if_block$g(ctx) {
-  let each_blocks = [];
-  let each_1_lookup = /* @__PURE__ */ new Map();
-  let each_1_anchor;
-  let each_value = ensure_array_like(
-    /*effects*/
-    ctx[0].parts
-  );
-  const get_key = (ctx2) => (
-    /*index*/
-    ctx2[3]
-  );
-  for (let i = 0; i < each_value.length; i += 1) {
-    let child_ctx = get_each_context$1(ctx, each_value, i);
-    let key = get_key(child_ctx);
-    each_1_lookup.set(key, each_blocks[i] = create_each_block$1(key, child_ctx));
-  }
-  return {
-    c() {
-      for (let i = 0; i < each_blocks.length; i += 1) {
-        each_blocks[i].c();
-      }
-      each_1_anchor = empty();
-    },
-    m(target, anchor) {
-      for (let i = 0; i < each_blocks.length; i += 1) {
-        if (each_blocks[i]) {
-          each_blocks[i].m(target, anchor);
-        }
-      }
-      insert(target, each_1_anchor, anchor);
-    },
-    p(ctx2, dirty) {
-      if (dirty & /*effects*/
-      1) {
-        each_value = ensure_array_like(
-          /*effects*/
-          ctx2[0].parts
-        );
-        each_blocks = update_keyed_each(each_blocks, dirty, get_key, 1, ctx2, each_value, each_1_lookup, each_1_anchor.parentNode, destroy_block, create_each_block$1, each_1_anchor, get_each_context$1);
-      }
-    },
-    d(detaching) {
-      if (detaching) {
-        detach(each_1_anchor);
-      }
-      for (let i = 0; i < each_blocks.length; i += 1) {
-        each_blocks[i].d(detaching);
-      }
-    }
-  };
-}
-function create_each_block$1(key_1, ctx) {
-  let p;
-  let b;
-  let t2;
-  let t3_value = evaluateAsFormula(
-    /*effect*/
-    ctx[1][0]
-  ) + "";
-  let t3;
-  let t4;
-  let t5_value = (
-    /*effect*/
-    ctx[1][1] + ""
-  );
-  let t5;
-  return {
-    key: key_1,
-    first: null,
-    c() {
-      p = element("p");
-      b = element("b");
-      b.textContent = `${myi18n("DND5E.effect")}:`;
-      t2 = space();
-      t3 = text(t3_value);
-      t4 = space();
-      t5 = text(t5_value);
-      this.first = p;
-    },
-    m(target, anchor) {
-      insert(target, p, anchor);
-      append(p, b);
-      append(p, t2);
-      append(p, t3);
-      append(p, t4);
-      append(p, t5);
-    },
-    p(new_ctx, dirty) {
-      ctx = new_ctx;
-      if (dirty & /*effects*/
-      1 && t3_value !== (t3_value = evaluateAsFormula(
-        /*effect*/
-        ctx[1][0]
-      ) + ""))
-        set_data(t3, t3_value);
-      if (dirty & /*effects*/
-      1 && t5_value !== (t5_value = /*effect*/
-      ctx[1][1] + ""))
-        set_data(t5, t5_value);
-    },
-    d(detaching) {
-      if (detaching) {
-        detach(p);
-      }
-    }
-  };
-}
-function create_fragment$k(ctx) {
-  let if_block_anchor;
-  let if_block = (
-    /*effects*/
-    ctx[0].parts?.length > 0 && create_if_block$g(ctx)
-  );
-  return {
-    c() {
-      if (if_block)
-        if_block.c();
-      if_block_anchor = empty();
-    },
-    m(target, anchor) {
-      if (if_block)
-        if_block.m(target, anchor);
-      insert(target, if_block_anchor, anchor);
-    },
-    p(ctx2, [dirty]) {
-      if (
-        /*effects*/
-        ctx2[0].parts?.length > 0
-      ) {
-        if (if_block) {
-          if_block.p(ctx2, dirty);
-        } else {
-          if_block = create_if_block$g(ctx2);
-          if_block.c();
-          if_block.m(if_block_anchor.parentNode, if_block_anchor);
-        }
-      } else if (if_block) {
-        if_block.d(1);
-        if_block = null;
-      }
-    },
-    i: noop,
-    o: noop,
-    d(detaching) {
-      if (detaching) {
-        detach(if_block_anchor);
-      }
-      if (if_block)
-        if_block.d(detaching);
-    }
-  };
-}
-function instance$k($$self, $$props, $$invalidate) {
-  let { effects } = $$props;
-  $$self.$$set = ($$props2) => {
-    if ("effects" in $$props2)
-      $$invalidate(0, effects = $$props2.effects);
-  };
-  return [effects];
-}
-class Dnd5eEffect extends SvelteComponent {
-  constructor(options) {
-    super();
-    init$1(this, options, instance$k, create_fragment$k, safe_not_equal, { effects: 0 });
-  }
-}
-function create_if_block_3$3(ctx) {
-  let p;
-  let b;
-  let t2;
-  let t3;
-  let t4;
-  let t5;
-  return {
-    c() {
-      p = element("p");
-      b = element("b");
-      b.textContent = `${i18n("DND5E.Type")}:`;
-      t2 = space();
-      t3 = text(
-        /*consumableTypeLabel*/
-        ctx[1]
-      );
-      t4 = space();
-      t5 = text(
-        /*subtype*/
-        ctx[2]
-      );
-    },
-    m(target, anchor) {
-      insert(target, p, anchor);
-      append(p, b);
-      append(p, t2);
-      append(p, t3);
-      append(p, t4);
-      append(p, t5);
-    },
-    p: noop,
-    d(detaching) {
-      if (detaching) {
-        detach(p);
-      }
-    }
-  };
-}
-function create_if_block_2$4(ctx) {
-  let dnd5eactivation;
-  let current;
-  dnd5eactivation = new Dnd5EActivation({
-    props: {
-      activation: (
-        /*itemData*/
-        ctx[0].activation
-      )
-    }
-  });
-  return {
-    c() {
-      create_component(dnd5eactivation.$$.fragment);
-    },
-    m(target, anchor) {
-      mount_component(dnd5eactivation, target, anchor);
-      current = true;
-    },
-    p: noop,
-    i(local) {
-      if (current)
-        return;
-      transition_in(dnd5eactivation.$$.fragment, local);
-      current = true;
-    },
-    o(local) {
-      transition_out(dnd5eactivation.$$.fragment, local);
-      current = false;
-    },
-    d(detaching) {
-      destroy_component(dnd5eactivation, detaching);
-    }
-  };
-}
-function create_if_block_1$5(ctx) {
-  let dnd5etarget;
-  let current;
-  dnd5etarget = new Dnd5ETarget({
-    props: { target: (
-      /*itemData*/
-      ctx[0].target
-    ) }
-  });
-  return {
-    c() {
-      create_component(dnd5etarget.$$.fragment);
-    },
-    m(target, anchor) {
-      mount_component(dnd5etarget, target, anchor);
-      current = true;
-    },
-    p: noop,
-    i(local) {
-      if (current)
-        return;
-      transition_in(dnd5etarget.$$.fragment, local);
-      current = true;
-    },
-    o(local) {
-      transition_out(dnd5etarget.$$.fragment, local);
-      current = false;
-    },
-    d(detaching) {
-      destroy_component(dnd5etarget, detaching);
-    }
-  };
-}
-function create_if_block$f(ctx) {
-  let dnd5eeffect;
-  let current;
-  dnd5eeffect = new Dnd5eEffect({
-    props: { effects: (
-      /*itemData*/
-      ctx[0].damage
-    ) }
-  });
-  return {
-    c() {
-      create_component(dnd5eeffect.$$.fragment);
-    },
-    m(target, anchor) {
-      mount_component(dnd5eeffect, target, anchor);
-      current = true;
-    },
-    p: noop,
-    i(local) {
-      if (current)
-        return;
-      transition_in(dnd5eeffect.$$.fragment, local);
-      current = true;
-    },
-    o(local) {
-      transition_out(dnd5eeffect.$$.fragment, local);
-      current = false;
-    },
-    d(detaching) {
-      destroy_component(dnd5eeffect, detaching);
-    }
-  };
-}
-function create_fragment$j(ctx) {
-  let t0;
-  let t1;
-  let t2;
-  let if_block3_anchor;
-  let current;
-  let if_block0 = (
-    /*consumableTypeLabel*/
-    ctx[1] && create_if_block_3$3(ctx)
-  );
-  let if_block1 = (
-    /*itemData*/
-    ctx[0].activation && create_if_block_2$4(ctx)
-  );
-  let if_block2 = (
-    /*itemData*/
-    ctx[0].target && create_if_block_1$5(ctx)
-  );
-  let if_block3 = (
-    /*itemData*/
-    ctx[0].damage && create_if_block$f(ctx)
-  );
-  return {
-    c() {
-      if (if_block0)
-        if_block0.c();
-      t0 = space();
-      if (if_block1)
-        if_block1.c();
-      t1 = space();
-      if (if_block2)
-        if_block2.c();
-      t2 = space();
-      if (if_block3)
-        if_block3.c();
-      if_block3_anchor = empty();
-    },
-    m(target, anchor) {
-      if (if_block0)
-        if_block0.m(target, anchor);
-      insert(target, t0, anchor);
-      if (if_block1)
-        if_block1.m(target, anchor);
-      insert(target, t1, anchor);
-      if (if_block2)
-        if_block2.m(target, anchor);
-      insert(target, t2, anchor);
-      if (if_block3)
-        if_block3.m(target, anchor);
-      insert(target, if_block3_anchor, anchor);
-      current = true;
-    },
-    p(ctx2, [dirty]) {
-      if (
-        /*consumableTypeLabel*/
-        ctx2[1]
-      )
-        if_block0.p(ctx2, dirty);
-      if (
-        /*itemData*/
-        ctx2[0].activation
-      )
-        if_block1.p(ctx2, dirty);
-      if (
-        /*itemData*/
-        ctx2[0].target
-      )
-        if_block2.p(ctx2, dirty);
-      if (
-        /*itemData*/
-        ctx2[0].damage
-      )
-        if_block3.p(ctx2, dirty);
-    },
-    i(local) {
-      if (current)
-        return;
-      transition_in(if_block1);
-      transition_in(if_block2);
-      transition_in(if_block3);
-      current = true;
-    },
-    o(local) {
-      transition_out(if_block1);
-      transition_out(if_block2);
-      transition_out(if_block3);
-      current = false;
-    },
-    d(detaching) {
-      if (detaching) {
-        detach(t0);
-        detach(t1);
-        detach(t2);
-        detach(if_block3_anchor);
-      }
-      if (if_block0)
-        if_block0.d(detaching);
-      if (if_block1)
-        if_block1.d(detaching);
-      if (if_block2)
-        if_block2.d(detaching);
-      if (if_block3)
-        if_block3.d(detaching);
-    }
-  };
-}
-function instance$j($$self, $$props, $$invalidate) {
   var _a;
   let { item } = $$props;
   let itemData = item.system;
@@ -20305,18 +19693,18 @@ function instance$j($$self, $$props, $$invalidate) {
   const subtype = itemData.type.subtype ? "(" + CONFIG.DND5E.consumableTypes.subtypes[itemData.type.subtype] + ")" : "";
   $$self.$$set = ($$props2) => {
     if ("item" in $$props2)
-      $$invalidate(3, item = $$props2.item);
+      $$invalidate(2, item = $$props2.item);
   };
-  return [itemData, consumableTypeLabel, subtype, item];
+  return [consumableTypeLabel, subtype, item];
 }
 class Dnd5eConsumableObject extends SvelteComponent {
   constructor(options) {
     super();
-    init$1(this, options, instance$j, create_fragment$j, safe_not_equal, { item: 3 });
+    init$1(this, options, instance$m, create_fragment$m, safe_not_equal, { item: 2 });
   }
 }
 const Quantity_svelte_svelte_type_style_lang = "";
-function create_fragment$i(ctx) {
+function create_fragment$l(ctx) {
   let div;
   let a0;
   let t0;
@@ -20393,7 +19781,7 @@ function create_fragment$i(ctx) {
     }
   };
 }
-function instance$i($$self, $$props, $$invalidate) {
+function instance$l($$self, $$props, $$invalidate) {
   let { quantity = 0 } = $$props;
   const dispatch2 = createEventDispatcher();
   function increase() {
@@ -20415,29 +19803,30 @@ function instance$i($$self, $$props, $$invalidate) {
 class Quantity extends SvelteComponent {
   constructor(options) {
     super();
-    init$1(this, options, instance$i, create_fragment$i, safe_not_equal, { quantity: 0 });
+    init$1(this, options, instance$l, create_fragment$l, safe_not_equal, { quantity: 0 });
   }
 }
-function create_if_block$e(ctx) {
+function create_if_block$i(ctx) {
   let p;
   let b;
   let t2;
-  let span;
+  let t3;
   return {
     c() {
       p = element("p");
       b = element("b");
       b.textContent = `${i18n("DND5E.Properties")}:`;
       t2 = space();
-      span = element("span");
-      span.textContent = `${/*labels*/
-      ctx[0]}`;
+      t3 = text(
+        /*properties*/
+        ctx[0]
+      );
     },
     m(target, anchor) {
       insert(target, p, anchor);
       append(p, b);
       append(p, t2);
-      append(p, span);
+      append(p, t3);
     },
     p: noop,
     d(detaching) {
@@ -20447,11 +19836,11 @@ function create_if_block$e(ctx) {
     }
   };
 }
-function create_fragment$h(ctx) {
+function create_fragment$k(ctx) {
   let if_block_anchor;
   let if_block = (
-    /*labels*/
-    ctx[0] && create_if_block$e(ctx)
+    /*properties*/
+    ctx[0] && create_if_block$i(ctx)
   );
   return {
     c() {
@@ -20466,7 +19855,7 @@ function create_fragment$h(ctx) {
     },
     p(ctx2, [dirty]) {
       if (
-        /*labels*/
+        /*properties*/
         ctx2[0]
       )
         if_block.p(ctx2, dirty);
@@ -20482,27 +19871,22 @@ function create_fragment$h(ctx) {
     }
   };
 }
-function instance$h($$self, $$props, $$invalidate) {
-  let { properties } = $$props;
-  const labels = Array.from(properties).map((it) => {
-    var _a;
-    return (_a = CONFIG.DND5E.itemProperties[it]) === null || _a === void 0 ? void 0 : _a.label;
-  }).filter(Boolean).join(
-    ", "
-  );
+function instance$k($$self, $$props, $$invalidate) {
+  let { item } = $$props;
+  const properties = item.labels.properties.map((property) => property.label).join(", ");
   $$self.$$set = ($$props2) => {
-    if ("properties" in $$props2)
-      $$invalidate(1, properties = $$props2.properties);
+    if ("item" in $$props2)
+      $$invalidate(1, item = $$props2.item);
   };
-  return [labels, properties];
+  return [properties, item];
 }
-class Dnd5EObjectProperties extends SvelteComponent {
+class Dnd5eObjectProperties extends SvelteComponent {
   constructor(options) {
     super();
-    init$1(this, options, instance$h, create_fragment$h, safe_not_equal, { properties: 1 });
+    init$1(this, options, instance$k, create_fragment$k, safe_not_equal, { item: 1 });
   }
 }
-function create_if_block$d(ctx) {
+function create_if_block$h(ctx) {
   let p;
   return {
     c() {
@@ -20526,11 +19910,11 @@ function create_if_block$d(ctx) {
     }
   };
 }
-function create_fragment$g(ctx) {
+function create_fragment$j(ctx) {
   let if_block_anchor;
   let if_block = (
     /*description*/
-    ctx[0] && create_if_block$d(ctx)
+    ctx[0] && create_if_block$h(ctx)
   );
   return {
     c() {
@@ -20551,7 +19935,7 @@ function create_fragment$g(ctx) {
         if (if_block) {
           if_block.p(ctx2, dirty);
         } else {
-          if_block = create_if_block$d(ctx2);
+          if_block = create_if_block$h(ctx2);
           if_block.c();
           if_block.m(if_block_anchor.parentNode, if_block_anchor);
         }
@@ -20571,7 +19955,7 @@ function create_fragment$g(ctx) {
     }
   };
 }
-function instance$g($$self, $$props, $$invalidate) {
+function instance$j($$self, $$props, $$invalidate) {
   let { itemData } = $$props;
   let identified, description;
   $$self.$$set = ($$props2) => {
@@ -20589,7 +19973,7 @@ function instance$g($$self, $$props, $$invalidate) {
           if (itemData.unidentified.description) {
             $$invalidate(0, description = itemData.unidentified.description);
           } else {
-            $$invalidate(0, description = i18n("DND5E.Unidentified.Notice"));
+            $$invalidate(0, description = i18n$1("DND5E.Unidentified.Notice"));
           }
         }
       }
@@ -20600,10 +19984,10 @@ function instance$g($$self, $$props, $$invalidate) {
 class Dnd5eDescription extends SvelteComponent {
   constructor(options) {
     super();
-    init$1(this, options, instance$g, create_fragment$g, safe_not_equal, { itemData: 1 });
+    init$1(this, options, instance$j, create_fragment$j, safe_not_equal, { itemData: 1 });
   }
 }
-function create_if_block$c(ctx) {
+function create_if_block$g(ctx) {
   let p;
   let b;
   let t1;
@@ -20653,11 +20037,11 @@ function create_if_block$c(ctx) {
     }
   };
 }
-function create_fragment$f(ctx) {
+function create_fragment$i(ctx) {
   let if_block_anchor;
   let if_block = (
     /*price*/
-    ctx[0].value && create_if_block$c(ctx)
+    ctx[0].value && create_if_block$g(ctx)
   );
   return {
     c() {
@@ -20678,7 +20062,7 @@ function create_fragment$f(ctx) {
         if (if_block) {
           if_block.p(ctx2, dirty);
         } else {
-          if_block = create_if_block$c(ctx2);
+          if_block = create_if_block$g(ctx2);
           if_block.c();
           if_block.m(if_block_anchor.parentNode, if_block_anchor);
         }
@@ -20698,7 +20082,7 @@ function create_fragment$f(ctx) {
     }
   };
 }
-function instance$f($$self, $$props, $$invalidate) {
+function instance$i($$self, $$props, $$invalidate) {
   let { price } = $$props;
   $$self.$$set = ($$props2) => {
     if ("price" in $$props2)
@@ -20709,10 +20093,10 @@ function instance$f($$self, $$props, $$invalidate) {
 class Dnd5ePrice extends SvelteComponent {
   constructor(options) {
     super();
-    init$1(this, options, instance$f, create_fragment$f, safe_not_equal, { price: 0 });
+    init$1(this, options, instance$i, create_fragment$i, safe_not_equal, { price: 0 });
   }
 }
-function create_if_block$b(ctx) {
+function create_if_block$f(ctx) {
   let p;
   let b;
   let t1;
@@ -20757,11 +20141,11 @@ function create_if_block$b(ctx) {
     }
   };
 }
-function create_fragment$e(ctx) {
+function create_fragment$h(ctx) {
   let if_block_anchor;
   let if_block = (
     /*weight*/
-    ctx[0] && create_if_block$b(ctx)
+    ctx[0] && create_if_block$f(ctx)
   );
   return {
     c() {
@@ -20778,6 +20162,571 @@ function create_fragment$e(ctx) {
       if (
         /*weight*/
         ctx2[0]
+      ) {
+        if (if_block) {
+          if_block.p(ctx2, dirty);
+        } else {
+          if_block = create_if_block$f(ctx2);
+          if_block.c();
+          if_block.m(if_block_anchor.parentNode, if_block_anchor);
+        }
+      } else if (if_block) {
+        if_block.d(1);
+        if_block = null;
+      }
+    },
+    i: noop,
+    o: noop,
+    d(detaching) {
+      if (detaching) {
+        detach(if_block_anchor);
+      }
+      if (if_block)
+        if_block.d(detaching);
+    }
+  };
+}
+function instance$h($$self, $$props, $$invalidate) {
+  let { weight } = $$props;
+  $$self.$$set = ($$props2) => {
+    if ("weight" in $$props2)
+      $$invalidate(0, weight = $$props2.weight);
+  };
+  return [weight];
+}
+class Dnd5eWeight extends SvelteComponent {
+  constructor(options) {
+    super();
+    init$1(this, options, instance$h, create_fragment$h, safe_not_equal, { weight: 0 });
+  }
+}
+function create_fragment$g(ctx) {
+  let p;
+  let b;
+  let t2;
+  let t3_value = (
+    /*item*/
+    ctx[0].labels.toHit + ""
+  );
+  let t3;
+  return {
+    c() {
+      p = element("p");
+      b = element("b");
+      b.textContent = `${i18n("DND5E.ToHit")}:`;
+      t2 = text("\r\n    1d20 ");
+      t3 = text(t3_value);
+    },
+    m(target, anchor) {
+      insert(target, p, anchor);
+      append(p, b);
+      append(p, t2);
+      append(p, t3);
+    },
+    p(ctx2, [dirty]) {
+      if (dirty & /*item*/
+      1 && t3_value !== (t3_value = /*item*/
+      ctx2[0].labels.toHit + ""))
+        set_data(t3, t3_value);
+    },
+    i: noop,
+    o: noop,
+    d(detaching) {
+      if (detaching) {
+        detach(p);
+      }
+    }
+  };
+}
+function instance$g($$self, $$props, $$invalidate) {
+  let { item } = $$props;
+  $$self.$$set = ($$props2) => {
+    if ("item" in $$props2)
+      $$invalidate(0, item = $$props2.item);
+  };
+  return [item];
+}
+class Dnd5eAttack extends SvelteComponent {
+  constructor(options) {
+    super();
+    init$1(this, options, instance$g, create_fragment$g, safe_not_equal, { item: 0 });
+  }
+}
+function get_each_context$1(ctx, list, i) {
+  const child_ctx = ctx.slice();
+  child_ctx[2] = list[i];
+  child_ctx[4] = i;
+  return child_ctx;
+}
+function create_else_block(ctx) {
+  let p;
+  let b;
+  let t2;
+  let t3_value = (
+    /*damage*/
+    ctx[2].label + ""
+  );
+  let t3;
+  return {
+    c() {
+      p = element("p");
+      b = element("b");
+      b.textContent = `${i18n("DND5E.Damage")}:`;
+      t2 = space();
+      t3 = text(t3_value);
+    },
+    m(target, anchor) {
+      insert(target, p, anchor);
+      append(p, b);
+      append(p, t2);
+      append(p, t3);
+    },
+    p: noop,
+    d(detaching) {
+      if (detaching) {
+        detach(p);
+      }
+    }
+  };
+}
+function create_if_block$e(ctx) {
+  let p;
+  let b;
+  let t2;
+  let t3_value = (
+    /*damage*/
+    ctx[2].label + ""
+  );
+  let t3;
+  return {
+    c() {
+      p = element("p");
+      b = element("b");
+      b.textContent = `${i18n("DND5E.Healing")}:`;
+      t2 = space();
+      t3 = text(t3_value);
+    },
+    m(target, anchor) {
+      insert(target, p, anchor);
+      append(p, b);
+      append(p, t2);
+      append(p, t3);
+    },
+    p: noop,
+    d(detaching) {
+      if (detaching) {
+        detach(p);
+      }
+    }
+  };
+}
+function create_each_block$1(key_1, ctx) {
+  let first;
+  let if_block_anchor;
+  function select_block_type(ctx2, dirty) {
+    if (
+      /*damage*/
+      ctx2[2].damageType === "healing"
+    )
+      return create_if_block$e;
+    return create_else_block;
+  }
+  let current_block_type = select_block_type(ctx);
+  let if_block = current_block_type(ctx);
+  return {
+    key: key_1,
+    first: null,
+    c() {
+      first = empty();
+      if_block.c();
+      if_block_anchor = empty();
+      this.first = first;
+    },
+    m(target, anchor) {
+      insert(target, first, anchor);
+      if_block.m(target, anchor);
+      insert(target, if_block_anchor, anchor);
+    },
+    p(new_ctx, dirty) {
+      ctx = new_ctx;
+      if_block.p(ctx, dirty);
+    },
+    d(detaching) {
+      if (detaching) {
+        detach(first);
+        detach(if_block_anchor);
+      }
+      if_block.d(detaching);
+    }
+  };
+}
+function create_fragment$f(ctx) {
+  let each_blocks = [];
+  let each_1_lookup = /* @__PURE__ */ new Map();
+  let each_1_anchor;
+  let each_value = ensure_array_like(
+    /*damages*/
+    ctx[0]
+  );
+  const get_key = (ctx2) => (
+    /*index*/
+    ctx2[4]
+  );
+  for (let i = 0; i < each_value.length; i += 1) {
+    let child_ctx = get_each_context$1(ctx, each_value, i);
+    let key = get_key(child_ctx);
+    each_1_lookup.set(key, each_blocks[i] = create_each_block$1(key, child_ctx));
+  }
+  return {
+    c() {
+      for (let i = 0; i < each_blocks.length; i += 1) {
+        each_blocks[i].c();
+      }
+      each_1_anchor = empty();
+    },
+    m(target, anchor) {
+      for (let i = 0; i < each_blocks.length; i += 1) {
+        if (each_blocks[i]) {
+          each_blocks[i].m(target, anchor);
+        }
+      }
+      insert(target, each_1_anchor, anchor);
+    },
+    p(ctx2, [dirty]) {
+      if (dirty & /*damages*/
+      1) {
+        each_value = ensure_array_like(
+          /*damages*/
+          ctx2[0]
+        );
+        each_blocks = update_keyed_each(each_blocks, dirty, get_key, 1, ctx2, each_value, each_1_lookup, each_1_anchor.parentNode, destroy_block, create_each_block$1, each_1_anchor, get_each_context$1);
+      }
+    },
+    i: noop,
+    o: noop,
+    d(detaching) {
+      if (detaching) {
+        detach(each_1_anchor);
+      }
+      for (let i = 0; i < each_blocks.length; i += 1) {
+        each_blocks[i].d(detaching);
+      }
+    }
+  };
+}
+function instance$f($$self, $$props, $$invalidate) {
+  let { item } = $$props;
+  const damages = item.labels.derivedDamage;
+  $$self.$$set = ($$props2) => {
+    if ("item" in $$props2)
+      $$invalidate(1, item = $$props2.item);
+  };
+  return [damages, item];
+}
+class Dnd5eDamage extends SvelteComponent {
+  constructor(options) {
+    super();
+    init$1(this, options, instance$f, create_fragment$f, safe_not_equal, { item: 1 });
+  }
+}
+function create_if_block$d(ctx) {
+  let p;
+  let b;
+  let t2;
+  let t3;
+  return {
+    c() {
+      p = element("p");
+      b = element("b");
+      b.textContent = `${i18n$1("DND5E.SavingThrow")}:`;
+      t2 = space();
+      t3 = text(
+        /*result*/
+        ctx[1]
+      );
+    },
+    m(target, anchor) {
+      insert(target, p, anchor);
+      append(p, b);
+      append(p, t2);
+      append(p, t3);
+    },
+    p: noop,
+    d(detaching) {
+      if (detaching) {
+        detach(p);
+      }
+    }
+  };
+}
+function create_fragment$e(ctx) {
+  let if_block_anchor;
+  let if_block = (
+    /*save*/
+    ctx[0].ability && create_if_block$d(ctx)
+  );
+  return {
+    c() {
+      if (if_block)
+        if_block.c();
+      if_block_anchor = empty();
+    },
+    m(target, anchor) {
+      if (if_block)
+        if_block.m(target, anchor);
+      insert(target, if_block_anchor, anchor);
+    },
+    p(ctx2, [dirty]) {
+      if (
+        /*save*/
+        ctx2[0].ability
+      ) {
+        if (if_block) {
+          if_block.p(ctx2, dirty);
+        } else {
+          if_block = create_if_block$d(ctx2);
+          if_block.c();
+          if_block.m(if_block_anchor.parentNode, if_block_anchor);
+        }
+      } else if (if_block) {
+        if_block.d(1);
+        if_block = null;
+      }
+    },
+    i: noop,
+    o: noop,
+    d(detaching) {
+      if (detaching) {
+        detach(if_block_anchor);
+      }
+      if (if_block)
+        if_block.d(detaching);
+    }
+  };
+}
+function instance$e($$self, $$props, $$invalidate) {
+  var _a, _b;
+  let { item } = $$props;
+  let itemData = item.system;
+  const save = itemData.save;
+  if (save.scaling === "spell") {
+    save.dc = item.isOwned ? item.actor.system.attributes.spelldc : null;
+  } else if (save.scaling !== "flat") {
+    save.dc = item.isOwned ? item.actor.system.abilities[save.scaling].dc : null;
+  }
+  const abl = (_b = (_a = CONFIG.DND5E.abilities[save.ability]) === null || _a === void 0 ? void 0 : _a.label) !== null && _b !== void 0 ? _b : "";
+  let result = i18nFormat("DND5E.SaveDC", { dc: save.dc || "", ability: abl });
+  $$self.$$set = ($$props2) => {
+    if ("item" in $$props2)
+      $$invalidate(2, item = $$props2.item);
+  };
+  return [save, result, item];
+}
+class Dnd5eSave extends SvelteComponent {
+  constructor(options) {
+    super();
+    init$1(this, options, instance$e, create_fragment$e, safe_not_equal, { item: 2 });
+  }
+}
+function create_if_block$c(ctx) {
+  let p;
+  let b;
+  let t2;
+  let t3_value = (
+    /*item*/
+    ctx[0].labels.activation + ""
+  );
+  let t3;
+  return {
+    c() {
+      p = element("p");
+      b = element("b");
+      b.textContent = `${i18n("DND5E.ItemActivation")}:`;
+      t2 = space();
+      t3 = text(t3_value);
+    },
+    m(target, anchor) {
+      insert(target, p, anchor);
+      append(p, b);
+      append(p, t2);
+      append(p, t3);
+    },
+    p(ctx2, dirty) {
+      if (dirty & /*item*/
+      1 && t3_value !== (t3_value = /*item*/
+      ctx2[0].labels.activation + ""))
+        set_data(t3, t3_value);
+    },
+    d(detaching) {
+      if (detaching) {
+        detach(p);
+      }
+    }
+  };
+}
+function create_fragment$d(ctx) {
+  let if_block_anchor;
+  let if_block = (
+    /*item*/
+    ctx[0].labels.activation && create_if_block$c(ctx)
+  );
+  return {
+    c() {
+      if (if_block)
+        if_block.c();
+      if_block_anchor = empty();
+    },
+    m(target, anchor) {
+      if (if_block)
+        if_block.m(target, anchor);
+      insert(target, if_block_anchor, anchor);
+    },
+    p(ctx2, [dirty]) {
+      if (
+        /*item*/
+        ctx2[0].labels.activation
+      ) {
+        if (if_block) {
+          if_block.p(ctx2, dirty);
+        } else {
+          if_block = create_if_block$c(ctx2);
+          if_block.c();
+          if_block.m(if_block_anchor.parentNode, if_block_anchor);
+        }
+      } else if (if_block) {
+        if_block.d(1);
+        if_block = null;
+      }
+    },
+    i: noop,
+    o: noop,
+    d(detaching) {
+      if (detaching) {
+        detach(if_block_anchor);
+      }
+      if (if_block)
+        if_block.d(detaching);
+    }
+  };
+}
+function instance$d($$self, $$props, $$invalidate) {
+  let { item } = $$props;
+  $$self.$$set = ($$props2) => {
+    if ("item" in $$props2)
+      $$invalidate(0, item = $$props2.item);
+  };
+  return [item];
+}
+class Dnd5eActivation extends SvelteComponent {
+  constructor(options) {
+    super();
+    init$1(this, options, instance$d, create_fragment$d, safe_not_equal, { item: 0 });
+  }
+}
+function create_fragment$c(ctx) {
+  let p;
+  let b;
+  let t2;
+  let t3;
+  return {
+    c() {
+      p = element("p");
+      b = element("b");
+      b.textContent = `${i18n("DND5E.ItemActionType")}:`;
+      t2 = space();
+      t3 = text(
+        /*itemActionType*/
+        ctx[0]
+      );
+    },
+    m(target, anchor) {
+      insert(target, p, anchor);
+      append(p, b);
+      append(p, t2);
+      append(p, t3);
+    },
+    p: noop,
+    i: noop,
+    o: noop,
+    d(detaching) {
+      if (detaching) {
+        detach(p);
+      }
+    }
+  };
+}
+function instance$c($$self, $$props, $$invalidate) {
+  let { actionType } = $$props;
+  const itemActionType = CONFIG.DND5E.itemActionTypes[actionType];
+  $$self.$$set = ($$props2) => {
+    if ("actionType" in $$props2)
+      $$invalidate(1, actionType = $$props2.actionType);
+  };
+  return [itemActionType, actionType];
+}
+class Dnd5eActivationType extends SvelteComponent {
+  constructor(options) {
+    super();
+    init$1(this, options, instance$c, create_fragment$c, safe_not_equal, { actionType: 1 });
+  }
+}
+function create_if_block$b(ctx) {
+  let p;
+  let b;
+  let t2;
+  let t3_value = (
+    /*item*/
+    ctx[0].labels.target + ""
+  );
+  let t3;
+  return {
+    c() {
+      p = element("p");
+      b = element("b");
+      b.textContent = `${i18n("DND5E.Target")}:`;
+      t2 = space();
+      t3 = text(t3_value);
+    },
+    m(target, anchor) {
+      insert(target, p, anchor);
+      append(p, b);
+      append(p, t2);
+      append(p, t3);
+    },
+    p(ctx2, dirty) {
+      if (dirty & /*item*/
+      1 && t3_value !== (t3_value = /*item*/
+      ctx2[0].labels.target + ""))
+        set_data(t3, t3_value);
+    },
+    d(detaching) {
+      if (detaching) {
+        detach(p);
+      }
+    }
+  };
+}
+function create_fragment$b(ctx) {
+  let if_block_anchor;
+  let if_block = (
+    /*item*/
+    ctx[0].labels?.target && create_if_block$b(ctx)
+  );
+  return {
+    c() {
+      if (if_block)
+        if_block.c();
+      if_block_anchor = empty();
+    },
+    m(target, anchor) {
+      if (if_block)
+        if_block.m(target, anchor);
+      insert(target, if_block_anchor, anchor);
+    },
+    p(ctx2, [dirty]) {
+      if (
+        /*item*/
+        ctx2[0].labels?.target
       ) {
         if (if_block) {
           if_block.p(ctx2, dirty);
@@ -20802,224 +20751,36 @@ function create_fragment$e(ctx) {
     }
   };
 }
-function instance$e($$self, $$props, $$invalidate) {
-  let { weight } = $$props;
-  $$self.$$set = ($$props2) => {
-    if ("weight" in $$props2)
-      $$invalidate(0, weight = $$props2.weight);
-  };
-  return [weight];
-}
-class Dnd5eWeight extends SvelteComponent {
-  constructor(options) {
-    super();
-    init$1(this, options, instance$e, create_fragment$e, safe_not_equal, { weight: 0 });
-  }
-}
-function create_catch_block$2(ctx) {
-  return { c: noop, m: noop, p: noop, d: noop };
-}
-function create_then_block$2(ctx) {
-  let t_value = (
-    /*total*/
-    ctx[2].formula.replace(/\+\s*-\s*/g, "- ") + ""
-  );
-  let t;
-  return {
-    c() {
-      t = text(t_value);
-    },
-    m(target, anchor) {
-      insert(target, t, anchor);
-    },
-    p: noop,
-    d(detaching) {
-      if (detaching) {
-        detach(t);
-      }
-    }
-  };
-}
-function create_pending_block$2(ctx) {
-  return { c: noop, m: noop, p: noop, d: noop };
-}
-function create_fragment$d(ctx) {
-  let p;
-  let b;
-  let t2;
-  let info = {
-    ctx,
-    current: null,
-    token: null,
-    hasCatch: false,
-    pending: create_pending_block$2,
-    then: create_then_block$2,
-    catch: create_catch_block$2,
-    value: 2
-  };
-  handle_promise(
-    /*result*/
-    ctx[0],
-    info
-  );
-  return {
-    c() {
-      p = element("p");
-      b = element("b");
-      b.textContent = `${i18n("DND5E.ToHit")}:`;
-      t2 = space();
-      info.block.c();
-    },
-    m(target, anchor) {
-      insert(target, p, anchor);
-      append(p, b);
-      append(p, t2);
-      info.block.m(p, info.anchor = null);
-      info.mount = () => p;
-      info.anchor = null;
-    },
-    p(new_ctx, [dirty]) {
-      ctx = new_ctx;
-      update_await_block_branch(info, ctx, dirty);
-    },
-    i: noop,
-    o: noop,
-    d(detaching) {
-      if (detaching) {
-        detach(p);
-      }
-      info.block.d();
-      info.token = null;
-      info = null;
-    }
-  };
-}
-function instance$d($$self, $$props, $$invalidate) {
+function instance$b($$self, $$props, $$invalidate) {
   let { item } = $$props;
-  let result = item.rollAttack({ fastForward: true, chatMessage: false });
   $$self.$$set = ($$props2) => {
     if ("item" in $$props2)
-      $$invalidate(1, item = $$props2.item);
+      $$invalidate(0, item = $$props2.item);
   };
-  return [result, item];
+  return [item];
 }
-class Dnd5eAttack extends SvelteComponent {
+class Dnd5eTarget extends SvelteComponent {
   constructor(options) {
     super();
-    init$1(this, options, instance$d, create_fragment$d, safe_not_equal, { item: 1 });
-  }
-}
-function create_catch_block$1(ctx) {
-  return { c: noop, m: noop, p: noop, d: noop };
-}
-function create_then_block$1(ctx) {
-  let t_value = (
-    /*total*/
-    ctx[2].formula.replace(/\+\s*-\s*/g, "- ") + ""
-  );
-  let t;
-  return {
-    c() {
-      t = text(t_value);
-    },
-    m(target, anchor) {
-      insert(target, t, anchor);
-    },
-    p: noop,
-    d(detaching) {
-      if (detaching) {
-        detach(t);
-      }
-    }
-  };
-}
-function create_pending_block$1(ctx) {
-  return { c: noop, m: noop, p: noop, d: noop };
-}
-function create_fragment$c(ctx) {
-  let p;
-  let b;
-  let t2;
-  let info = {
-    ctx,
-    current: null,
-    token: null,
-    hasCatch: false,
-    pending: create_pending_block$1,
-    then: create_then_block$1,
-    catch: create_catch_block$1,
-    value: 2
-  };
-  handle_promise(
-    /*result*/
-    ctx[0],
-    info
-  );
-  return {
-    c() {
-      p = element("p");
-      b = element("b");
-      b.textContent = `${i18n("DND5E.Damage")}:`;
-      t2 = space();
-      info.block.c();
-    },
-    m(target, anchor) {
-      insert(target, p, anchor);
-      append(p, b);
-      append(p, t2);
-      info.block.m(p, info.anchor = null);
-      info.mount = () => p;
-      info.anchor = null;
-    },
-    p(new_ctx, [dirty]) {
-      ctx = new_ctx;
-      update_await_block_branch(info, ctx, dirty);
-    },
-    i: noop,
-    o: noop,
-    d(detaching) {
-      if (detaching) {
-        detach(p);
-      }
-      info.block.d();
-      info.token = null;
-      info = null;
-    }
-  };
-}
-function instance$c($$self, $$props, $$invalidate) {
-  let { item } = $$props;
-  let result = item.rollDamage({
-    critical: false,
-    options: { fastForward: true, chatMessage: false }
-  });
-  $$self.$$set = ($$props2) => {
-    if ("item" in $$props2)
-      $$invalidate(1, item = $$props2.item);
-  };
-  return [result, item];
-}
-class Dnd5eDamage extends SvelteComponent {
-  constructor(options) {
-    super();
-    init$1(this, options, instance$c, create_fragment$c, safe_not_equal, { item: 1 });
+    init$1(this, options, instance$b, create_fragment$b, safe_not_equal, { item: 0 });
   }
 }
 function create_if_block$a(ctx) {
   let p;
   let b;
   let t2;
+  let t3_value = (
+    /*item*/
+    ctx[0].labels.range + ""
+  );
   let t3;
   return {
     c() {
       p = element("p");
       b = element("b");
-      b.textContent = `${i18n("DND5E.SavingThrow")}:`;
+      b.textContent = `${i18n("DND5E.Range")}:`;
       t2 = space();
-      t3 = text(
-        /*result*/
-        ctx[1]
-      );
+      t3 = text(t3_value);
     },
     m(target, anchor) {
       insert(target, p, anchor);
@@ -21027,7 +20788,12 @@ function create_if_block$a(ctx) {
       append(p, t2);
       append(p, t3);
     },
-    p: noop,
+    p(ctx2, dirty) {
+      if (dirty & /*item*/
+      1 && t3_value !== (t3_value = /*item*/
+      ctx2[0].labels.range + ""))
+        set_data(t3, t3_value);
+    },
     d(detaching) {
       if (detaching) {
         detach(p);
@@ -21035,11 +20801,11 @@ function create_if_block$a(ctx) {
     }
   };
 }
-function create_fragment$b(ctx) {
+function create_fragment$a(ctx) {
   let if_block_anchor;
   let if_block = (
-    /*save*/
-    ctx[0].ability && create_if_block$a(ctx)
+    /*item*/
+    ctx[0].labels.range && create_if_block$a(ctx)
   );
   return {
     c() {
@@ -21054,8 +20820,8 @@ function create_fragment$b(ctx) {
     },
     p(ctx2, [dirty]) {
       if (
-        /*save*/
-        ctx2[0].ability
+        /*item*/
+        ctx2[0].labels.range
       ) {
         if (if_block) {
           if_block.p(ctx2, dirty);
@@ -21080,28 +20846,19 @@ function create_fragment$b(ctx) {
     }
   };
 }
-function instance$b($$self, $$props, $$invalidate) {
-  var _a, _b;
+function instance$a($$self, $$props, $$invalidate) {
   let { item } = $$props;
-  let itemData = item.system;
-  const save = itemData.save;
-  if (save.scaling === "spell") {
-    save.dc = item.isOwned ? item.actor.system.attributes.spelldc : null;
-  } else if (save.scaling !== "flat") {
-    save.dc = item.isOwned ? item.actor.system.abilities[save.scaling].dc : null;
-  }
-  const abl = (_b = (_a = CONFIG.DND5E.abilities[save.ability]) === null || _a === void 0 ? void 0 : _a.label) !== null && _b !== void 0 ? _b : "";
-  let result = i18nFormat("DND5E.SaveDC", { dc: save.dc || "", ability: abl });
+  item.labels.range;
   $$self.$$set = ($$props2) => {
     if ("item" in $$props2)
-      $$invalidate(2, item = $$props2.item);
+      $$invalidate(0, item = $$props2.item);
   };
-  return [save, result, item];
+  return [item];
 }
-class Dnd5eSave extends SvelteComponent {
+class Dnd5eRange extends SvelteComponent {
   constructor(options) {
     super();
-    init$1(this, options, instance$b, create_fragment$b, safe_not_equal, { item: 2 });
+    init$1(this, options, instance$a, create_fragment$a, safe_not_equal, { item: 0 });
   }
 }
 function create_if_block$9(ctx) {
@@ -21113,44 +20870,64 @@ function create_if_block$9(ctx) {
   let t4;
   let t5;
   let t6;
+  let t7;
+  let t8;
+  let t9;
+  let t10;
   let div_transition;
   let current;
   let if_block0 = (
     /*item*/
-    ctx[0].system.properties?.size > 0 && create_if_block_7(ctx)
+    ctx[0].system.properties?.size > 0 && create_if_block_11(ctx)
   );
   const default_slot_template = (
     /*#slots*/
-    ctx[7].default
+    ctx[8].default
   );
   const default_slot = create_slot(
     default_slot_template,
     ctx,
     /*$$scope*/
-    ctx[6],
+    ctx[7],
     null
   );
   let if_block1 = (
-    /*item*/
-    ctx[0].hasAttack && create_if_block_6(ctx)
+    /*itemData*/
+    ctx[3].activation && create_if_block_10(ctx)
   );
   let if_block2 = (
-    /*item*/
-    ctx[0].hasDamage && create_if_block_5$1(ctx)
+    /*itemData*/
+    ctx[3].actionType && create_if_block_9(ctx)
   );
   let if_block3 = (
-    /*item*/
-    ctx[0].hasSave && create_if_block_4$2(ctx)
+    /*itemData*/
+    ctx[3].target && create_if_block_8(ctx)
   );
   let if_block4 = (
-    /*item*/
-    ctx[0].system.price && create_if_block_3$2(ctx)
+    /*itemData*/
+    ctx[3].range && create_if_block_7(ctx)
   );
   let if_block5 = (
     /*item*/
-    ctx[0].system.weight && create_if_block_2$3(ctx)
+    ctx[0].hasAttack && create_if_block_6(ctx)
   );
   let if_block6 = (
+    /*item*/
+    ctx[0].hasDamage && create_if_block_5$1(ctx)
+  );
+  let if_block7 = (
+    /*item*/
+    ctx[0].hasSave && create_if_block_4$1(ctx)
+  );
+  let if_block8 = (
+    /*item*/
+    ctx[0].system.price && create_if_block_3$1(ctx)
+  );
+  let if_block9 = (
+    /*item*/
+    ctx[0].system.weight && create_if_block_2$1(ctx)
+  );
+  let if_block10 = (
     /*item*/
     (ctx[0].system.description || /*item*/
     ctx[0].system.price || /*item*/
@@ -21182,6 +20959,18 @@ function create_if_block$9(ctx) {
       t6 = space();
       if (if_block6)
         if_block6.c();
+      t7 = space();
+      if (if_block7)
+        if_block7.c();
+      t8 = space();
+      if (if_block8)
+        if_block8.c();
+      t9 = space();
+      if (if_block9)
+        if_block9.c();
+      t10 = space();
+      if (if_block10)
+        if_block10.c();
     },
     m(target, anchor) {
       insert(target, div, anchor);
@@ -21209,6 +20998,18 @@ function create_if_block$9(ctx) {
       append(div, t6);
       if (if_block6)
         if_block6.m(div, null);
+      append(div, t7);
+      if (if_block7)
+        if_block7.m(div, null);
+      append(div, t8);
+      if (if_block8)
+        if_block8.m(div, null);
+      append(div, t9);
+      if (if_block9)
+        if_block9.m(div, null);
+      append(div, t10);
+      if (if_block10)
+        if_block10.m(div, null);
       current = true;
     },
     p(ctx2, dirty) {
@@ -21223,7 +21024,7 @@ function create_if_block$9(ctx) {
             transition_in(if_block0, 1);
           }
         } else {
-          if_block0 = create_if_block_7(ctx2);
+          if_block0 = create_if_block_11(ctx2);
           if_block0.c();
           transition_in(if_block0, 1);
           if_block0.m(div, t0);
@@ -21237,20 +21038,20 @@ function create_if_block$9(ctx) {
       }
       if (default_slot) {
         if (default_slot.p && (!current || dirty & /*$$scope*/
-        64)) {
+        128)) {
           update_slot_base(
             default_slot,
             default_slot_template,
             ctx2,
             /*$$scope*/
-            ctx2[6],
+            ctx2[7],
             !current ? get_all_dirty_from_scope(
               /*$$scope*/
-              ctx2[6]
+              ctx2[7]
             ) : get_slot_changes(
               default_slot_template,
               /*$$scope*/
-              ctx2[6],
+              ctx2[7],
               dirty,
               null
             ),
@@ -21259,17 +21060,17 @@ function create_if_block$9(ctx) {
         }
       }
       if (
-        /*item*/
-        ctx2[0].hasAttack
+        /*itemData*/
+        ctx2[3].activation
       ) {
         if (if_block1) {
           if_block1.p(ctx2, dirty);
-          if (dirty & /*item*/
-          1) {
+          if (dirty & /*itemData*/
+          8) {
             transition_in(if_block1, 1);
           }
         } else {
-          if_block1 = create_if_block_6(ctx2);
+          if_block1 = create_if_block_10(ctx2);
           if_block1.c();
           transition_in(if_block1, 1);
           if_block1.m(div, t2);
@@ -21282,17 +21083,17 @@ function create_if_block$9(ctx) {
         check_outros();
       }
       if (
-        /*item*/
-        ctx2[0].hasDamage
+        /*itemData*/
+        ctx2[3].actionType
       ) {
         if (if_block2) {
           if_block2.p(ctx2, dirty);
-          if (dirty & /*item*/
-          1) {
+          if (dirty & /*itemData*/
+          8) {
             transition_in(if_block2, 1);
           }
         } else {
-          if_block2 = create_if_block_5$1(ctx2);
+          if_block2 = create_if_block_9(ctx2);
           if_block2.c();
           transition_in(if_block2, 1);
           if_block2.m(div, t3);
@@ -21305,17 +21106,17 @@ function create_if_block$9(ctx) {
         check_outros();
       }
       if (
-        /*item*/
-        ctx2[0].hasSave
+        /*itemData*/
+        ctx2[3].target
       ) {
         if (if_block3) {
           if_block3.p(ctx2, dirty);
-          if (dirty & /*item*/
-          1) {
+          if (dirty & /*itemData*/
+          8) {
             transition_in(if_block3, 1);
           }
         } else {
-          if_block3 = create_if_block_4$2(ctx2);
+          if_block3 = create_if_block_8(ctx2);
           if_block3.c();
           transition_in(if_block3, 1);
           if_block3.m(div, t4);
@@ -21328,17 +21129,17 @@ function create_if_block$9(ctx) {
         check_outros();
       }
       if (
-        /*item*/
-        ctx2[0].system.price
+        /*itemData*/
+        ctx2[3].range
       ) {
         if (if_block4) {
           if_block4.p(ctx2, dirty);
-          if (dirty & /*item*/
-          1) {
+          if (dirty & /*itemData*/
+          8) {
             transition_in(if_block4, 1);
           }
         } else {
-          if_block4 = create_if_block_3$2(ctx2);
+          if_block4 = create_if_block_7(ctx2);
           if_block4.c();
           transition_in(if_block4, 1);
           if_block4.m(div, t5);
@@ -21352,7 +21153,7 @@ function create_if_block$9(ctx) {
       }
       if (
         /*item*/
-        ctx2[0].system.weight
+        ctx2[0].hasAttack
       ) {
         if (if_block5) {
           if_block5.p(ctx2, dirty);
@@ -21361,7 +21162,7 @@ function create_if_block$9(ctx) {
             transition_in(if_block5, 1);
           }
         } else {
-          if_block5 = create_if_block_2$3(ctx2);
+          if_block5 = create_if_block_6(ctx2);
           if_block5.c();
           transition_in(if_block5, 1);
           if_block5.m(div, t6);
@@ -21375,9 +21176,7 @@ function create_if_block$9(ctx) {
       }
       if (
         /*item*/
-        ctx2[0].system.description || /*item*/
-        ctx2[0].system.price || /*item*/
-        ctx2[0].system.weight
+        ctx2[0].hasDamage
       ) {
         if (if_block6) {
           if_block6.p(ctx2, dirty);
@@ -21386,15 +21185,109 @@ function create_if_block$9(ctx) {
             transition_in(if_block6, 1);
           }
         } else {
-          if_block6 = create_if_block_1$4(ctx2);
+          if_block6 = create_if_block_5$1(ctx2);
           if_block6.c();
           transition_in(if_block6, 1);
-          if_block6.m(div, null);
+          if_block6.m(div, t7);
         }
       } else if (if_block6) {
         group_outros();
         transition_out(if_block6, 1, 1, () => {
           if_block6 = null;
+        });
+        check_outros();
+      }
+      if (
+        /*item*/
+        ctx2[0].hasSave
+      ) {
+        if (if_block7) {
+          if_block7.p(ctx2, dirty);
+          if (dirty & /*item*/
+          1) {
+            transition_in(if_block7, 1);
+          }
+        } else {
+          if_block7 = create_if_block_4$1(ctx2);
+          if_block7.c();
+          transition_in(if_block7, 1);
+          if_block7.m(div, t8);
+        }
+      } else if (if_block7) {
+        group_outros();
+        transition_out(if_block7, 1, 1, () => {
+          if_block7 = null;
+        });
+        check_outros();
+      }
+      if (
+        /*item*/
+        ctx2[0].system.price
+      ) {
+        if (if_block8) {
+          if_block8.p(ctx2, dirty);
+          if (dirty & /*item*/
+          1) {
+            transition_in(if_block8, 1);
+          }
+        } else {
+          if_block8 = create_if_block_3$1(ctx2);
+          if_block8.c();
+          transition_in(if_block8, 1);
+          if_block8.m(div, t9);
+        }
+      } else if (if_block8) {
+        group_outros();
+        transition_out(if_block8, 1, 1, () => {
+          if_block8 = null;
+        });
+        check_outros();
+      }
+      if (
+        /*item*/
+        ctx2[0].system.weight
+      ) {
+        if (if_block9) {
+          if_block9.p(ctx2, dirty);
+          if (dirty & /*item*/
+          1) {
+            transition_in(if_block9, 1);
+          }
+        } else {
+          if_block9 = create_if_block_2$1(ctx2);
+          if_block9.c();
+          transition_in(if_block9, 1);
+          if_block9.m(div, t10);
+        }
+      } else if (if_block9) {
+        group_outros();
+        transition_out(if_block9, 1, 1, () => {
+          if_block9 = null;
+        });
+        check_outros();
+      }
+      if (
+        /*item*/
+        ctx2[0].system.description || /*item*/
+        ctx2[0].system.price || /*item*/
+        ctx2[0].system.weight
+      ) {
+        if (if_block10) {
+          if_block10.p(ctx2, dirty);
+          if (dirty & /*item*/
+          1) {
+            transition_in(if_block10, 1);
+          }
+        } else {
+          if_block10 = create_if_block_1$4(ctx2);
+          if_block10.c();
+          transition_in(if_block10, 1);
+          if_block10.m(div, null);
+        }
+      } else if (if_block10) {
+        group_outros();
+        transition_out(if_block10, 1, 1, () => {
+          if_block10 = null;
         });
         check_outros();
       }
@@ -21410,6 +21303,10 @@ function create_if_block$9(ctx) {
       transition_in(if_block4);
       transition_in(if_block5);
       transition_in(if_block6);
+      transition_in(if_block7);
+      transition_in(if_block8);
+      transition_in(if_block9);
+      transition_in(if_block10);
       if (local) {
         add_render_callback(() => {
           if (!current)
@@ -21430,6 +21327,10 @@ function create_if_block$9(ctx) {
       transition_out(if_block4);
       transition_out(if_block5);
       transition_out(if_block6);
+      transition_out(if_block7);
+      transition_out(if_block8);
+      transition_out(if_block9);
+      transition_out(if_block10);
       if (local) {
         if (!div_transition)
           div_transition = create_bidirectional_transition(div, slide, {}, false);
@@ -21457,22 +21358,26 @@ function create_if_block$9(ctx) {
         if_block5.d();
       if (if_block6)
         if_block6.d();
+      if (if_block7)
+        if_block7.d();
+      if (if_block8)
+        if_block8.d();
+      if (if_block9)
+        if_block9.d();
+      if (if_block10)
+        if_block10.d();
       if (detaching && div_transition)
         div_transition.end();
     }
   };
 }
-function create_if_block_7(ctx) {
+function create_if_block_11(ctx) {
   let dnd5eobjectproperties;
   let current;
-  dnd5eobjectproperties = new Dnd5EObjectProperties({
-    props: {
-      properties: (
-        /*item*/
-        ctx[0].system.properties
-      )
-    }
-  });
+  dnd5eobjectproperties = new Dnd5eObjectProperties({ props: { item: (
+    /*item*/
+    ctx[0]
+  ) } });
   return {
     c() {
       create_component(dnd5eobjectproperties.$$.fragment);
@@ -21485,8 +21390,8 @@ function create_if_block_7(ctx) {
       const dnd5eobjectproperties_changes = {};
       if (dirty & /*item*/
       1)
-        dnd5eobjectproperties_changes.properties = /*item*/
-        ctx2[0].system.properties;
+        dnd5eobjectproperties_changes.item = /*item*/
+        ctx2[0];
       dnd5eobjectproperties.$set(dnd5eobjectproperties_changes);
     },
     i(local) {
@@ -21501,6 +21406,162 @@ function create_if_block_7(ctx) {
     },
     d(detaching) {
       destroy_component(dnd5eobjectproperties, detaching);
+    }
+  };
+}
+function create_if_block_10(ctx) {
+  let dnd5eactivation;
+  let current;
+  dnd5eactivation = new Dnd5eActivation({ props: { item: (
+    /*item*/
+    ctx[0]
+  ) } });
+  return {
+    c() {
+      create_component(dnd5eactivation.$$.fragment);
+    },
+    m(target, anchor) {
+      mount_component(dnd5eactivation, target, anchor);
+      current = true;
+    },
+    p(ctx2, dirty) {
+      const dnd5eactivation_changes = {};
+      if (dirty & /*item*/
+      1)
+        dnd5eactivation_changes.item = /*item*/
+        ctx2[0];
+      dnd5eactivation.$set(dnd5eactivation_changes);
+    },
+    i(local) {
+      if (current)
+        return;
+      transition_in(dnd5eactivation.$$.fragment, local);
+      current = true;
+    },
+    o(local) {
+      transition_out(dnd5eactivation.$$.fragment, local);
+      current = false;
+    },
+    d(detaching) {
+      destroy_component(dnd5eactivation, detaching);
+    }
+  };
+}
+function create_if_block_9(ctx) {
+  let dnd5eactivationtype;
+  let current;
+  dnd5eactivationtype = new Dnd5eActivationType({
+    props: {
+      actionType: (
+        /*itemData*/
+        ctx[3].actionType
+      )
+    }
+  });
+  return {
+    c() {
+      create_component(dnd5eactivationtype.$$.fragment);
+    },
+    m(target, anchor) {
+      mount_component(dnd5eactivationtype, target, anchor);
+      current = true;
+    },
+    p(ctx2, dirty) {
+      const dnd5eactivationtype_changes = {};
+      if (dirty & /*itemData*/
+      8)
+        dnd5eactivationtype_changes.actionType = /*itemData*/
+        ctx2[3].actionType;
+      dnd5eactivationtype.$set(dnd5eactivationtype_changes);
+    },
+    i(local) {
+      if (current)
+        return;
+      transition_in(dnd5eactivationtype.$$.fragment, local);
+      current = true;
+    },
+    o(local) {
+      transition_out(dnd5eactivationtype.$$.fragment, local);
+      current = false;
+    },
+    d(detaching) {
+      destroy_component(dnd5eactivationtype, detaching);
+    }
+  };
+}
+function create_if_block_8(ctx) {
+  let dnd5etarget;
+  let current;
+  dnd5etarget = new Dnd5eTarget({ props: { item: (
+    /*item*/
+    ctx[0]
+  ) } });
+  return {
+    c() {
+      create_component(dnd5etarget.$$.fragment);
+    },
+    m(target, anchor) {
+      mount_component(dnd5etarget, target, anchor);
+      current = true;
+    },
+    p(ctx2, dirty) {
+      const dnd5etarget_changes = {};
+      if (dirty & /*item*/
+      1)
+        dnd5etarget_changes.item = /*item*/
+        ctx2[0];
+      dnd5etarget.$set(dnd5etarget_changes);
+    },
+    i(local) {
+      if (current)
+        return;
+      transition_in(dnd5etarget.$$.fragment, local);
+      current = true;
+    },
+    o(local) {
+      transition_out(dnd5etarget.$$.fragment, local);
+      current = false;
+    },
+    d(detaching) {
+      destroy_component(dnd5etarget, detaching);
+    }
+  };
+}
+function create_if_block_7(ctx) {
+  let dnd5erange;
+  let current;
+  dnd5erange = new Dnd5eRange({ props: { item: (
+    /*item*/
+    ctx[0]
+  ) } });
+  return {
+    c() {
+      create_component(dnd5erange.$$.fragment);
+    },
+    m(target, anchor) {
+      mount_component(dnd5erange, target, anchor);
+      current = true;
+    },
+    p(ctx2, dirty) {
+      const dnd5erange_changes = {};
+      if (dirty & /*item*/
+      1)
+        dnd5erange_changes.item = /*item*/
+        ctx2[0];
+      dnd5erange.$set(dnd5erange_changes);
+    },
+    i(local) {
+      if (current)
+        return;
+      transition_in(dnd5erange.$$.fragment, local);
+      current = true;
+    },
+    o(local) {
+      transition_out(dnd5erange.$$.fragment, local);
+      current = false;
+    },
+    d(detaching) {
+      destroy_component(dnd5erange, detaching);
     }
   };
 }
@@ -21580,7 +21641,7 @@ function create_if_block_5$1(ctx) {
     }
   };
 }
-function create_if_block_4$2(ctx) {
+function create_if_block_4$1(ctx) {
   let dnd5esave;
   let current;
   dnd5esave = new Dnd5eSave({ props: { item: (
@@ -21618,7 +21679,7 @@ function create_if_block_4$2(ctx) {
     }
   };
 }
-function create_if_block_3$2(ctx) {
+function create_if_block_3$1(ctx) {
   let dnd5eprice;
   let current;
   dnd5eprice = new Dnd5ePrice({
@@ -21658,7 +21719,7 @@ function create_if_block_3$2(ctx) {
     }
   };
 }
-function create_if_block_2$3(ctx) {
+function create_if_block_2$1(ctx) {
   let dnd5eweight;
   let current;
   dnd5eweight = new Dnd5eWeight({
@@ -21738,7 +21799,7 @@ function create_if_block_1$4(ctx) {
     }
   };
 }
-function create_fragment$a(ctx) {
+function create_fragment$9(ctx) {
   let section;
   let div2;
   let div1;
@@ -21765,7 +21826,7 @@ function create_fragment$a(ctx) {
   quantity.$on(
     "onQtyChange",
     /*handleQtyChange*/
-    ctx[4]
+    ctx[5]
   );
   let if_block = (
     /*showItemData*/
@@ -21823,7 +21884,7 @@ function create_fragment$a(ctx) {
           div0,
           "click",
           /*toggleDescription*/
-          ctx[3]
+          ctx[4]
         );
         mounted = true;
       }
@@ -21904,11 +21965,12 @@ function create_fragment$a(ctx) {
     }
   };
 }
-function instance$a($$self, $$props, $$invalidate) {
+function instance$9($$self, $$props, $$invalidate) {
   let { $$slots: slots = {}, $$scope } = $$props;
   let { item } = $$props;
   let showItemData = false;
   let name, identified;
+  let itemData = item.system;
   function toggleDescription() {
     $$invalidate(1, showItemData = !showItemData);
   }
@@ -21920,13 +21982,14 @@ function instance$a($$self, $$props, $$invalidate) {
     if ("item" in $$props2)
       $$invalidate(0, item = $$props2.item);
     if ("$$scope" in $$props2)
-      $$invalidate(6, $$scope = $$props2.$$scope);
+      $$invalidate(7, $$scope = $$props2.$$scope);
   };
   $$self.$$.update = () => {
     if ($$self.$$.dirty & /*item, identified*/
-    33) {
+    65) {
       {
-        $$invalidate(5, identified = item.system.identified);
+        $$invalidate(3, itemData = item.system);
+        $$invalidate(6, identified = item.system.identified);
         if (identified) {
           $$invalidate(2, name = item.name);
         } else {
@@ -21939,6 +22002,7 @@ function instance$a($$self, $$props, $$invalidate) {
     item,
     showItemData,
     name,
+    itemData,
     toggleDescription,
     handleQtyChange,
     identified,
@@ -21949,35 +22013,123 @@ function instance$a($$self, $$props, $$invalidate) {
 class Dnd5eObject extends SvelteComponent {
   constructor(options) {
     super();
-    init$1(this, options, instance$a, create_fragment$a, safe_not_equal, { item: 0 });
+    init$1(this, options, instance$9, create_fragment$9, safe_not_equal, { item: 0 });
   }
+}
+async function evaluateTotal(formula, rollData) {
+  let roll;
+  if (rollData) {
+    roll = new Roll(formula, rollData);
+  } else {
+    roll = new Roll(formula);
+  }
+  await roll.evaluate();
+  return roll.total;
 }
 function create_catch_block(ctx) {
   return { c: noop, m: noop, p: noop, d: noop };
 }
 function create_then_block(ctx) {
-  let t_value = (
+  let t0_value = (
+    /*item*/
+    ctx[0].type.value === "shield" ? "+" : ""
+  );
+  let t0;
+  let t1_value = (
     /*total*/
     ctx[4] + ""
   );
-  let t;
+  let t1;
   return {
     c() {
-      t = text(t_value);
+      t0 = text(t0_value);
+      t1 = text(t1_value);
     },
     m(target, anchor) {
-      insert(target, t, anchor);
+      insert(target, t0, anchor);
+      insert(target, t1, anchor);
     },
-    p: noop,
+    p(ctx2, dirty) {
+      if (dirty & /*item*/
+      1 && t0_value !== (t0_value = /*item*/
+      ctx2[0].type.value === "shield" ? "+" : ""))
+        set_data(t0, t0_value);
+    },
     d(detaching) {
       if (detaching) {
-        detach(t);
+        detach(t0);
+        detach(t1);
       }
     }
   };
 }
 function create_pending_block(ctx) {
   return { c: noop, m: noop, p: noop, d: noop };
+}
+function create_if_block_1$3(ctx) {
+  let t0;
+  let t1_value = (
+    /*item*/
+    ctx[0].armor.value + ""
+  );
+  let t1;
+  let t2;
+  let t3_value = Math.min(
+    /*rollData*/
+    ctx[1].abilities.dex.mod,
+    /*item*/
+    ctx[0].armor.dex
+  ) + "";
+  let t3;
+  let t4;
+  let t5_value = i18n("DND5E.AbilityDex") + "";
+  let t5;
+  let t6;
+  return {
+    c() {
+      t0 = text("(");
+      t1 = text(t1_value);
+      t2 = text(" + ");
+      t3 = text(t3_value);
+      t4 = space();
+      t5 = text(t5_value);
+      t6 = text(")");
+    },
+    m(target, anchor) {
+      insert(target, t0, anchor);
+      insert(target, t1, anchor);
+      insert(target, t2, anchor);
+      insert(target, t3, anchor);
+      insert(target, t4, anchor);
+      insert(target, t5, anchor);
+      insert(target, t6, anchor);
+    },
+    p(ctx2, dirty) {
+      if (dirty & /*item*/
+      1 && t1_value !== (t1_value = /*item*/
+      ctx2[0].armor.value + ""))
+        set_data(t1, t1_value);
+      if (dirty & /*rollData, item*/
+      3 && t3_value !== (t3_value = Math.min(
+        /*rollData*/
+        ctx2[1].abilities.dex.mod,
+        /*item*/
+        ctx2[0].armor.dex
+      ) + ""))
+        set_data(t3, t3_value);
+    },
+    d(detaching) {
+      if (detaching) {
+        detach(t0);
+        detach(t1);
+        detach(t2);
+        detach(t3);
+        detach(t4);
+        detach(t5);
+        detach(t6);
+      }
+    }
+  };
 }
 function create_if_block$8(ctx) {
   let p;
@@ -22015,30 +22167,13 @@ function create_if_block$8(ctx) {
     }
   };
 }
-function create_fragment$9(ctx) {
+function create_fragment$8(ctx) {
   let p;
   let b;
   let t2;
   let t3;
-  let t4_value = (
-    /*item*/
-    ctx[0].armor.value + ""
-  );
   let t4;
-  let t5;
-  let t6_value = Math.min(
-    /*rollData*/
-    ctx[1].abilities.dex.mod,
-    /*item*/
-    ctx[0].armor.dex
-  ) + "";
-  let t6;
-  let t7;
-  let t8_value = i18n("DND5E.AbilityDex") + "";
-  let t8;
-  let t9;
-  let t10;
-  let if_block_anchor;
+  let if_block1_anchor;
   let info = {
     ctx,
     current: null,
@@ -22054,7 +22189,11 @@ function create_fragment$9(ctx) {
     ctx[2],
     info
   );
-  let if_block = (
+  let if_block0 = (
+    /*item*/
+    ctx[0].armor.dex && create_if_block_1$3(ctx)
+  );
+  let if_block1 = (
     /*item*/
     ctx[0].strength && create_if_block$8(ctx)
   );
@@ -22065,17 +22204,13 @@ function create_fragment$9(ctx) {
       b.textContent = `${i18n("DND5E.ArmorClass")}:`;
       t2 = space();
       info.block.c();
-      t3 = text("\r\n    (");
-      t4 = text(t4_value);
-      t5 = text(" + ");
-      t6 = text(t6_value);
-      t7 = space();
-      t8 = text(t8_value);
-      t9 = text(")");
-      t10 = space();
-      if (if_block)
-        if_block.c();
-      if_block_anchor = empty();
+      t3 = space();
+      if (if_block0)
+        if_block0.c();
+      t4 = space();
+      if (if_block1)
+        if_block1.c();
+      if_block1_anchor = empty();
     },
     m(target, anchor) {
       insert(target, p, anchor);
@@ -22085,46 +22220,45 @@ function create_fragment$9(ctx) {
       info.mount = () => p;
       info.anchor = t3;
       append(p, t3);
-      append(p, t4);
-      append(p, t5);
-      append(p, t6);
-      append(p, t7);
-      append(p, t8);
-      append(p, t9);
-      insert(target, t10, anchor);
-      if (if_block)
-        if_block.m(target, anchor);
-      insert(target, if_block_anchor, anchor);
+      if (if_block0)
+        if_block0.m(p, null);
+      insert(target, t4, anchor);
+      if (if_block1)
+        if_block1.m(target, anchor);
+      insert(target, if_block1_anchor, anchor);
     },
     p(new_ctx, [dirty]) {
       ctx = new_ctx;
       update_await_block_branch(info, ctx, dirty);
-      if (dirty & /*item*/
-      1 && t4_value !== (t4_value = /*item*/
-      ctx[0].armor.value + ""))
-        set_data(t4, t4_value);
-      if (dirty & /*rollData, item*/
-      3 && t6_value !== (t6_value = Math.min(
-        /*rollData*/
-        ctx[1].abilities.dex.mod,
+      if (
         /*item*/
         ctx[0].armor.dex
-      ) + ""))
-        set_data(t6, t6_value);
+      ) {
+        if (if_block0) {
+          if_block0.p(ctx, dirty);
+        } else {
+          if_block0 = create_if_block_1$3(ctx);
+          if_block0.c();
+          if_block0.m(p, null);
+        }
+      } else if (if_block0) {
+        if_block0.d(1);
+        if_block0 = null;
+      }
       if (
         /*item*/
         ctx[0].strength
       ) {
-        if (if_block) {
-          if_block.p(ctx, dirty);
+        if (if_block1) {
+          if_block1.p(ctx, dirty);
         } else {
-          if_block = create_if_block$8(ctx);
-          if_block.c();
-          if_block.m(if_block_anchor.parentNode, if_block_anchor);
+          if_block1 = create_if_block$8(ctx);
+          if_block1.c();
+          if_block1.m(if_block1_anchor.parentNode, if_block1_anchor);
         }
-      } else if (if_block) {
-        if_block.d(1);
-        if_block = null;
+      } else if (if_block1) {
+        if_block1.d(1);
+        if_block1 = null;
       }
     },
     i: noop,
@@ -22132,21 +22266,23 @@ function create_fragment$9(ctx) {
     d(detaching) {
       if (detaching) {
         detach(p);
-        detach(t10);
-        detach(if_block_anchor);
+        detach(t4);
+        detach(if_block1_anchor);
       }
       info.block.d();
       info.token = null;
       info = null;
-      if (if_block)
-        if_block.d(detaching);
+      if (if_block0)
+        if_block0.d();
+      if (if_block1)
+        if_block1.d(detaching);
     }
   };
 }
-function instance$9($$self, $$props, $$invalidate) {
+function instance$8($$self, $$props, $$invalidate) {
   let { item } = $$props;
   let { rollData } = $$props;
-  const formula = item.armor.value + ` + min(${item.armor.dex},@abilities.dex.mod)`;
+  const formula = item.armor.value + ` + min(${item.armor.dex ? item.armor.dex : 0},@abilities.dex.mod)`;
   let totalAc = evaluateTotal(formula, rollData);
   $$self.$$set = ($$props2) => {
     if ("item" in $$props2)
@@ -22159,10 +22295,10 @@ function instance$9($$self, $$props, $$invalidate) {
 class Dnd5eArmorClass extends SvelteComponent {
   constructor(options) {
     super();
-    init$1(this, options, instance$9, create_fragment$9, safe_not_equal, { item: 0, rollData: 1 });
+    init$1(this, options, instance$8, create_fragment$8, safe_not_equal, { item: 0, rollData: 1 });
   }
 }
-function create_if_block_2$2(ctx) {
+function create_if_block_1$2(ctx) {
   let p;
   let b;
   let t2;
@@ -22189,41 +22325,6 @@ function create_if_block_2$2(ctx) {
       if (detaching) {
         detach(p);
       }
-    }
-  };
-}
-function create_if_block_1$3(ctx) {
-  let dnd5eactivation;
-  let current;
-  dnd5eactivation = new Dnd5EActivation({
-    props: {
-      activation: (
-        /*itemData*/
-        ctx[1].activation
-      )
-    }
-  });
-  return {
-    c() {
-      create_component(dnd5eactivation.$$.fragment);
-    },
-    m(target, anchor) {
-      mount_component(dnd5eactivation, target, anchor);
-      current = true;
-    },
-    p: noop,
-    i(local) {
-      if (current)
-        return;
-      transition_in(dnd5eactivation.$$.fragment, local);
-      current = true;
-    },
-    o(local) {
-      transition_out(dnd5eactivation.$$.fragment, local);
-      current = false;
-    },
-    d(detaching) {
-      destroy_component(dnd5eactivation, detaching);
     }
   };
 }
@@ -22273,20 +22374,15 @@ function create_if_block$7(ctx) {
     }
   };
 }
-function create_fragment$8(ctx) {
-  let t0;
-  let t1;
-  let if_block2_anchor;
+function create_fragment$7(ctx) {
+  let t;
+  let if_block1_anchor;
   let current;
   let if_block0 = (
     /*equipmentType*/
-    ctx[2] && create_if_block_2$2(ctx)
+    ctx[2] && create_if_block_1$2(ctx)
   );
   let if_block1 = (
-    /*itemData*/
-    ctx[1].activation && create_if_block_1$3(ctx)
-  );
-  let if_block2 = (
     /*itemData*/
     ctx[1].armor?.value && create_if_block$7(ctx)
   );
@@ -22294,24 +22390,18 @@ function create_fragment$8(ctx) {
     c() {
       if (if_block0)
         if_block0.c();
-      t0 = space();
+      t = space();
       if (if_block1)
         if_block1.c();
-      t1 = space();
-      if (if_block2)
-        if_block2.c();
-      if_block2_anchor = empty();
+      if_block1_anchor = empty();
     },
     m(target, anchor) {
       if (if_block0)
         if_block0.m(target, anchor);
-      insert(target, t0, anchor);
+      insert(target, t, anchor);
       if (if_block1)
         if_block1.m(target, anchor);
-      insert(target, t1, anchor);
-      if (if_block2)
-        if_block2.m(target, anchor);
-      insert(target, if_block2_anchor, anchor);
+      insert(target, if_block1_anchor, anchor);
       current = true;
     },
     p(ctx2, [dirty]) {
@@ -22322,43 +22412,33 @@ function create_fragment$8(ctx) {
         if_block0.p(ctx2, dirty);
       if (
         /*itemData*/
-        ctx2[1].activation
-      )
-        if_block1.p(ctx2, dirty);
-      if (
-        /*itemData*/
         ctx2[1].armor?.value
       )
-        if_block2.p(ctx2, dirty);
+        if_block1.p(ctx2, dirty);
     },
     i(local) {
       if (current)
         return;
       transition_in(if_block1);
-      transition_in(if_block2);
       current = true;
     },
     o(local) {
       transition_out(if_block1);
-      transition_out(if_block2);
       current = false;
     },
     d(detaching) {
       if (detaching) {
-        detach(t0);
-        detach(t1);
-        detach(if_block2_anchor);
+        detach(t);
+        detach(if_block1_anchor);
       }
       if (if_block0)
         if_block0.d(detaching);
       if (if_block1)
         if_block1.d(detaching);
-      if (if_block2)
-        if_block2.d(detaching);
     }
   };
 }
-function instance$8($$self, $$props, $$invalidate) {
+function instance$7($$self, $$props, $$invalidate) {
   let { item } = $$props;
   let { rollData } = $$props;
   let itemData = item.system;
@@ -22374,7 +22454,7 @@ function instance$8($$self, $$props, $$invalidate) {
 class Dnd5eEquipmentObject extends SvelteComponent {
   constructor(options) {
     super();
-    init$1(this, options, instance$8, create_fragment$8, safe_not_equal, { item: 3, rollData: 0 });
+    init$1(this, options, instance$7, create_fragment$7, safe_not_equal, { item: 3, rollData: 0 });
   }
 }
 function create_if_block$6(ctx) {
@@ -22407,7 +22487,7 @@ function create_if_block$6(ctx) {
     }
   };
 }
-function create_fragment$7(ctx) {
+function create_fragment$6(ctx) {
   let if_block_anchor;
   let if_block = (
     /*lootType*/
@@ -22442,7 +22522,7 @@ function create_fragment$7(ctx) {
     }
   };
 }
-function instance$7($$self, $$props, $$invalidate) {
+function instance$6($$self, $$props, $$invalidate) {
   var _a;
   let { item } = $$props;
   const itemData = item.system;
@@ -22456,7 +22536,7 @@ function instance$7($$self, $$props, $$invalidate) {
 class Dnd5eLootObject extends SvelteComponent {
   constructor(options) {
     super();
-    init$1(this, options, instance$7, create_fragment$7, safe_not_equal, { item: 1 });
+    init$1(this, options, instance$6, create_fragment$6, safe_not_equal, { item: 1 });
   }
 }
 function create_if_block$5(ctx) {
@@ -22489,7 +22569,7 @@ function create_if_block$5(ctx) {
     }
   };
 }
-function create_fragment$6(ctx) {
+function create_fragment$5(ctx) {
   let if_block_anchor;
   let if_block = (
     /*ability*/
@@ -22524,7 +22604,7 @@ function create_fragment$6(ctx) {
     }
   };
 }
-function instance$6($$self, $$props, $$invalidate) {
+function instance$5($$self, $$props, $$invalidate) {
   var _a;
   let { item } = $$props;
   let itemData = item.system;
@@ -22538,58 +22618,32 @@ function instance$6($$self, $$props, $$invalidate) {
 class Dnd5eToolObject extends SvelteComponent {
   constructor(options) {
     super();
-    init$1(this, options, instance$6, create_fragment$6, safe_not_equal, { item: 1 });
+    init$1(this, options, instance$5, create_fragment$5, safe_not_equal, { item: 1 });
   }
 }
 function create_if_block$4(ctx) {
   let p;
   let b;
   let t2;
-  let t3_value = (
-    /*range*/
-    ctx[0].value + ""
-  );
   let t3;
-  let t4;
-  let t5_value = (
-    /*range*/
-    (ctx[0].units ? CONFIG.DND5E.distanceUnits[
-      /*range*/
-      ctx[0].units
-    ] : "") + ""
-  );
-  let t5;
   return {
     c() {
       p = element("p");
       b = element("b");
-      b.textContent = `${i18n("DND5E.Range")}:`;
+      b.textContent = `${i18n("DND5E.ItemWeaponType")}:`;
       t2 = space();
-      t3 = text(t3_value);
-      t4 = space();
-      t5 = text(t5_value);
+      t3 = text(
+        /*weaponType*/
+        ctx[0]
+      );
     },
     m(target, anchor) {
       insert(target, p, anchor);
       append(p, b);
       append(p, t2);
       append(p, t3);
-      append(p, t4);
-      append(p, t5);
     },
-    p(ctx2, dirty) {
-      if (dirty & /*range*/
-      1 && t3_value !== (t3_value = /*range*/
-      ctx2[0].value + ""))
-        set_data(t3, t3_value);
-      if (dirty & /*range*/
-      1 && t5_value !== (t5_value = /*range*/
-      (ctx2[0].units ? CONFIG.DND5E.distanceUnits[
-        /*range*/
-        ctx2[0].units
-      ] : "") + ""))
-        set_data(t5, t5_value);
-    },
+    p: noop,
     d(detaching) {
       if (detaching) {
         detach(p);
@@ -22597,11 +22651,11 @@ function create_if_block$4(ctx) {
     }
   };
 }
-function create_fragment$5(ctx) {
+function create_fragment$4(ctx) {
   let if_block_anchor;
   let if_block = (
-    /*range*/
-    ctx[0].value && create_if_block$4(ctx)
+    /*weaponType*/
+    ctx[0] && create_if_block$4(ctx)
   );
   return {
     c() {
@@ -22616,20 +22670,10 @@ function create_fragment$5(ctx) {
     },
     p(ctx2, [dirty]) {
       if (
-        /*range*/
-        ctx2[0].value
-      ) {
-        if (if_block) {
-          if_block.p(ctx2, dirty);
-        } else {
-          if_block = create_if_block$4(ctx2);
-          if_block.c();
-          if_block.m(if_block_anchor.parentNode, if_block_anchor);
-        }
-      } else if (if_block) {
-        if_block.d(1);
-        if_block = null;
-      }
+        /*weaponType*/
+        ctx2[0]
+      )
+        if_block.p(ctx2, dirty);
     },
     i: noop,
     o: noop,
@@ -22642,405 +22686,51 @@ function create_fragment$5(ctx) {
     }
   };
 }
-function instance$5($$self, $$props, $$invalidate) {
-  let { range } = $$props;
-  $$self.$$set = ($$props2) => {
-    if ("range" in $$props2)
-      $$invalidate(0, range = $$props2.range);
-  };
-  return [range];
-}
-class Dnd5ERange extends SvelteComponent {
-  constructor(options) {
-    super();
-    init$1(this, options, instance$5, create_fragment$5, safe_not_equal, { range: 0 });
-  }
-}
-function create_fragment$4(ctx) {
-  let p;
-  let b;
-  let t2;
-  let t3;
-  return {
-    c() {
-      p = element("p");
-      b = element("b");
-      b.textContent = `${i18n("DND5E.ItemActionType")}:`;
-      t2 = space();
-      t3 = text(
-        /*itemActionType*/
-        ctx[0]
-      );
-    },
-    m(target, anchor) {
-      insert(target, p, anchor);
-      append(p, b);
-      append(p, t2);
-      append(p, t3);
-    },
-    p: noop,
-    i: noop,
-    o: noop,
-    d(detaching) {
-      if (detaching) {
-        detach(p);
-      }
-    }
-  };
-}
 function instance$4($$self, $$props, $$invalidate) {
-  let { actionType } = $$props;
-  const itemActionType = CONFIG.DND5E.itemActionTypes[actionType];
-  $$self.$$set = ($$props2) => {
-    if ("actionType" in $$props2)
-      $$invalidate(1, actionType = $$props2.actionType);
-  };
-  return [itemActionType, actionType];
-}
-class Dnd5EActivationType extends SvelteComponent {
-  constructor(options) {
-    super();
-    init$1(this, options, instance$4, create_fragment$4, safe_not_equal, { actionType: 1 });
-  }
-}
-function create_if_block_4$1(ctx) {
-  let p;
-  let b;
-  let t2;
-  let t3;
-  return {
-    c() {
-      p = element("p");
-      b = element("b");
-      b.textContent = `${i18n("DND5E.ItemWeaponType")}:`;
-      t2 = space();
-      t3 = text(
-        /*weaponType*/
-        ctx[1]
-      );
-    },
-    m(target, anchor) {
-      insert(target, p, anchor);
-      append(p, b);
-      append(p, t2);
-      append(p, t3);
-    },
-    p: noop,
-    d(detaching) {
-      if (detaching) {
-        detach(p);
-      }
-    }
-  };
-}
-function create_if_block_3$1(ctx) {
-  let dnd5eactivation;
-  let current;
-  dnd5eactivation = new Dnd5EActivation({
-    props: {
-      activation: (
-        /*itemData*/
-        ctx[0].activation
-      )
-    }
-  });
-  return {
-    c() {
-      create_component(dnd5eactivation.$$.fragment);
-    },
-    m(target, anchor) {
-      mount_component(dnd5eactivation, target, anchor);
-      current = true;
-    },
-    p: noop,
-    i(local) {
-      if (current)
-        return;
-      transition_in(dnd5eactivation.$$.fragment, local);
-      current = true;
-    },
-    o(local) {
-      transition_out(dnd5eactivation.$$.fragment, local);
-      current = false;
-    },
-    d(detaching) {
-      destroy_component(dnd5eactivation, detaching);
-    }
-  };
-}
-function create_if_block_2$1(ctx) {
-  let dnd5eactivationtype;
-  let current;
-  dnd5eactivationtype = new Dnd5EActivationType({
-    props: {
-      actionType: (
-        /*itemData*/
-        ctx[0].actionType
-      )
-    }
-  });
-  return {
-    c() {
-      create_component(dnd5eactivationtype.$$.fragment);
-    },
-    m(target, anchor) {
-      mount_component(dnd5eactivationtype, target, anchor);
-      current = true;
-    },
-    p: noop,
-    i(local) {
-      if (current)
-        return;
-      transition_in(dnd5eactivationtype.$$.fragment, local);
-      current = true;
-    },
-    o(local) {
-      transition_out(dnd5eactivationtype.$$.fragment, local);
-      current = false;
-    },
-    d(detaching) {
-      destroy_component(dnd5eactivationtype, detaching);
-    }
-  };
-}
-function create_if_block_1$2(ctx) {
-  let dnd5etarget;
-  let current;
-  dnd5etarget = new Dnd5ETarget({
-    props: { target: (
-      /*itemData*/
-      ctx[0].target
-    ) }
-  });
-  return {
-    c() {
-      create_component(dnd5etarget.$$.fragment);
-    },
-    m(target, anchor) {
-      mount_component(dnd5etarget, target, anchor);
-      current = true;
-    },
-    p: noop,
-    i(local) {
-      if (current)
-        return;
-      transition_in(dnd5etarget.$$.fragment, local);
-      current = true;
-    },
-    o(local) {
-      transition_out(dnd5etarget.$$.fragment, local);
-      current = false;
-    },
-    d(detaching) {
-      destroy_component(dnd5etarget, detaching);
-    }
-  };
-}
-function create_if_block$3(ctx) {
-  let dnd5erange;
-  let current;
-  dnd5erange = new Dnd5ERange({
-    props: { range: (
-      /*itemData*/
-      ctx[0].range
-    ) }
-  });
-  return {
-    c() {
-      create_component(dnd5erange.$$.fragment);
-    },
-    m(target, anchor) {
-      mount_component(dnd5erange, target, anchor);
-      current = true;
-    },
-    p: noop,
-    i(local) {
-      if (current)
-        return;
-      transition_in(dnd5erange.$$.fragment, local);
-      current = true;
-    },
-    o(local) {
-      transition_out(dnd5erange.$$.fragment, local);
-      current = false;
-    },
-    d(detaching) {
-      destroy_component(dnd5erange, detaching);
-    }
-  };
-}
-function create_fragment$3(ctx) {
-  let t0;
-  let t1;
-  let t2;
-  let t3;
-  let if_block4_anchor;
-  let current;
-  let if_block0 = (
-    /*weaponType*/
-    ctx[1] && create_if_block_4$1(ctx)
-  );
-  let if_block1 = (
-    /*itemData*/
-    ctx[0].activation && create_if_block_3$1(ctx)
-  );
-  let if_block2 = (
-    /*itemData*/
-    ctx[0].actionType && create_if_block_2$1(ctx)
-  );
-  let if_block3 = (
-    /*itemData*/
-    ctx[0].target && create_if_block_1$2(ctx)
-  );
-  let if_block4 = (
-    /*itemData*/
-    ctx[0].range && create_if_block$3(ctx)
-  );
-  return {
-    c() {
-      if (if_block0)
-        if_block0.c();
-      t0 = space();
-      if (if_block1)
-        if_block1.c();
-      t1 = space();
-      if (if_block2)
-        if_block2.c();
-      t2 = space();
-      if (if_block3)
-        if_block3.c();
-      t3 = space();
-      if (if_block4)
-        if_block4.c();
-      if_block4_anchor = empty();
-    },
-    m(target, anchor) {
-      if (if_block0)
-        if_block0.m(target, anchor);
-      insert(target, t0, anchor);
-      if (if_block1)
-        if_block1.m(target, anchor);
-      insert(target, t1, anchor);
-      if (if_block2)
-        if_block2.m(target, anchor);
-      insert(target, t2, anchor);
-      if (if_block3)
-        if_block3.m(target, anchor);
-      insert(target, t3, anchor);
-      if (if_block4)
-        if_block4.m(target, anchor);
-      insert(target, if_block4_anchor, anchor);
-      current = true;
-    },
-    p(ctx2, [dirty]) {
-      if (
-        /*weaponType*/
-        ctx2[1]
-      )
-        if_block0.p(ctx2, dirty);
-      if (
-        /*itemData*/
-        ctx2[0].activation
-      )
-        if_block1.p(ctx2, dirty);
-      if (
-        /*itemData*/
-        ctx2[0].actionType
-      )
-        if_block2.p(ctx2, dirty);
-      if (
-        /*itemData*/
-        ctx2[0].target
-      )
-        if_block3.p(ctx2, dirty);
-      if (
-        /*itemData*/
-        ctx2[0].range
-      )
-        if_block4.p(ctx2, dirty);
-    },
-    i(local) {
-      if (current)
-        return;
-      transition_in(if_block1);
-      transition_in(if_block2);
-      transition_in(if_block3);
-      transition_in(if_block4);
-      current = true;
-    },
-    o(local) {
-      transition_out(if_block1);
-      transition_out(if_block2);
-      transition_out(if_block3);
-      transition_out(if_block4);
-      current = false;
-    },
-    d(detaching) {
-      if (detaching) {
-        detach(t0);
-        detach(t1);
-        detach(t2);
-        detach(t3);
-        detach(if_block4_anchor);
-      }
-      if (if_block0)
-        if_block0.d(detaching);
-      if (if_block1)
-        if_block1.d(detaching);
-      if (if_block2)
-        if_block2.d(detaching);
-      if (if_block3)
-        if_block3.d(detaching);
-      if (if_block4)
-        if_block4.d(detaching);
-    }
-  };
-}
-function instance$3($$self, $$props, $$invalidate) {
   let { item } = $$props;
   let itemData = item.system;
   const weaponType = CONFIG.DND5E.weaponTypes[itemData.type.value];
   $$self.$$set = ($$props2) => {
     if ("item" in $$props2)
-      $$invalidate(2, item = $$props2.item);
+      $$invalidate(1, item = $$props2.item);
   };
-  return [itemData, weaponType, item];
+  return [weaponType, item];
 }
 class Dnd5eWeaponObject extends SvelteComponent {
   constructor(options) {
     super();
-    init$1(this, options, instance$3, create_fragment$3, safe_not_equal, { item: 2 });
+    init$1(this, options, instance$4, create_fragment$4, safe_not_equal, { item: 1 });
   }
 }
 const Dnd5eObjects_svelte_svelte_type_style_lang = "";
 function get_each_context(ctx, list, i) {
   const child_ctx = ctx.slice();
-  child_ctx[7] = list[i];
+  child_ctx[12] = list[i];
   return child_ctx;
 }
 function get_each_context_1(ctx, list, i) {
   const child_ctx = ctx.slice();
-  child_ctx[10] = list[i];
+  child_ctx[15] = list[i];
   return child_ctx;
 }
 function get_each_context_2(ctx, list, i) {
   const child_ctx = ctx.slice();
-  child_ctx[13] = list[i];
+  child_ctx[18] = list[i];
   return child_ctx;
 }
 function get_each_context_3(ctx, list, i) {
   const child_ctx = ctx.slice();
-  child_ctx[16] = list[i];
+  child_ctx[21] = list[i];
   return child_ctx;
 }
 function get_each_context_4(ctx, list, i) {
   const child_ctx = ctx.slice();
-  child_ctx[19] = list[i];
+  child_ctx[24] = list[i];
   return child_ctx;
 }
 function get_each_context_5(ctx, list, i) {
   const child_ctx = ctx.slice();
-  child_ctx[22] = list[i];
+  child_ctx[27] = list[i];
   return child_ctx;
 }
 function create_if_block_5(ctx) {
@@ -23056,7 +22746,7 @@ function create_if_block_5(ctx) {
   );
   const get_key = (ctx2) => (
     /*weapon*/
-    ctx2[22]._id
+    ctx2[27].id
   );
   for (let i = 0; i < each_value_5.length; i += 1) {
     let child_ctx = get_each_context_5(ctx, each_value_5, i);
@@ -23127,7 +22817,7 @@ function create_default_slot_5(ctx) {
   let current;
   dnd5eweaponobject = new Dnd5eWeaponObject({ props: { item: (
     /*weapon*/
-    ctx[22]
+    ctx[27]
   ) } });
   return {
     c() {
@@ -23144,7 +22834,7 @@ function create_default_slot_5(ctx) {
       if (dirty & /*weapons*/
       64)
         dnd5eweaponobject_changes.item = /*weapon*/
-        ctx2[22];
+        ctx2[27];
       dnd5eweaponobject.$set(dnd5eweaponobject_changes);
     },
     i(local) {
@@ -23173,7 +22863,7 @@ function create_each_block_5(key_1, ctx) {
     props: {
       item: (
         /*weapon*/
-        ctx[22]
+        ctx[27]
       ),
       $$slots: { default: [create_default_slot_5] },
       $$scope: { ctx }
@@ -23198,9 +22888,9 @@ function create_each_block_5(key_1, ctx) {
       if (dirty & /*weapons*/
       64)
         dnd5eobject_changes.item = /*weapon*/
-        ctx[22];
+        ctx[27];
       if (dirty & /*$$scope, weapons*/
-      33554496) {
+      1073741888) {
         dnd5eobject_changes.$$scope = { dirty, ctx };
       }
       dnd5eobject.$set(dnd5eobject_changes);
@@ -23236,7 +22926,7 @@ function create_if_block_4(ctx) {
   );
   const get_key = (ctx2) => (
     /*equipment*/
-    ctx2[19]._id
+    ctx2[24].id
   );
   for (let i = 0; i < each_value_4.length; i += 1) {
     let child_ctx = get_each_context_4(ctx, each_value_4, i);
@@ -23309,13 +22999,13 @@ function create_default_slot_4(ctx) {
     props: {
       item: (
         /*equipment*/
-        ctx[19]
+        ctx[24]
       ),
       rollData: (
         /*actor*/
         ctx[0].getRollData(
           /*equipment*/
-          ctx[19]
+          ctx[24]
         )
       )
     }
@@ -23335,13 +23025,13 @@ function create_default_slot_4(ctx) {
       if (dirty & /*equipments*/
       8)
         dnd5eequipmentobject_changes.item = /*equipment*/
-        ctx2[19];
+        ctx2[24];
       if (dirty & /*actor, equipments*/
       9)
         dnd5eequipmentobject_changes.rollData = /*actor*/
         ctx2[0].getRollData(
           /*equipment*/
-          ctx2[19]
+          ctx2[24]
         );
       dnd5eequipmentobject.$set(dnd5eequipmentobject_changes);
     },
@@ -23371,7 +23061,7 @@ function create_each_block_4(key_1, ctx) {
     props: {
       item: (
         /*equipment*/
-        ctx[19]
+        ctx[24]
       ),
       $$slots: { default: [create_default_slot_4] },
       $$scope: { ctx }
@@ -23396,9 +23086,9 @@ function create_each_block_4(key_1, ctx) {
       if (dirty & /*equipments*/
       8)
         dnd5eobject_changes.item = /*equipment*/
-        ctx[19];
+        ctx[24];
       if (dirty & /*$$scope, equipments, actor*/
-      33554441) {
+      1073741833) {
         dnd5eobject_changes.$$scope = { dirty, ctx };
       }
       dnd5eobject.$set(dnd5eobject_changes);
@@ -23434,7 +23124,7 @@ function create_if_block_3(ctx) {
   );
   const get_key = (ctx2) => (
     /*consumable*/
-    ctx2[16]._id
+    ctx2[21].id
   );
   for (let i = 0; i < each_value_3.length; i += 1) {
     let child_ctx = get_each_context_3(ctx, each_value_3, i);
@@ -23505,7 +23195,7 @@ function create_default_slot_3(ctx) {
   let current;
   dnd5econsumableobject = new Dnd5eConsumableObject({ props: { item: (
     /*consumable*/
-    ctx[16]
+    ctx[21]
   ) } });
   return {
     c() {
@@ -23522,7 +23212,7 @@ function create_default_slot_3(ctx) {
       if (dirty & /*consumables*/
       4)
         dnd5econsumableobject_changes.item = /*consumable*/
-        ctx2[16];
+        ctx2[21];
       dnd5econsumableobject.$set(dnd5econsumableobject_changes);
     },
     i(local) {
@@ -23551,7 +23241,7 @@ function create_each_block_3(key_1, ctx) {
     props: {
       item: (
         /*consumable*/
-        ctx[16]
+        ctx[21]
       ),
       $$slots: { default: [create_default_slot_3] },
       $$scope: { ctx }
@@ -23576,9 +23266,9 @@ function create_each_block_3(key_1, ctx) {
       if (dirty & /*consumables*/
       4)
         dnd5eobject_changes.item = /*consumable*/
-        ctx[16];
+        ctx[21];
       if (dirty & /*$$scope, consumables*/
-      33554436) {
+      1073741828) {
         dnd5eobject_changes.$$scope = { dirty, ctx };
       }
       dnd5eobject.$set(dnd5eobject_changes);
@@ -23614,7 +23304,7 @@ function create_if_block_2(ctx) {
   );
   const get_key = (ctx2) => (
     /*tool*/
-    ctx2[13]._id
+    ctx2[18].id
   );
   for (let i = 0; i < each_value_2.length; i += 1) {
     let child_ctx = get_each_context_2(ctx, each_value_2, i);
@@ -23685,7 +23375,7 @@ function create_default_slot_2(ctx) {
   let current;
   dnd5etoolobject = new Dnd5eToolObject({ props: { item: (
     /*tool*/
-    ctx[13]
+    ctx[18]
   ) } });
   return {
     c() {
@@ -23702,7 +23392,7 @@ function create_default_slot_2(ctx) {
       if (dirty & /*tools*/
       32)
         dnd5etoolobject_changes.item = /*tool*/
-        ctx2[13];
+        ctx2[18];
       dnd5etoolobject.$set(dnd5etoolobject_changes);
     },
     i(local) {
@@ -23731,7 +23421,7 @@ function create_each_block_2(key_1, ctx) {
     props: {
       item: (
         /*tool*/
-        ctx[13]
+        ctx[18]
       ),
       $$slots: { default: [create_default_slot_2] },
       $$scope: { ctx }
@@ -23756,9 +23446,9 @@ function create_each_block_2(key_1, ctx) {
       if (dirty & /*tools*/
       32)
         dnd5eobject_changes.item = /*tool*/
-        ctx[13];
+        ctx[18];
       if (dirty & /*$$scope, tools*/
-      33554464) {
+      1073741856) {
         dnd5eobject_changes.$$scope = { dirty, ctx };
       }
       dnd5eobject.$set(dnd5eobject_changes);
@@ -23794,7 +23484,7 @@ function create_if_block_1$1(ctx) {
   );
   const get_key = (ctx2) => (
     /*loot*/
-    ctx2[10]._id
+    ctx2[15].id
   );
   for (let i = 0; i < each_value_1.length; i += 1) {
     let child_ctx = get_each_context_1(ctx, each_value_1, i);
@@ -23865,7 +23555,7 @@ function create_default_slot_1(ctx) {
   let current;
   dnd5elootobject = new Dnd5eLootObject({ props: { item: (
     /*loot*/
-    ctx[10]
+    ctx[15]
   ) } });
   return {
     c() {
@@ -23882,7 +23572,7 @@ function create_default_slot_1(ctx) {
       if (dirty & /*loots*/
       16)
         dnd5elootobject_changes.item = /*loot*/
-        ctx2[10];
+        ctx2[15];
       dnd5elootobject.$set(dnd5elootobject_changes);
     },
     i(local) {
@@ -23911,7 +23601,7 @@ function create_each_block_1(key_1, ctx) {
     props: {
       item: (
         /*loot*/
-        ctx[10]
+        ctx[15]
       ),
       $$slots: { default: [create_default_slot_1] },
       $$scope: { ctx }
@@ -23936,9 +23626,9 @@ function create_each_block_1(key_1, ctx) {
       if (dirty & /*loots*/
       16)
         dnd5eobject_changes.item = /*loot*/
-        ctx[10];
+        ctx[15];
       if (dirty & /*$$scope, loots*/
-      33554448) {
+      1073741840) {
         dnd5eobject_changes.$$scope = { dirty, ctx };
       }
       dnd5eobject.$set(dnd5eobject_changes);
@@ -23961,7 +23651,7 @@ function create_each_block_1(key_1, ctx) {
     }
   };
 }
-function create_if_block$2(ctx) {
+function create_if_block$3(ctx) {
   let section;
   let div;
   let t1;
@@ -23974,7 +23664,7 @@ function create_if_block$2(ctx) {
   );
   const get_key = (ctx2) => (
     /*container*/
-    ctx2[7]._id
+    ctx2[12].id
   );
   for (let i = 0; i < each_value.length; i += 1) {
     let child_ctx = get_each_context(ctx, each_value, i);
@@ -24045,7 +23735,7 @@ function create_default_slot$1(ctx) {
   let current;
   dnd5econtainerobject = new Dnd5eContainerObject({ props: { item: (
     /*container*/
-    ctx[7]
+    ctx[12]
   ) } });
   return {
     c() {
@@ -24062,7 +23752,7 @@ function create_default_slot$1(ctx) {
       if (dirty & /*containers*/
       2)
         dnd5econtainerobject_changes.item = /*container*/
-        ctx2[7];
+        ctx2[12];
       dnd5econtainerobject.$set(dnd5econtainerobject_changes);
     },
     i(local) {
@@ -24091,7 +23781,7 @@ function create_each_block(key_1, ctx) {
     props: {
       item: (
         /*container*/
-        ctx[7]
+        ctx[12]
       ),
       $$slots: { default: [create_default_slot$1] },
       $$scope: { ctx }
@@ -24116,9 +23806,9 @@ function create_each_block(key_1, ctx) {
       if (dirty & /*containers*/
       2)
         dnd5eobject_changes.item = /*container*/
-        ctx[7];
+        ctx[12];
       if (dirty & /*$$scope, containers*/
-      33554434) {
+      1073741826) {
         dnd5eobject_changes.$$scope = { dirty, ctx };
       }
       dnd5eobject.$set(dnd5eobject_changes);
@@ -24141,7 +23831,7 @@ function create_each_block(key_1, ctx) {
     }
   };
 }
-function create_fragment$2(ctx) {
+function create_fragment$3(ctx) {
   let section;
   let t0;
   let t1;
@@ -24171,7 +23861,7 @@ function create_fragment$2(ctx) {
   );
   let if_block5 = (
     /*containers*/
-    ctx[1].length > 0 && showContainers && create_if_block$2(ctx)
+    ctx[1].length > 0 && showContainers && create_if_block$3(ctx)
   );
   return {
     c() {
@@ -24343,7 +24033,7 @@ function create_fragment$2(ctx) {
             transition_in(if_block5, 1);
           }
         } else {
-          if_block5 = create_if_block$2(ctx2);
+          if_block5 = create_if_block$3(ctx2);
           if_block5.c();
           transition_in(if_block5, 1);
           if_block5.m(section, null);
@@ -24396,9 +24086,26 @@ function create_fragment$2(ctx) {
   };
 }
 const showContainers = false;
-function instance$2($$self, $$props, $$invalidate) {
+function instance$3($$self, $$props, $$invalidate) {
   let { actor } = $$props;
-  let containers, consumables, equipments, loots, tools, weapons;
+  let containers;
+  let consumables;
+  let equipments;
+  let loots;
+  let tools;
+  let weapons;
+  let isUsingEncumbrance = true;
+  let isUsingCurrency = false;
+  const unsubscribeEncumbrance = mobileCompanionGameSettings.getWritableStore(settings.dnd5e.useEncumbrance).subscribe((value) => {
+    $$invalidate(7, isUsingEncumbrance = value);
+  });
+  const unsubscribeCurrency = mobileCompanionGameSettings.getWritableStore(settings.dnd5e.useCurrency).subscribe((value) => {
+    $$invalidate(8, isUsingCurrency = value);
+  });
+  onDestroy(() => {
+    unsubscribeEncumbrance();
+    unsubscribeCurrency();
+  });
   $$self.$$set = ($$props2) => {
     if ("actor" in $$props2)
       $$invalidate(0, actor = $$props2.actor);
@@ -24415,17 +24122,30 @@ function instance$2($$self, $$props, $$invalidate) {
         $$invalidate(6, weapons = actor.itemTypes.weapon);
       }
     }
+    if ($$self.$$.dirty & /*isUsingCurrency, additionalHeight, isUsingEncumbrance*/
+    896)
+      ;
   };
-  return [actor, containers, consumables, equipments, loots, tools, weapons];
+  return [
+    actor,
+    containers,
+    consumables,
+    equipments,
+    loots,
+    tools,
+    weapons,
+    isUsingEncumbrance,
+    isUsingCurrency
+  ];
 }
 class Dnd5eObjects extends SvelteComponent {
   constructor(options) {
     super();
-    init$1(this, options, instance$2, create_fragment$2, safe_not_equal, { actor: 0 });
+    init$1(this, options, instance$3, create_fragment$3, safe_not_equal, { actor: 0 });
   }
 }
 const Dnd5eCurrency_svelte_svelte_type_style_lang = "";
-function create_if_block$1(ctx) {
+function create_if_block$2(ctx) {
   let section;
   let label0;
   let i0;
@@ -24480,47 +24200,47 @@ function create_if_block$1(ctx) {
       i4 = element("i");
       t8 = space();
       input4 = element("input");
-      attr(i0, "class", "currency pp svelte-mobile-companion81nkluj30u9vsd-6y2tlo");
+      attr(i0, "class", "currency pp svelte-mobile-companion81nkluj30u9vsd-1t29uq8");
       attr(input0, "type", "text");
       attr(input0, "name", "system.currency.pp");
       attr(input0, "inputmode", "numeric");
       attr(input0, "pattern", "[0-9+=\\-]*");
-      attr(input0, "class", "svelte-mobile-companion81nkluj30u9vsd-6y2tlo");
+      attr(input0, "class", "svelte-mobile-companion81nkluj30u9vsd-1t29uq8");
       attr(label0, "aria-label", "Platinum");
-      attr(label0, "class", "svelte-mobile-companion81nkluj30u9vsd-6y2tlo");
-      attr(i1, "class", "currency gp svelte-mobile-companion81nkluj30u9vsd-6y2tlo");
+      attr(label0, "class", "svelte-mobile-companion81nkluj30u9vsd-1t29uq8");
+      attr(i1, "class", "currency gp svelte-mobile-companion81nkluj30u9vsd-1t29uq8");
       attr(input1, "type", "text");
       attr(input1, "name", "system.currency.gp");
       attr(input1, "inputmode", "numeric");
       attr(input1, "pattern", "[0-9+=\\-]*");
-      attr(input1, "class", "svelte-mobile-companion81nkluj30u9vsd-6y2tlo");
+      attr(input1, "class", "svelte-mobile-companion81nkluj30u9vsd-1t29uq8");
       attr(label1, "aria-label", "Gold");
-      attr(label1, "class", "svelte-mobile-companion81nkluj30u9vsd-6y2tlo");
-      attr(i2, "class", "currency ep svelte-mobile-companion81nkluj30u9vsd-6y2tlo");
+      attr(label1, "class", "svelte-mobile-companion81nkluj30u9vsd-1t29uq8");
+      attr(i2, "class", "currency ep svelte-mobile-companion81nkluj30u9vsd-1t29uq8");
       attr(input2, "type", "text");
       attr(input2, "name", "system.currency.ep");
       attr(input2, "inputmode", "numeric");
       attr(input2, "pattern", "[0-9+=\\-]*");
-      attr(input2, "class", "svelte-mobile-companion81nkluj30u9vsd-6y2tlo");
+      attr(input2, "class", "svelte-mobile-companion81nkluj30u9vsd-1t29uq8");
       attr(label2, "aria-label", "Electrum");
-      attr(label2, "class", "svelte-mobile-companion81nkluj30u9vsd-6y2tlo");
-      attr(i3, "class", "currency sp svelte-mobile-companion81nkluj30u9vsd-6y2tlo");
+      attr(label2, "class", "svelte-mobile-companion81nkluj30u9vsd-1t29uq8");
+      attr(i3, "class", "currency sp svelte-mobile-companion81nkluj30u9vsd-1t29uq8");
       attr(input3, "type", "text");
       attr(input3, "name", "system.currency.sp");
       attr(input3, "inputmode", "numeric");
       attr(input3, "pattern", "[0-9+=\\-]*");
-      attr(input3, "class", "svelte-mobile-companion81nkluj30u9vsd-6y2tlo");
+      attr(input3, "class", "svelte-mobile-companion81nkluj30u9vsd-1t29uq8");
       attr(label3, "aria-label", "Silver");
-      attr(label3, "class", "svelte-mobile-companion81nkluj30u9vsd-6y2tlo");
-      attr(i4, "class", "currency cp svelte-mobile-companion81nkluj30u9vsd-6y2tlo");
+      attr(label3, "class", "svelte-mobile-companion81nkluj30u9vsd-1t29uq8");
+      attr(i4, "class", "currency cp svelte-mobile-companion81nkluj30u9vsd-1t29uq8");
       attr(input4, "type", "text");
       attr(input4, "name", "system.currency.cp");
       attr(input4, "inputmode", "numeric");
       attr(input4, "pattern", "[0-9+=\\-]*");
-      attr(input4, "class", "svelte-mobile-companion81nkluj30u9vsd-6y2tlo");
+      attr(input4, "class", "svelte-mobile-companion81nkluj30u9vsd-1t29uq8");
       attr(label4, "aria-label", "Copper");
-      attr(label4, "class", "svelte-mobile-companion81nkluj30u9vsd-6y2tlo");
-      attr(section, "class", "currency svelte-mobile-companion81nkluj30u9vsd-6y2tlo");
+      attr(label4, "class", "svelte-mobile-companion81nkluj30u9vsd-1t29uq8");
+      attr(section, "class", "currency-container svelte-mobile-companion81nkluj30u9vsd-1t29uq8");
     },
     m(target, anchor) {
       insert(target, section, anchor);
@@ -24665,11 +24385,11 @@ function create_if_block$1(ctx) {
     }
   };
 }
-function create_fragment$1(ctx) {
+function create_fragment$2(ctx) {
   let if_block_anchor;
   let if_block = (
     /*isUsingCurrency*/
-    ctx[1] && create_if_block$1(ctx)
+    ctx[1] && create_if_block$2(ctx)
   );
   return {
     c() {
@@ -24690,7 +24410,7 @@ function create_fragment$1(ctx) {
         if (if_block) {
           if_block.p(ctx2, dirty);
         } else {
-          if_block = create_if_block$1(ctx2);
+          if_block = create_if_block$2(ctx2);
           if_block.c();
           if_block.m(if_block_anchor.parentNode, if_block_anchor);
         }
@@ -24710,7 +24430,7 @@ function create_fragment$1(ctx) {
     }
   };
 }
-function instance$1($$self, $$props, $$invalidate) {
+function instance$2($$self, $$props, $$invalidate) {
   let { actor } = $$props;
   let currency = actor.system.currency;
   let isUsingCurrency = true;
@@ -24767,15 +24487,19 @@ function instance$1($$self, $$props, $$invalidate) {
 class Dnd5eCurrency extends SvelteComponent {
   constructor(options) {
     super();
-    init$1(this, options, instance$1, create_fragment$1, safe_not_equal, { actor: 2 });
+    init$1(this, options, instance$2, create_fragment$2, safe_not_equal, { actor: 2 });
   }
 }
-const filters = {
-  object: "object",
-  spell: "spell"
-};
-const actorStore = writable(null);
-const activeFilterStore = writable(filters.object);
+var Filters = /* @__PURE__ */ ((Filters2) => {
+  Filters2["Object"] = "object";
+  Filters2["Spell"] = "spell";
+  return Filters2;
+})(Filters || {});
+const actorStore = writable({});
+const activeFilterStore = writable(
+  "object"
+  /* Object */
+);
 function init(props) {
   actorStore.set(props);
 }
@@ -24814,14 +24538,20 @@ const headerButtons = [
     iconClass: "fas fa-box-open",
     buttonClass: "dnd-button",
     label: "Inventory",
-    onClick: () => switchFilter(filters.object)
+    onClick: () => switchFilter(
+      "object"
+      /* Object */
+    )
   },
   {
     id: 1,
     iconClass: "fas fa-wand-sparkles",
     buttonClass: "dnd-button",
     label: "Spells",
-    onClick: () => switchFilter(filters.spell)
+    onClick: () => switchFilter(
+      "spell"
+      /* Spell */
+    )
   }
 ];
 const menuButtons = {
@@ -24831,10 +24561,234 @@ const menuButtons = {
 function switchFilter(newFilter) {
   activeFilterStore.set(newFilter);
 }
+const Dnd5eEncumbrance_svelte_svelte_type_style_lang = "";
+function create_if_block$1(ctx) {
+  let div2;
+  let div1;
+  let div0;
+  let i0;
+  let t0;
+  let span0;
+  let t1_value = (
+    /*encumbrance*/
+    ctx[0].value + ""
+  );
+  let t1;
+  let t2;
+  let span1;
+  let t4;
+  let span2;
+  let t5_value = (
+    /*encumbrance*/
+    ctx[0].max + ""
+  );
+  let t5;
+  let t6;
+  let i1;
+  let t7;
+  let i2;
+  let t8;
+  let i3;
+  let t9;
+  let i4;
+  return {
+    c() {
+      div2 = element("div");
+      div1 = element("div");
+      div0 = element("div");
+      i0 = element("i");
+      t0 = space();
+      span0 = element("span");
+      t1 = text(t1_value);
+      t2 = space();
+      span1 = element("span");
+      span1.textContent = "/";
+      t4 = space();
+      span2 = element("span");
+      t5 = text(t5_value);
+      t6 = space();
+      i1 = element("i");
+      t7 = space();
+      i2 = element("i");
+      t8 = space();
+      i3 = element("i");
+      t9 = space();
+      i4 = element("i");
+      attr(i0, "class", "fas fa-weight-hanging svelte-mobile-companion81nkluj30u9vsd-1j8yxox");
+      attr(span0, "class", "value svelte-mobile-companion81nkluj30u9vsd-1j8yxox");
+      attr(span1, "class", "separator svelte-mobile-companion81nkluj30u9vsd-1j8yxox");
+      attr(span2, "class", "max svelte-mobile-companion81nkluj30u9vsd-1j8yxox");
+      attr(div0, "class", "label svelte-mobile-companion81nkluj30u9vsd-1j8yxox");
+      attr(i1, "class", "breakpoint encumbrance-low arrow-up svelte-mobile-companion81nkluj30u9vsd-1j8yxox");
+      attr(i2, "class", "breakpoint encumbrance-low arrow-down svelte-mobile-companion81nkluj30u9vsd-1j8yxox");
+      attr(i3, "class", "breakpoint encumbrance-high arrow-up svelte-mobile-companion81nkluj30u9vsd-1j8yxox");
+      attr(i4, "class", "breakpoint encumbrance-high arrow-down svelte-mobile-companion81nkluj30u9vsd-1j8yxox");
+      attr(div1, "class", "meter progress svelte-mobile-companion81nkluj30u9vsd-1j8yxox");
+      set_style(
+        div1,
+        "--bar-percentage",
+        /*encumbrance*/
+        ctx[0].pct + "%"
+      );
+      set_style(
+        div1,
+        "--encumbrance-low",
+        /*encumbrance*/
+        ctx[0].stops.encumbered + "%"
+      );
+      set_style(
+        div1,
+        "--encumbrance-high",
+        /*encumbrance*/
+        ctx[0].stops.heavilyEncumbered + "%"
+      );
+      attr(div2, "class", "encumbrance svelte-mobile-companion81nkluj30u9vsd-1j8yxox");
+    },
+    m(target, anchor) {
+      insert(target, div2, anchor);
+      append(div2, div1);
+      append(div1, div0);
+      append(div0, i0);
+      append(div0, t0);
+      append(div0, span0);
+      append(span0, t1);
+      append(div0, t2);
+      append(div0, span1);
+      append(div0, t4);
+      append(div0, span2);
+      append(span2, t5);
+      append(div1, t6);
+      append(div1, i1);
+      append(div1, t7);
+      append(div1, i2);
+      append(div1, t8);
+      append(div1, i3);
+      append(div1, t9);
+      append(div1, i4);
+    },
+    p(ctx2, dirty) {
+      if (dirty & /*encumbrance*/
+      1 && t1_value !== (t1_value = /*encumbrance*/
+      ctx2[0].value + ""))
+        set_data(t1, t1_value);
+      if (dirty & /*encumbrance*/
+      1 && t5_value !== (t5_value = /*encumbrance*/
+      ctx2[0].max + ""))
+        set_data(t5, t5_value);
+      if (dirty & /*encumbrance*/
+      1) {
+        set_style(
+          div1,
+          "--bar-percentage",
+          /*encumbrance*/
+          ctx2[0].pct + "%"
+        );
+      }
+      if (dirty & /*encumbrance*/
+      1) {
+        set_style(
+          div1,
+          "--encumbrance-low",
+          /*encumbrance*/
+          ctx2[0].stops.encumbered + "%"
+        );
+      }
+      if (dirty & /*encumbrance*/
+      1) {
+        set_style(
+          div1,
+          "--encumbrance-high",
+          /*encumbrance*/
+          ctx2[0].stops.heavilyEncumbered + "%"
+        );
+      }
+    },
+    d(detaching) {
+      if (detaching) {
+        detach(div2);
+      }
+    }
+  };
+}
+function create_fragment$1(ctx) {
+  let if_block_anchor;
+  let if_block = (
+    /*isUsingEncumbrance*/
+    ctx[1] && create_if_block$1(ctx)
+  );
+  return {
+    c() {
+      if (if_block)
+        if_block.c();
+      if_block_anchor = empty();
+    },
+    m(target, anchor) {
+      if (if_block)
+        if_block.m(target, anchor);
+      insert(target, if_block_anchor, anchor);
+    },
+    p(ctx2, [dirty]) {
+      if (
+        /*isUsingEncumbrance*/
+        ctx2[1]
+      ) {
+        if (if_block) {
+          if_block.p(ctx2, dirty);
+        } else {
+          if_block = create_if_block$1(ctx2);
+          if_block.c();
+          if_block.m(if_block_anchor.parentNode, if_block_anchor);
+        }
+      } else if (if_block) {
+        if_block.d(1);
+        if_block = null;
+      }
+    },
+    i: noop,
+    o: noop,
+    d(detaching) {
+      if (detaching) {
+        detach(if_block_anchor);
+      }
+      if (if_block)
+        if_block.d(detaching);
+    }
+  };
+}
+function instance$1($$self, $$props, $$invalidate) {
+  let { actor } = $$props;
+  let encumbrance = actor.system.attributes.encumbrance;
+  let isUsingEncumbrance = true;
+  const unsubscribe = mobileCompanionGameSettings.getWritableStore(settings.dnd5e.useEncumbrance).subscribe((value) => {
+    $$invalidate(1, isUsingEncumbrance = value);
+  });
+  onDestroy(() => {
+    unsubscribe();
+  });
+  $$self.$$set = ($$props2) => {
+    if ("actor" in $$props2)
+      $$invalidate(2, actor = $$props2.actor);
+  };
+  $$self.$$.update = () => {
+    if ($$self.$$.dirty & /*actor*/
+    4) {
+      $$invalidate(0, encumbrance = actor.system.attributes.encumbrance);
+    }
+  };
+  return [encumbrance, isUsingEncumbrance, actor];
+}
+class Dnd5eEncumbrance extends SvelteComponent {
+  constructor(options) {
+    super();
+    init$1(this, options, instance$1, create_fragment$1, safe_not_equal, { actor: 2 });
+  }
+}
 function create_if_block_1(ctx) {
   let dnd5ecurrency;
-  let t;
+  let t0;
   let dnd5eobjects;
+  let t1;
+  let dnd5eencumbrance;
   let current;
   dnd5ecurrency = new Dnd5eCurrency({ props: { actor: (
     /*actor*/
@@ -24844,16 +24798,24 @@ function create_if_block_1(ctx) {
     /*actor*/
     ctx[1]
   ) } });
+  dnd5eencumbrance = new Dnd5eEncumbrance({ props: { actor: (
+    /*actor*/
+    ctx[1]
+  ) } });
   return {
     c() {
       create_component(dnd5ecurrency.$$.fragment);
-      t = space();
+      t0 = space();
       create_component(dnd5eobjects.$$.fragment);
+      t1 = space();
+      create_component(dnd5eencumbrance.$$.fragment);
     },
     m(target, anchor) {
       mount_component(dnd5ecurrency, target, anchor);
-      insert(target, t, anchor);
+      insert(target, t0, anchor);
       mount_component(dnd5eobjects, target, anchor);
+      insert(target, t1, anchor);
+      mount_component(dnd5eencumbrance, target, anchor);
       current = true;
     },
     p(ctx2, dirty) {
@@ -24869,25 +24831,35 @@ function create_if_block_1(ctx) {
         dnd5eobjects_changes.actor = /*actor*/
         ctx2[1];
       dnd5eobjects.$set(dnd5eobjects_changes);
+      const dnd5eencumbrance_changes = {};
+      if (dirty & /*actor*/
+      2)
+        dnd5eencumbrance_changes.actor = /*actor*/
+        ctx2[1];
+      dnd5eencumbrance.$set(dnd5eencumbrance_changes);
     },
     i(local) {
       if (current)
         return;
       transition_in(dnd5ecurrency.$$.fragment, local);
       transition_in(dnd5eobjects.$$.fragment, local);
+      transition_in(dnd5eencumbrance.$$.fragment, local);
       current = true;
     },
     o(local) {
       transition_out(dnd5ecurrency.$$.fragment, local);
       transition_out(dnd5eobjects.$$.fragment, local);
+      transition_out(dnd5eencumbrance.$$.fragment, local);
       current = false;
     },
     d(detaching) {
       if (detaching) {
-        detach(t);
+        detach(t0);
+        detach(t1);
       }
       destroy_component(dnd5ecurrency, detaching);
       destroy_component(dnd5eobjects, detaching);
+      destroy_component(dnd5eencumbrance, detaching);
     }
   };
 }
@@ -24929,12 +24901,12 @@ function create_default_slot(ctx) {
   function select_block_type(ctx2, dirty) {
     if (
       /*activeFilter*/
-      ctx2[2] === filters.spell
+      ctx2[2] === Filters.Spell
     )
       return 0;
     if (
       /*activeFilter*/
-      ctx2[2] === filters.object
+      ctx2[2] === Filters.Object
     )
       return 1;
     return -1;

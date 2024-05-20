@@ -18,8 +18,12 @@
     },
     "Settings": {
       "UseCurrency": {
-        "Name": "Use Currency",
-        "Hint" : "Whether or not to show your currency within the inventory"
+        "Name": "Show Currency",
+        "Hint" : "Whether or not to show your currency within the inventory."
+      },
+      "UseEncumbrance": {
+        "Name": "Show Encumbrance",
+        "Hint" : "Whether or not to show the encumbrance indicator."
       }
     }
   }
