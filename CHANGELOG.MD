@@ -1,4 +1,4 @@
-# 0.3.0
+# 0.3.1
 - Adds weight indicator
 - Fixed wrong label for healing potions (was 'Damage')
 

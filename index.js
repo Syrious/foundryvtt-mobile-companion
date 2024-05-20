@@ -25075,7 +25075,7 @@ function instance($$self, $$props, $$invalidate) {
   };
   return [elementRoot, actor, activeFilter, props, applicationshell_elementRoot_binding];
 }
-class Dnd5eFreeAppShell extends SvelteComponent {
+let Dnd5eFreeAppShell$1 = class Dnd5eFreeAppShell extends SvelteComponent {
   constructor(options) {
     super();
     init$1(this, options, instance, create_fragment, safe_not_equal, { elementRoot: 0, props: 3 });
@@ -25094,8 +25094,8 @@ class Dnd5eFreeAppShell extends SvelteComponent {
     this.$$set({ props });
     flush();
   }
-}
-class Dnd5eAppShell extends SvelteApplication {
+};
+class Dnd5eFreeAppShell2 extends SvelteApplication {
   constructor(actor) {
     super();
     this.options.svelte.props = actor;
@@ -25111,7 +25111,7 @@ class Dnd5eAppShell extends SvelteApplication {
       resizable: false,
       // The other options...
       svelte: {
-        class: Dnd5eFreeAppShell,
+        class: Dnd5eFreeAppShell$1,
         target: document.body,
         props: {}
       }
@@ -25120,7 +25120,7 @@ class Dnd5eAppShell extends SvelteApplication {
 }
 function getCompanionComponent(actor) {
   if (game.system.id === system.DND5E) {
-    return new Dnd5eAppShell({ props: actor });
+    return new Dnd5eFreeAppShell2({ props: actor });
   }
 }
 Hooks.once("ready", () => {
