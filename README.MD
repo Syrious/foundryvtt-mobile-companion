@@ -1,10 +1,11 @@
 ![](https://img.shields.io/badge/Foundry-v11-informational)
-![GitHub Downloads (all assets, all releases)](https://img.shields.io/github/downloads/Syrious/foundryvtt-mobile-companion/total?style=flat&label=Downloads%20total)
-![GitHub Downloads (all assets, latest release)](https://img.shields.io/github/downloads/Syrious/foundryvtt-mobile-companion/latest/total)
-
+![GitHub Downloads (all assets, all releases)](https://img.shields.io/github/downloads/Syrious/foundryvtt-mobile-companion/total?label=Downloads+Total)
+![GitHub Downloads (all assets, latest release)](https://img.shields.io/github/downloads/Syrious/foundryvtt-mobile-companion/latest/total?label=Downloads+Latest)
 [![Support me on Patreon](https://img.shields.io/endpoint.svg?url=https%3A%2F%2Fshieldsio-patreon.vercel.app%2Fapi%3Fusername%3DSyriousWorkshop%26type%3Dpatrons&style=flat)](https://patreon.com/SyriousWorkshop)
 
-[Join the Discord Community](https://discord.gg/VMqndcyUGS)
+[Discord](https://discord.gg/VMqndcyUGS)
+
+
 
 Still in alpha!
 
