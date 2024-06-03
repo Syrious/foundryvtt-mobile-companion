@@ -30,8 +30,11 @@ https://github.com/Syrious/foundryvtt-mobile-companion/assets/8050391/3bd6b84d-7
 ## Supported Systems
 ### [Level Up: Advanced 5th Edition](https://foundryvtt.com/packages/a5e)
 - Inventory working
+
 ### [Dungeons & Dragons Fifth Edition](https://foundryvtt.com/packages/dnd5e)
 - Inventory working
+
+## More to follow... 
 
 ## Future plans
 I will at least do the aforementioned systems as well as adding spells. If everything goes smoothly I'll also add additional information, useful to the players like feats, combat maneuvers etc.
