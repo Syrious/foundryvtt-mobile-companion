@@ -5,8 +5,6 @@
 
 [Discord](https://discord.gg/VMqndcyUGS)
 
-Still in alpha!
-
 # Introduction
 Mobile-Companion is designed for in-person gaming sessions, catering to players who prefer not to micromanage their inventory. This module provides a streamlined, clean user interface that displays all relevant information for items, and will soon include spells and other features. With Mobile-Companion, players will never need to look up items in the rulebook again.
 
@@ -30,11 +28,16 @@ https://github.com/Syrious/foundryvtt-mobile-companion/assets/8050391/3bd6b84d-7
 ## Supported Systems
 ### [Level Up: Advanced 5th Edition](https://foundryvtt.com/packages/a5e)
 - Inventory working
+  [![A5e](https://img.youtube.com/vi/KJzjQq46G20/0.jpg)](https://www.youtube.com/watch?v=KJzjQq46G20)
 
 ### [Dungeons & Dragons Fifth Edition](https://foundryvtt.com/packages/dnd5e)
 - Inventory working
+  [![Dnd5e](https://img.youtube.com/vi/DOKYq5_ZelQ/0.jpg)](https://www.youtube.com/watch?v=DOKYq5_ZelQ)
+### More to follow... 
 
-## More to follow... 
+## Notes
+- Mobile Companion is still in active development and in a very early state
+- Some of the footage in this document might show an early-access version 
 
 ## Future plans
 I will at least do the aforementioned systems as well as adding spells. If everything goes smoothly I'll also add additional information, useful to the players like feats, combat maneuvers etc.
