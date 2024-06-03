@@ -14235,7 +14235,7 @@ function instance$v($$self, $$props, $$invalidate) {
         {},
         {
           ease: true,
-          easeOptions: { duration: 0.08, ease: cubicOut }
+          easeOptions: { duration: 0.06, ease: cubicOut }
         },
         isObject(draggableOptions) ? draggableOptions : {},
         {
@@ -17988,6 +17988,21 @@ class TJSDialog extends SvelteApplication {
     return new this({ ...data }, options).wait();
   }
 }
+Hooks.on("PopOut:loading", (app) => {
+  if (app instanceof SvelteApplication) {
+    app.position.enabled = false;
+  }
+});
+Hooks.on("PopOut:popin", (app) => {
+  if (app instanceof SvelteApplication) {
+    app.position.enabled = true;
+  }
+});
+Hooks.on("PopOut:close", (app) => {
+  if (app instanceof SvelteApplication) {
+    app.position.enabled = true;
+  }
+});
 class UIControl {
   /** @type {import('./types').TJSSettingsCustomSection[]} */
   #sections = [];
@@ -20100,9 +20115,16 @@ function create_if_block$f(ctx) {
   let p;
   let b;
   let t1;
+  let t2_value = (
+    /*weight*/
+    ctx[0].value + ""
+  );
   let t2;
   let t3;
-  let t4_value = i18n("DND5E.AbbreviationLbs") + "";
+  let t4_value = (
+    /*weight*/
+    ctx[0].units + ""
+  );
   let t4;
   return {
     c() {
@@ -20110,10 +20132,7 @@ function create_if_block$f(ctx) {
       b = element("b");
       b.textContent = `${i18n("DND5E.Weight")}`;
       t1 = text(": ");
-      t2 = text(
-        /*weight*/
-        ctx[0]
-      );
+      t2 = text(t2_value);
       t3 = space();
       t4 = text(t4_value);
     },
@@ -20127,12 +20146,13 @@ function create_if_block$f(ctx) {
     },
     p(ctx2, dirty) {
       if (dirty & /*weight*/
-      1)
-        set_data(
-          t2,
-          /*weight*/
-          ctx2[0]
-        );
+      1 && t2_value !== (t2_value = /*weight*/
+      ctx2[0].value + ""))
+        set_data(t2, t2_value);
+      if (dirty & /*weight*/
+      1 && t4_value !== (t4_value = /*weight*/
+      ctx2[0].units + ""))
+        set_data(t4, t4_value);
     },
     d(detaching) {
       if (detaching) {
@@ -24786,15 +24806,11 @@ class Dnd5eEncumbrance extends SvelteComponent {
 function create_if_block_1(ctx) {
   let dnd5ecurrency;
   let t0;
-  let dnd5eobjects;
-  let t1;
   let dnd5eencumbrance;
+  let t1;
+  let dnd5eobjects;
   let current;
   dnd5ecurrency = new Dnd5eCurrency({ props: { actor: (
-    /*actor*/
-    ctx[1]
-  ) } });
-  dnd5eobjects = new Dnd5eObjects({ props: { actor: (
     /*actor*/
     ctx[1]
   ) } });
@@ -24802,20 +24818,24 @@ function create_if_block_1(ctx) {
     /*actor*/
     ctx[1]
   ) } });
+  dnd5eobjects = new Dnd5eObjects({ props: { actor: (
+    /*actor*/
+    ctx[1]
+  ) } });
   return {
     c() {
       create_component(dnd5ecurrency.$$.fragment);
       t0 = space();
-      create_component(dnd5eobjects.$$.fragment);
-      t1 = space();
       create_component(dnd5eencumbrance.$$.fragment);
+      t1 = space();
+      create_component(dnd5eobjects.$$.fragment);
     },
     m(target, anchor) {
       mount_component(dnd5ecurrency, target, anchor);
       insert(target, t0, anchor);
-      mount_component(dnd5eobjects, target, anchor);
-      insert(target, t1, anchor);
       mount_component(dnd5eencumbrance, target, anchor);
+      insert(target, t1, anchor);
+      mount_component(dnd5eobjects, target, anchor);
       current = true;
     },
     p(ctx2, dirty) {
@@ -24825,31 +24845,31 @@ function create_if_block_1(ctx) {
         dnd5ecurrency_changes.actor = /*actor*/
         ctx2[1];
       dnd5ecurrency.$set(dnd5ecurrency_changes);
-      const dnd5eobjects_changes = {};
-      if (dirty & /*actor*/
-      2)
-        dnd5eobjects_changes.actor = /*actor*/
-        ctx2[1];
-      dnd5eobjects.$set(dnd5eobjects_changes);
       const dnd5eencumbrance_changes = {};
       if (dirty & /*actor*/
       2)
         dnd5eencumbrance_changes.actor = /*actor*/
         ctx2[1];
       dnd5eencumbrance.$set(dnd5eencumbrance_changes);
+      const dnd5eobjects_changes = {};
+      if (dirty & /*actor*/
+      2)
+        dnd5eobjects_changes.actor = /*actor*/
+        ctx2[1];
+      dnd5eobjects.$set(dnd5eobjects_changes);
     },
     i(local) {
       if (current)
         return;
       transition_in(dnd5ecurrency.$$.fragment, local);
-      transition_in(dnd5eobjects.$$.fragment, local);
       transition_in(dnd5eencumbrance.$$.fragment, local);
+      transition_in(dnd5eobjects.$$.fragment, local);
       current = true;
     },
     o(local) {
       transition_out(dnd5ecurrency.$$.fragment, local);
-      transition_out(dnd5eobjects.$$.fragment, local);
       transition_out(dnd5eencumbrance.$$.fragment, local);
+      transition_out(dnd5eobjects.$$.fragment, local);
       current = false;
     },
     d(detaching) {
@@ -24858,8 +24878,8 @@ function create_if_block_1(ctx) {
         detach(t1);
       }
       destroy_component(dnd5ecurrency, detaching);
-      destroy_component(dnd5eobjects, detaching);
       destroy_component(dnd5eencumbrance, detaching);
+      destroy_component(dnd5eobjects, detaching);
     }
   };
 }
