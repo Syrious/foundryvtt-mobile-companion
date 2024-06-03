@@ -5,8 +5,6 @@
 
 [Discord](https://discord.gg/VMqndcyUGS)
 
-
-
 Still in alpha!
 
 # Introduction
@@ -30,7 +28,10 @@ https://github.com/Syrious/foundryvtt-mobile-companion/assets/8050391/3bd6b84d-7
 3. Make sure the user is the owner of an actor
 
 ## Supported Systems
-Currently, I am working on DND5e and A5e. When this is done I probably go to Pf2e. Additional systems will follow.
+### [Level Up: Advanced 5th Edition](https://foundryvtt.com/packages/a5e)
+- Inventory working
+### [Dungeons & Dragons Fifth Edition](https://foundryvtt.com/packages/dnd5e)
+- Inventory working
 
 ## Future plans
 I will at least do the aforementioned systems as well as adding spells. If everything goes smoothly I'll also add additional information, useful to the players like feats, combat maneuvers etc.

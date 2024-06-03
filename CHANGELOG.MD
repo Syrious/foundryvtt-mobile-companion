@@ -1,3 +1,6 @@
+# 0.3.2
+- [DND5E] Fixes issue with weight not showing correctly
+
 # 0.3.1
 - Adds weight indicator
 - Fixed wrong label for healing potions (was 'Damage')
