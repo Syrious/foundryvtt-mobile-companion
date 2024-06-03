@@ -17,9 +17,6 @@ Also, system sheets do not provide all the data necessary for in-person sessions
 
 And last but not least: Mobile-Companion is intended to work on smaller displays like smartphones!
 
-
-https://github.com/Syrious/foundryvtt-mobile-companion/assets/8050391/3bd6b84d-7bb0-4061-9708-afa190fd8f21
-
 ## Setup
 1. Enable the module
 2. Go to game settings and add the users who want to use Mobile-Companion. You can enter a number in the field to only activate that user's Mobile-Companion when the screen size is smaller than the entered value (Leave it at 0 to always activate Mobile-Companion for that user).
