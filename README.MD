@@ -30,11 +30,15 @@ And last but not least: Mobile-Companion is intended to work on smaller displays
 ### [Dungeons & Dragons Fifth Edition](https://foundryvtt.com/packages/dnd5e)
 - Inventory working
   [![Dnd5e](https://img.youtube.com/vi/DOKYq5_ZelQ/0.jpg)](https://www.youtube.com/watch?v=DOKYq5_ZelQ)
+
+### [Pathfinder 2e](https://foundryvtt.com/packages/pf2e)
+- Inventory working
+
 ### More to follow... 
 
 ## Notes
 - Mobile Companion is still in active development and in a very early state
-- Some of the footage in this document might show an early-access version 
+- Some of the footage and information in this document might show an early-access version 
 
 ## Future plans
 I will at least do the aforementioned systems as well as adding spells. If everything goes smoothly I'll also add additional information, useful to the players like feats, combat maneuvers etc.
