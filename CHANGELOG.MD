@@ -2,7 +2,7 @@
 - [A5E] Finalizes inventory
 - [DND5E] Adds equipped state
 - [ALL] Self-evaluating input fields for currency
-  - You can input e.g., 39 + 2 into a currency's input field, and it will be evaluated to 42
+  - You can input e.g., 39 + 3 into a currency's input field, and it will be evaluated to 42
 
 # 0.3.3
 - [A5E] Fixes A5e sheet not starting
