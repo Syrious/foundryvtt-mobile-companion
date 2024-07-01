@@ -1,8 +1,8 @@
 {
   "id": "mobile-companion",
   "title": "Mobile Companion",
-  "description": "A companion module top be used on smartphones and tablets",
-  "version": "0.3.3",
+  "description": "A companion module for quick access to inventory and more, perfect for smartphones and tablets.",
+  "version": "0.4.5",
   "authors": [
     {
       "name": "Syrious",
@@ -16,7 +16,7 @@
   ],
   "compatibility": {
     "minimum": "11",
-    "verified": "11"
+    "verified": "12"
   },
   "esmodules": [
     "index.js"
@@ -26,12 +26,8 @@
   ],
   "flags": {
     "hotReload": {
-      "extensions": [
-        "json"
-      ],
-      "paths": [
-        "lang"
-      ]
+      "extensions": ["json"],
+      "paths": ["lang"]
     }
   },
   "languages": [
@@ -43,6 +39,6 @@
     }
   ],
   "url": "",
-  "manifest": "",
-  "download": ""
+  "manifest": "${module-endpoint}",
+  "download": "${download-endpoint}"
 }
