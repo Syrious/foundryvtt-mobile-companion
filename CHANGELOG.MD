@@ -1,3 +1,9 @@
+# 0.5.2
+- [PF2E] Inventory
+- [ALL] Animates weight bar
+- [ALL] Header now sticks to the top
+- [ALL] Evaluates references to compendia. Clicking on a reference opens a new window with the respective information
+
 # 0.4.5
 - [A5E] Finalizes inventory
 - [DND5E] Adds equipped state
