@@ -25,11 +25,11 @@ And last but not least: Mobile-Companion is intended to work on smaller displays
 ## Supported Systems
 ### [Level Up: Advanced 5th Edition](https://foundryvtt.com/packages/a5e)
 - Inventory
-  [![A5e](https://img.youtube.com/vi/KJzjQq46G20/0.jpg)](https://www.youtube.com/watch?v=KJzjQq46G20)
+  - [![A5e](https://img.youtube.com/vi/KJzjQq46G20/0.jpg)](https://www.youtube.com/watch?v=KJzjQq46G20)
 
 ### [Dungeons & Dragons Fifth Edition](https://foundryvtt.com/packages/dnd5e)
 - Inventory
-  [![Dnd5e](https://img.youtube.com/vi/DOKYq5_ZelQ/0.jpg)](https://www.youtube.com/watch?v=DOKYq5_ZelQ)
+  - [![Dnd5e](https://img.youtube.com/vi/DOKYq5_ZelQ/0.jpg)](https://www.youtube.com/watch?v=DOKYq5_ZelQ)
 - Spells
 
 ### [Pathfinder 2e](https://foundryvtt.com/packages/pf2e)
