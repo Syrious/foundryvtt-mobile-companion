@@ -1,3 +1,9 @@
+# 0.6.4
+- [DND5E] Fixes issue with app crashing if character has no leveled spells available
+
+# 0.6.3
+- [DND5E] Adds spells tab
+
 # 0.5.2
 - [PF2E] Inventory
 - [ALL] Animates weight bar

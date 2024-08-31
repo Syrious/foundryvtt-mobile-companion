@@ -2,7 +2,7 @@
   "id": "mobile-companion",
   "title": "Mobile Companion",
   "description": "A companion module for quick access to inventory and more, perfect for smartphones and tablets.",
-  "version": "0.5.2",
+  "version": "0.6.4L",
   "authors": [
     {
       "name": "Syrious",
@@ -17,6 +17,25 @@
   "compatibility": {
     "minimum": "11",
     "verified": "12"
+  },
+  "relationships": {
+    "systems": [
+      {
+        "id": "a5e",
+        "type": "system",
+        "compatibility": {}
+      },
+      {
+        "id": "dnd5e",
+        "type": "system",
+        "compatibility": {}
+      },
+      {
+        "id": "pf2e",
+        "type": "system",
+        "compatibility": {}
+      }
+    ]
   },
   "esmodules": [
     "index.js"
