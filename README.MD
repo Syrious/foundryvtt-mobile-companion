@@ -26,6 +26,7 @@ And last but not least: Mobile-Companion is intended to work on smaller displays
 ### [Level Up: Advanced 5th Edition](https://foundryvtt.com/packages/a5e)
 - Inventory
   - [![A5e](https://img.youtube.com/vi/KJzjQq46G20/0.jpg)](https://www.youtube.com/watch?v=KJzjQq46G20)
+- Spells (early access)
 
 ### [Dungeons & Dragons Fifth Edition](https://foundryvtt.com/packages/dnd5e)
 - Inventory
@@ -37,6 +38,10 @@ And last but not least: Mobile-Companion is intended to work on smaller displays
 - Inventory
 
 ### More to follow... 
+
+## Pro vs. Light version
+Starting with version 0.6.4, the free (light) version does not include all the features offered in the pro-version.
+Find out more about this on my [Patreon](https://www.patreon.com/SyriousWorkshop).
 
 ## Notes
 - Mobile Companion is still in active development and in a very early state
