@@ -1,3 +1,7 @@
+# 0.7.4 
+- [DND5E] Adds item containers
+- [A5E] Adds spells and item containers
+
 # 0.6.4
 - [DND5E] Fixes issue with app crashing if character has no leveled spells available
 

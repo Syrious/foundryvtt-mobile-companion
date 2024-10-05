@@ -11,6 +11,10 @@
       "UseEncumbrance": {
         "Name": "Show Encumbrance",
         "Hint" : "Whether or not to show the encumbrance indicator."
+      },
+      "UseContainer": {
+        "Name": "Use Containers",
+        "Hint" : "Whether or not to use the containers (Pro Feature)."
       }
     }
   }
