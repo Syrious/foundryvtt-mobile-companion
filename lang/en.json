@@ -3,6 +3,11 @@
     "A5E": {
       "StateToggle": "State Toggles"
     },
+    "PF2E": {
+      "SpellSlotEmptyClick": "Empty Slot (click to add)",
+      "SpellSlotEmpty": "Empty Slot",
+      "Unprepare": "Unprepare"
+    },
     "Settings": {
       "UseCurrency": {
         "Name": "Show Currency",
@@ -16,6 +21,9 @@
         "Name": "Use Containers",
         "Hint" : "Whether or not to use the containers (Pro Feature)."
       }
+    },
+    "Common": {
+      "Restore": "Restore"
     }
   }
 }

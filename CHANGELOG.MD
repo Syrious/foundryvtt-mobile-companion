@@ -1,11 +1,19 @@
-# 0.7.4 
+# 0.8.3
+- [PF2E] Adds spells tab
+
+# 0.7.4
+- [A5E] Adds item containers
+
+# 0.7.3
 - [DND5E] Adds item containers
-- [A5E] Adds spells and item containers
+
+# 0.7.2
+- [A5E] Adds spells tab
 
 # 0.6.4
 - [DND5E] Fixes issue with app crashing if character has no leveled spells available
 
-# 0.6.3
+# 0.6.3 
 - [DND5E] Adds spells tab
 
 # 0.5.2
@@ -17,8 +25,8 @@
 # 0.4.5
 - [A5E] Finalizes inventory
 - [DND5E] Adds equipped state
-- [ALL] Self-evaluating input fields for currency
-  - You can input e.g., 39 + 3 into a currency's input field, and it will be evaluated to 42
+- [ALL] Self-evaluating input fields for currency 
+  - You can input e.g., 39 + 3 into a currency's input field, and it will be evaluated to 42 
 
 # 0.3.3
 - [A5E] Fixes A5e sheet not starting
