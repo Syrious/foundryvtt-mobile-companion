@@ -1,6 +1,6 @@
 # 0.8.4
 - Adds deprecation warning
-- 
+
 # 0.8.3
 - [PF2E] Adds spells tab
 
