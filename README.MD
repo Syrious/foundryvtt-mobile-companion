@@ -13,7 +13,7 @@ Mobile-Companion has been **split into separate modules**, each tailored for spe
 ## Links
 
 - Get the latest version on my [Foundry Hub](https://hub.adventurer-backpack.com/)
-- Find all the new on [Syrious' Workshop](https://www.patreon.com/SyriousWorkshop)
+- Find all the news on [Syrious' Workshop](https://www.patreon.com/SyriousWorkshop)
 
 ### Module Links
 You can find the new modules here:
